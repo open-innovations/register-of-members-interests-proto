@@ -1,0 +1,12 @@
+---
+url: /data/competencies.json
+layout: layouts/bare.njk
+---
+{{
+  {
+    competencies: competency,
+    metadata: {
+      generation_date: date
+    }
+  } | dump(2) | safe
+}}

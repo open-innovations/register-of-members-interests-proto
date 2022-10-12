@@ -1,0 +1,35 @@
+---
+css: |
+  .competency-block {
+    --colour-fg: #222;
+    --colour-bg: #ddd;
+    display: block;
+    color: var(--colour-bg);
+    background-color: var(--colour-fg);
+    border: 2px solid var(--colour-bg);
+    height: 100%;
+    min-height: 5em;
+    padding: 1em;
+  }
+  .competency-block:hover {
+    color: var(--colour-fg);
+    background-color: var(--colour-bg);
+    border-color: var(--colour-fg);
+  }
+  .competency-block .value {
+    font-size: 1.3em;
+  }
+---
+{% if details.title == "" %}
+  <!-- {{ details.ID }} no title {{ details | dump() }} -->
+{% else %}
+<li id="{{ details.ID }}" class="competency-block">
+  <p class="title">{{ details.Competency }}</p>
+  {% if details.ID in dashboard.values %}
+    <p class="value">
+      {{ dashboard.values[details.ID] }}
+      {{ competency[details.ID].value_postfix }}
+    </p>
+  {% endif %}
+</li>
+{% endif %}
