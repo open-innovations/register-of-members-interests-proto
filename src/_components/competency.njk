@@ -23,7 +23,7 @@ css: |
 {% if details.title == "" %}
   <!-- {{ details.ID }} no title {{ details | dump() }} -->
 {% else %}
-<li id="{{ details.ID }}" class="competency-block">
+<li id="{{ details.ID }}" class="competency-block" data-auto-popup="{{ details.ID }}: {{ details.Competency }}">
   <p class="title">{{ details.Competency }}</p>
   {% if details.ID in dashboard.values %}
     <p class="value">

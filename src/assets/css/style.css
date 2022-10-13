@@ -1,2 +1,37 @@
-body { font-family: Arial, Helvetica, sans-serif; }
-main { margin: 2rem; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin: 2rem;
+}
+
+.popup {
+  --bg-colour: green;
+  position: fixed;
+  color: white;
+  background-color: var(--bg-colour);
+  z-index: 1000;
+  margin: 0;
+  padding: 0.5rem;
+  display: inline-block;
+  transition: left 0.1s linear, top 0.1s linear, opacity 0.5s ease-in-out;
+  min-width: 1vh;
+  max-width: 15em;
+  box-shadow: 2px 2px 4px hsla(0, 100%, 0%, 30%);
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.popup::after {
+  content: "";
+  position: absolute;
+  bottom: auto;
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 0;
+  transform: translate3d(-50%, -100%, 0);
+  border: 0.5rem solid #ffffff00;
+  border-bottom-color: var(--bg-colour);
+}
