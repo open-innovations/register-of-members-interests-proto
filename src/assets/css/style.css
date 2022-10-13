@@ -35,3 +35,25 @@ main {
   border: 0.5rem solid #ffffff00;
   border-bottom-color: var(--bg-colour);
 }
+
+.blinkenlights {
+  --auto-grid-min-size: 2em;
+  grid-auto-rows: var(--auto-grid-min-size);
+  gap: 0.1rem;
+}
+
+.blinkenlights > li {
+  height: var(--auto-grid-min-size);
+  min-height: var(--auto-grid-min-size);
+  padding: 0;
+}
+
+.blinkenlights > li * {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
