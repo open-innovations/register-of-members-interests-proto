@@ -20,8 +20,17 @@ css: |
     font-size: 1.3em;
   }
 ---
-{% if details.title == "" %}
-  <!-- {{ details.ID }} no title {{ details | dump() }} -->
+{% if
+  details.Competency == undefined
+  or
+  competency[details.ID].duplicate_of
+%}
+  <!-- 
+    Failed tests
+    {{ details.ID }}
+    details: {{ details | dump() | safe }}
+    competency: {{ competency[details.ID] | dump() | safe }}
+  -->
 {% else %}
 <li id="{{ details.ID }}" class="competency-block" data-auto-popup="{{ details.ID }}: {{ details.Competency }}">
   <p class="title">{{ details.Competency }}</p>
