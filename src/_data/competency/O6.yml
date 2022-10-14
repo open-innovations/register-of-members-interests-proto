@@ -1,5 +1,7 @@
+# Competency: What is the number of Members with outside interests
 # File per question with fields describing the content
 
-value_prefix:
-value_postfix: members
-
+psuedocode:
+  - count of c1_unique_members_identifier
+dependencies:
+  - c1_unique_members_identifier

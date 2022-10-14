@@ -19,6 +19,11 @@ site.copy([".css"]);
 
 site.process(['.html'], autoDependency)
 
+function objectToList(o: { [k: string]: object }, id_field: string = 'id') {
+  return Object.entries(o).map(([k, v]) => ({ [id_field]: k, ...v }))
+}
+site.filter('listify', objectToList)
+
 site.use(basePath());
 site.use(date());
 site.use(esbuild({

@@ -1,0 +1,7 @@
+# What are the number of hours spent on second jobs 
+
+dependencies:
+  - c1_unique_members_identifier
+  - c2_total_hours
+
+pseudocode: sum of c2_total_hours by c1_unique_members_identifier

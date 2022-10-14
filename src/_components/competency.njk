@@ -20,9 +20,9 @@ css: |
     font-size: 1.3em;
   }
 ---
+{# Rules to knock out competencies #}
 {% if
-  details.Competency == undefined
-  or
+  details.Competency == undefined or
   competency[details.ID].duplicate_of
 %}
   <!-- 

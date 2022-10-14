@@ -1,0 +1,7 @@
+title: Now!
+available:
+  - c1_unique_members_identifier
+  - c1_company_numner
+
+reliability:
+  c1_company_number: 50%

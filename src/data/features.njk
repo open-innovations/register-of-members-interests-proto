@@ -1,0 +1,10 @@
+{{-
+
+  {
+    features: features | listify('id'),
+    metadata: {
+      generated: date
+    }
+  }
+
+| dump(2) | safe -}}

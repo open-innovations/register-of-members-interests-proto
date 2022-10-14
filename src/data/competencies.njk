@@ -1,12 +1,11 @@
----
-url: /data/competencies.json
-layout: layouts/bare.njk
----
-{{
+{{-
+
   {
-    competencies: competency,
+    competencies:
+      competency | listify | sort(false, false, 'id'),
     metadata: {
-      generation_date: date
+      generated: date
     }
-  } | dump(2) | safe
-}}
+  }
+
+| dump(2) | safe -}}
