@@ -28,4 +28,4 @@ The key columns are:
 * https://github.com/ukparliament/ontologies/tree/master/meta/relational/register-of-members-financial-interests
 * The "ruleset" for the House of Commons register is here: https://publications.parliament.uk/pa/cm201719/cmcode/1882/188204.htm
 * Same but for the Lords https://www.parliament.uk/globalassets/documents/lords-commissioner-for-standards/hl-code-of-conduct.pdf
-* Combined Commons forms https://github.com/ukparliament/ontologies/tree/master/meta/relational/register-of-members-financial-interests/categories/commons/forms (based on https://github.com/ukparliament/ontologies/tree/master/meta/relational/register-of-members-financial-interests/categories/commons)
+* Combined Commons forms https://github.com/ukparliament/ontologies/tree/master/meta/relational/register-of-members-financial-interests/commons/forms (based on https://github.com/ukparliament/ontologies/tree/master/meta/relational/register-of-members-financial-interests/commons/categories)

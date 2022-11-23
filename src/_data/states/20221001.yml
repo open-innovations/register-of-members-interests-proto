@@ -1,5 +1,17 @@
 title: Now!
+source: https://github.com/ukparliament/ontologies/blob/master/meta/relational/register-of-members-financial-interests/commons/forms/new-member.pdf
 available:
+  c1_1_date_received:
+  c1_1_amount_or_value:
+  c1_1_name_and_address_of_payer:
+  c1_1_brief_description_of_payers_business:
+  c1_1_type_of_work_services_provided:
+  c1_1_dates_work_completed:
+  c1_1_number_of_hours:
+  c1_1_name_and_address_of_other_beneficiary_of_services:
+
+
+
   c1_unique_members_identifier:
   c1_company_number:
 
