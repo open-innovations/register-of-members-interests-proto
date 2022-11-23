@@ -1,2 +1,5 @@
 # Lume build environment
 _site/
+
+# Temporarily ignore deno lock file
+deno.lock
