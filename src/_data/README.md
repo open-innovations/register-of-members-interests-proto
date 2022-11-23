@@ -1,6 +1,6 @@
 ## Data from Parliamentary Digital Service
 
-`evidence.csv` is downloaded directly from the Parliament library sheet **TODO ADD LINK**.
+`evidence.csv` is downloaded directly from the [Parliament library sheet](https://docs.google.com/spreadsheets/d/1iRsQBRPChMVFitSGBtNJFGNBvFT8XGKQYYqu40zy_OM/edit?usp=sharing).
 The key columns are:
 
 * ID
@@ -26,3 +26,6 @@ The key columns are:
 ## Useful links
 
 * https://github.com/ukparliament/ontologies/tree/master/meta/relational/register-of-members-financial-interests
+* The "ruleset" for the House of Commons register is here: https://publications.parliament.uk/pa/cm201719/cmcode/1882/188204.htm
+* Same but for the Lords https://www.parliament.uk/globalassets/documents/lords-commissioner-for-standards/hl-code-of-conduct.pdf
+* Combined Commons forms https://github.com/ukparliament/ontologies/tree/master/meta/relational/register-of-members-financial-interests/categories/commons/forms (based on https://github.com/ukparliament/ontologies/tree/master/meta/relational/register-of-members-financial-interests/categories/commons)
