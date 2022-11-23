@@ -19,7 +19,7 @@ css: |
   <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
   {% for details in evidence %}
     {% if details['RMFI category'] == category %}
-      {{ comp.competency({ details: details }) | safe }}
+      {{ comp.competency({ current_state: current_state, details: details }) | safe }}
     {% endif %}
   {% endfor %}
   </ul>

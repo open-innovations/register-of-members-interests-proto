@@ -19,7 +19,17 @@ css: |
   .competency-block .value {
     font-size: 1.3em;
   }
+  .competency-block[data-score] {
+    --colour-fg: var(--indicator-scored);
+  }
+  .competency-block[data-score="1"] {
+    --colour-fg: var(--indicator-answerable);
+  }
+  .competency-block[data-score="0"] {
+    --colour-fg: var(--indicator-unanswerable);
+  }
 ---
+{%- macro get_dependencies(ID) -%}{{- competency[ID].dependencies | default([]) | join(",") -}}{%- endmacro -%}
 {# Rules to knock out competencies #}
 {% if
   details.Competency == undefined or
@@ -34,9 +44,7 @@ css: |
 {% else %}
 <li id="{{ details.ID }}" class="competency-block"
   data-auto-popup="{{ details.ID }}: {{ details.Competency }}"
-  {%- if competencies[details.ID].dependencies !== undefined
-  %} data-dependencies="{{ competencies[details.ID].dependencies | dump() }}"
-  {%- endif -%}
+  {{ comp.dependencies({ id: details.ID, current_state: current_state }) | safe }}
   >
   <p class="title">{{ details.Competency }}</p>
   {# NOT SURE WHAT THIS IS FOR - MAYBE REMOVE?

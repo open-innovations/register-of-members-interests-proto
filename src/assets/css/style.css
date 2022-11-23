@@ -1,3 +1,9 @@
+:root {
+  --indicator-answerable: rgb(29, 240, 29);
+  --indicator-unanswerable: rgb(200, 18, 18);
+  --indicator-scored: rgb(174, 131, 51);
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
