@@ -32,13 +32,20 @@ css: |
     competency: {{ competency[details.ID] | dump() | safe }}
   -->
 {% else %}
-<li id="{{ details.ID }}" class="competency-block" data-auto-popup="{{ details.ID }}: {{ details.Competency }}">
+<li id="{{ details.ID }}" class="competency-block"
+  data-auto-popup="{{ details.ID }}: {{ details.Competency }}"
+  {%- if competencies[details.ID].dependencies !== undefined
+  %} data-dependencies="{{ competencies[details.ID].dependencies | dump() }}"
+  {%- endif -%}
+  >
   <p class="title">{{ details.Competency }}</p>
+  {# NOT SURE WHAT THIS IS FOR - MAYBE REMOVE?
   {% if details.ID in dashboard.values %}
     <p class="value">
       {{ dashboard.values[details.ID] }}
       {{ competency[details.ID].value_postfix }}
     </p>
   {% endif %}
+  #}
 </li>
 {% endif %}
