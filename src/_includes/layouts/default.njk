@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
+  <header>
+  {{ comp.state_list() | safe }}
+  </header>
   {{ content | safe }}
 </body>
 </html>
