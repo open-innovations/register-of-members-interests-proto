@@ -11,8 +11,10 @@
 </head>
 <body>
   <header>
-  {{ comp.state_list() | safe }}
+    <h1><a class="undecorated" href="/">{{ metas.site | safe }}</a></h1>
   </header>
+  <main>
   {{ content | safe }}
+  </main>
 </body>
 </html>

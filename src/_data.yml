@@ -3,7 +3,9 @@ layout: layouts/default.njk
 site_title: Register of Members Interest Dashboard
 
 metas:
-  site: UK Parliament Register of Members' Financial Interests - competency answerability dashboard
+  site: |
+    UK Parliament Register of Members' Financial Interests
+    Competency answerability dashboard
   # twitter: "@misteroom"
   # icon: /img/icon.png
   lang: en

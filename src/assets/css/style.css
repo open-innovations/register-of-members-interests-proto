@@ -12,6 +12,14 @@ main, header {
   margin: 2rem;
 }
 
+a.undecorated {
+  color: inherit;
+  text-decoration: none;
+}
+a.undecorated:hover {
+  text-decoration: underline;
+}
+
 .popup {
   --bg-colour: green;
   position: fixed;

@@ -1,11 +1,5 @@
----
-current_state: 20221001
----
-<main>
-  <h1>RMFI Competency Answerability Dashboard</h1>
+<p>
+  This site presents a view of whether the competencies collected during a review of the RMFI can be answered.
+</p>
 
-  {{ comp.dashboard({ current_state: current_state }) | safe }}
-</main>
-<aside>
-  
-</aside>
+{{ comp.state_list() | safe }}

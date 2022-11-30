@@ -1,7 +1,7 @@
 ---
 layout: layouts/default.njk
 ---
-<main>
-  <h1>RMFI Competency Answerability Dashboard</h1>
-  {{ comp.dashboard({ current_state: current_state }) | safe }}
-</main>
+{{ comp.state_list({ current_page: url }) | safe }}
+
+<h2>State: {{ title }}</h2>
+{{ comp.dashboard({ current_state: current_state }) | safe }}

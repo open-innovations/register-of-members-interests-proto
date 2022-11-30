@@ -1,5 +1,7 @@
 title: Now!
 source: https://github.com/ukparliament/ontologies/blob/master/meta/relational/register-of-members-financial-interests/commons/forms/new-member.pdf
+draft: true
+
 available:
   c1_1_date_received:
   c1_1_amount_or_value:

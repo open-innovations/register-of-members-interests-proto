@@ -15,7 +15,7 @@ css: |
 ---
 {% for category in dashboard.categories %}
   <section aria-labelledby="category-{{ loop.index }}">
-  <h2 id="category-{{ loop.index }}">{{ category }}</h2>
+  <h3 id="category-{{ loop.index }}">{{ category }}</h3>
   <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
   {% for details in evidence %}
     {% if details['RMFI category'] == category %}
