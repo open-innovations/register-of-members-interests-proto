@@ -24,6 +24,9 @@ css: |
     color: white;
     background: black;
   }
+  .state-list li.active {
+    background: blue;
+  }
   .state-list li:hover {
     color: #eee;
     background: #333;
@@ -36,7 +39,7 @@ css: |
   <p id="state-list-title">Available States:</p>
   <ul>
     {% for state in search.pages('state') | data %}
-      <li><a href="{{ state.url }}">{{ state.title }}</a></li>
+      <li class="{% if current_page == state.url %}active{% endif %}"><a href="{{ state.url }}">{{ state.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
