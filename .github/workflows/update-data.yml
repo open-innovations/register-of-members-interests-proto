@@ -1,0 +1,31 @@
+name: Update data
+
+"on":
+  workflow_dispatch: {}
+  schedule:
+    # https://crontab.guru/#45_9-18/3_*_*_1-5
+    - "45 9-18/3 * * 1-5"
+
+jobs:
+  pull_data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+          cache: "pip"
+      - run: pip3 install -r requirements.txt
+      - run: python3 scripts/get_latest_evidence.py
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          # Optional. Commit message for the created commit.
+          # Defaults to "Apply automatic changes"
+          commit_message: Update evidence CSV
+          # Optional glob pattern of files which should be added to the commit
+          # Defaults to all (.)
+          # See the `pathspec`-documentation for git
+          # - https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203
+          # - https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefpathspecapathspec
+          file_pattern: 'src/_data/evidence.csv'

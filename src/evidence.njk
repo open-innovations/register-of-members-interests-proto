@@ -1,0 +1,28 @@
+---
+title: Competencies
+url: /competencies/
+---
+<h2>{{ title }}</h2>
+<p>
+  This table is derived from the Google sheet entitled "Code of Conduct evidence".
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Competency</th>
+      <th>RMFI Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ev in evidence %}
+    <tr>
+      <td>{{ ev.ID }}</td>
+      <td>{{ ev.Competency }}</td>
+      <td>{{ ev["RMFI category"] }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
