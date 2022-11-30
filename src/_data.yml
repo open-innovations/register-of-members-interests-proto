@@ -4,8 +4,10 @@ site_title: Register of Members Interest Dashboard
 
 metas:
   site: |
-    UK Parliament Register of Members' Financial Interests
-    Competency answerability dashboard
+    Competency Answerability Dashboard
+  description: |
+    Dashboard showing how a set of competencies can be answered based on
+    various states of the UK Parliament Register of Members' Financial Interests.
   # twitter: "@misteroom"
   # icon: /img/icon.png
   lang: en

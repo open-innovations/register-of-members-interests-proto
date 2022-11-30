@@ -3,5 +3,5 @@ layout: layouts/default.njk
 ---
 {{ comp.state_list({ current_page: url }) | safe }}
 
-<h2>State: {{ title }}</h2>
+<h2>{{ title }}</h2>
 {{ comp.dashboard({ current_state: current_state }) | safe }}

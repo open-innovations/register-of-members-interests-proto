@@ -39,7 +39,7 @@ css: |
   <p id="state-list-title">Available States:</p>
   <ul>
     {% for state in search.pages('state') | data %}
-      <li class="{% if current_page == state.url %}active{% endif %}"><a href="{{ state.url }}">{{ state.title }}</a></li>
+      <li class="{% if current_page == state.url %}active{% endif %}"><a href="{{ state.url }}">{{ state.name }}</a></li>
     {% endfor %}
   </ul>
 </div>

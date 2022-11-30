@@ -6,6 +6,7 @@ export default function* ({ states }) {
     if (!config?.draft)
       yield {
         ...config,
+        title: `State: ${ config.name }`,
         current_state: state,
         url: `/state/${state}/`,
       };
