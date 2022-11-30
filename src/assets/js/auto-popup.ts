@@ -1,10 +1,10 @@
 const POPUP_TIMEOUT = 2500;
 const MAX_TIMEOUT = 500;
-addEventListener('DOMContentLoaded', () => {
+addEventListener("DOMContentLoaded", () => {
   // Create and attach the popup
-  const popup = document.createElement('aside');
-  popup.className = 'popup';
-  popup.style.display = 'none';
+  const popup = document.createElement("aside");
+  popup.className = "popup";
+  popup.style.display = "none";
   popup.style.opacity = 0;
   document.body.appendChild(popup);
 
@@ -14,7 +14,7 @@ addEventListener('DOMContentLoaded', () => {
 
   /**
    * Event handler to show the popup.
-   * 
+   *
    * @param event event target
    */
   function showPopup(event) {
@@ -34,7 +34,7 @@ addEventListener('DOMContentLoaded', () => {
     const loc = target.getBoundingClientRect();
 
     // Get the hover position
-    const autoPopupPos = target.dataset.autoPopupPos || 'bottom';
+    const autoPopupPos = target.dataset.autoPopupPos || "bottom";
     console.log(autoPopupPos);
 
     // Setup the content and attributes of the popup
@@ -43,14 +43,14 @@ addEventListener('DOMContentLoaded', () => {
 
     // Set the position of the popup based on requested popup position
     switch (autoPopupPos) {
-      case 'right':
-        popup.style.top = loc.top + loc.height / 2 + 'px';
-        popup.style.left = loc.right + 10 + 'px';
+      case "right":
+        popup.style.top = loc.top + loc.height / 2 + "px";
+        popup.style.left = loc.right + 10 + "px";
         break;
-      case 'bottom':
+      case "bottom":
       default:
-        popup.style.top = loc.bottom + 10 + 'px';
-        popup.style.left = loc.left + loc.width / 2 + 'px';
+        popup.style.top = loc.bottom + 10 + "px";
+        popup.style.left = loc.left + loc.width / 2 + "px";
         break;
     }
 
@@ -63,32 +63,32 @@ addEventListener('DOMContentLoaded', () => {
   }
   /**
    * Factory to create an event listener which hides the popup.
-   * 
+   *
    * @param delay - time period to wait before fading
-   * @returns 
+   * @returns
    */
   function hidePopup(delay = POPUP_TIMEOUT) {
-    return function() {
+    return function () {
       // Create a fader which hides the popup, after a delay
       fader = setTimeout(function () {
         // Fade the opacity
         popup.style.opacity = 0;
         // Set a timeout to reset everything else
         setTimeout(function () {
-          popup.style.display = 'none';
+          popup.style.display = "none";
           fader = undefined;
           target = undefined;
         }, MAX_TIMEOUT);
       }, delay);
-    }
+    };
   }
 
   // Attach listeners
-  addEventListener('scroll', hidePopup(0));
+  addEventListener("scroll", hidePopup(0));
   // Get all the hoverable elements
-  const hoverables = document.querySelectorAll('[data-auto-popup]');
+  const hoverables = document.querySelectorAll("[data-auto-popup]");
   for (const hoverable of hoverables) {
-    hoverable.addEventListener('mouseover', showPopup);
-    hoverable.addEventListener('mouseout', hidePopup());
+    hoverable.addEventListener("mouseover", showPopup);
+    hoverable.addEventListener("mouseout", hidePopup());
   }
 });
