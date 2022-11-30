@@ -4,7 +4,7 @@ name: Update data
   workflow_dispatch: {}
   schedule:
     # https://crontab.guru/#45_9-18/3_*_*_1-5
-    - "45 9-18/3 * * 1-5"
+    - cron: "45 9-18/3 * * 1-5"
 
 jobs:
   pull_data:
