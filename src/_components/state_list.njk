@@ -2,13 +2,25 @@
 css: |
   .state-list {
     display: flex;
+    align-items: baseline;
+    gap: 2em;
+  }
+  .state-list > * {
+    margin-top: 0;
+  }
+  #state-list-title {
+    flex-shrink: 0;
+  }
+  .state-list ul {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     gap: 0.5em;
   }
   .state-list li {
     margin-top: 0;
-    padding: 1em;
+    padding: 0.5em 1em;
     color: white;
     background: black;
   }
@@ -20,8 +32,11 @@ css: |
     color: inherit;
   }
 ---
-<ul class="state-list">
-  {% for state in search.pages('state') | data %}
-    <li><a href="{{ state.url }}">{{ state.title }}</a></li>
-  {% endfor %}
-</ul>
+<div class="state-list" aria-describedby="state-list-title">
+  <p id="state-list-title">Available States:</p>
+  <ul>
+    {% for state in search.pages('state') | data %}
+      <li><a href="{{ state.url }}">{{ state.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
