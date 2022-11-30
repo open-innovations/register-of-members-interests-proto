@@ -4,9 +4,13 @@ import hashlib
 
 COMPETENCY_DIR = 'src/_data/competency'
 
-def iseven(digit):
-    return int(digit, 16) % 2 == 0
+def random_shuffle(digit, threshold):
+    return int(digit, 16) < threshold
 
+def remove_items(list, values):
+    for value in values:
+        while value in list:
+            list.remove(value)
 
 if __name__ == "__main__":
     competencies = [os.path.join(COMPETENCY_DIR, f)
@@ -18,9 +22,11 @@ if __name__ == "__main__":
       if 'dependencies' not in data:
           data['dependencies'] = []
 
-      iseven(hash[0]) and data['dependencies'].append('imagined_current')
-      iseven(hash[2]) and data['dependencies'].append('imagined_future')
-      iseven(hash[3]) and data['dependencies'].append('imagined_unlikely')
+      remove_items(data['dependencies'], ['imagined_current', 'imagined_future', 'imagined_unlikely'])
+      print(data['dependencies'])
+      random_shuffle(hash[0], 10) and data['dependencies'].append('imagined_current')
+      random_shuffle(hash[2], 5) and data['dependencies'].append('imagined_future')
+      random_shuffle(hash[3], 2) and data['dependencies'].append('imagined_unlikely')
 
       # Make this unique
       data['dependencies'] = list(set(data['dependencies']))
