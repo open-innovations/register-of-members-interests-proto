@@ -5,7 +5,7 @@ export default function ({ id, current_state: currentState, competency, states }
   let result = '';
 
   const dependencies = competency[id]?.dependencies || [];
-  result += 'data-dependencies="' + dependencies + '"';
+  result += 'data-required-features="' + dependencies + '"';
 
   const features = Object.keys(state.available);
   const score = dependencies.length > 0
