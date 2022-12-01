@@ -1,0 +1,23 @@
+<pre class="mermaid">
+erDiagram
+    COMPETENCY ||--o{ FEATURE : dependency
+    STATE }o--o{ FEATURE : available
+    COMPETENCY ||--o{ COMPETENCY: duplicate_of
+
+    COMPETENCY {
+        string notes
+        string pseudocode
+    }
+    STATE {
+        string name
+        string description
+        date date
+        url source
+        boolean draft
+    }
+</pre>
+
+<script type="module">
+    import mermaid from 'https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
