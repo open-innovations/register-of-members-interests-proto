@@ -13,6 +13,7 @@
     <strong>States</strong> make <strong>features</strong> available (or by omission,
     not available). The fundamental question this tool can answer is
 </p>
+
 <blockquote>
     <p>For a givenstate, is a question...</p>
     <ul>
@@ -29,6 +30,7 @@
         </li>
     </ul>
 </blockquote>
+<div>
 <pre class="mermaid">
 erDiagram
     COMPETENCY ||--o{ FEATURE : dependency
@@ -47,7 +49,7 @@ erDiagram
         boolean draft
     }
 </pre>
-
+</div>
 <script type="module">
     import mermaid from 'https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs';
     mermaid.initialize({ startOnLoad: true });
