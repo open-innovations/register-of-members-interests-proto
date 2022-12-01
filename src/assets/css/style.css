@@ -20,6 +20,12 @@ a.undecorated:hover {
   text-decoration: underline;
 }
 
+blockquote {
+  border-left: 5px solid grey;
+  padding-left: 2em;
+  display: block;
+}
+
 .popup {
   --bg-colour: green;
   position: fixed;
