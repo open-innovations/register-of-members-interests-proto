@@ -1,0 +1,47 @@
+unique_members_identifier:
+  description: |
+    Unique identifier of the members who have submitted **Category 1: Employment and earnings** declarations
+
+members_name:
+  type: text
+  description: "Name [in capitals]"
+
+members_name_crossref:
+  description: "A theoretical cross match/lookup of the member against a known list."
+  enables:
+    - "commons.members_name"
+    - "commons.members_constituency"
+
+members_constituency:
+  type: text
+  description: "Constituency"
+
+category_1:
+
+  section_1:
+
+    date_received:
+      type: date
+      format: "DD-MM-YYYY"
+      description: "If payment already made, date received"  
+
+    amount_or_value:
+      type: text
+      description: "Amount or value (plus details of any payments in kind and any taxable benefits)1"
+      notes: "Earnings should be stated gross, before any deductions; fees should be stated before the addition of VAT."
+
+    name_and_address_of_payer:
+      type: text
+
+    brief_description_of_payers_business:
+      type: text
+
+    type_of_work_services_provided:
+      type: text
+
+    dates_work_completed:
+
+    number_of_hours:
+
+    name_and_address_of_other_beneficiary_of_services:
+
