@@ -1,3 +1,34 @@
+<h2>Data model</h2>
+
+<p>
+    This site is based on augmentation of the list of competencies defined in the
+    Evidence spreadsheet collated by the UK Parliament Digital Service.
+    The additional data entity types allow each identified <strong>competency</strong>
+    to be linked to zero or more <strong>features</strong> of the Register of
+    Members' Interest.
+    These <strong>features</strong> are derived from current or potential attributes of the register.
+    An attribute in this instance is very broad, and could include not only whether
+    or not data is collected, but also whether it is structured, validated, linked
+    or of a sufficient quality.
+    <strong>States</strong> make <strong>features</strong> available (or by omission,
+    not available). The fundamental question this tool can answer is
+</p>
+<blockquote>
+    <p>For a givenstate, is a question...</p>
+    <ul>
+        <li>
+            answerable - all required features are available in the relative state
+        </li>
+        <li>
+            unanswerable - not all required features are available in the
+            relative state
+        </li>
+        <li>
+            unaskable - there are no features that exist in this state or any
+            other which could answer this question
+        </li>
+    </ul>
+</blockquote>
 <pre class="mermaid">
 erDiagram
     COMPETENCY ||--o{ FEATURE : dependency
