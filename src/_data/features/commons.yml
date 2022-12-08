@@ -35,13 +35,405 @@ category_1:
 
     brief_description_of_payers_business:
       type: text
+      description: "Unless obvious, brief description of payer’s business"
 
     type_of_work_services_provided:
       type: text
+      description: "Type of work or services provided [Please state if you are a director]"
 
     dates_work_completed:
+      type: text
+      description: "If payment not yet received, date(s) when you did the work"
 
     number_of_hours:
+      type: text
+      description: "Number of hours worked"
+      notes: "If the work was done before you were elected to Parliament, please add “No hours since my election”"
 
     name_and_address_of_other_beneficiary_of_services:
+      type: text
+      description: "If services were provided to someone other than the payer, their name and address"
+      notes: "Unless this would be contrary to any legal or established professional duty of privacy or confidentiality."
+      
+    more_details:
+      type: text
+      description:
+        - "The payment was or will be made via an agent. [Please give their name and address.]"
+        - "The payment was or will be made directly or indirectly to another person or organisation, such as a charity."
 
+  section_2:
+
+    date_started:
+      type: date
+      format: "DD-MM-YYYY"
+      description: "This arrangement started on"
+      
+    date_end:
+      type: date
+      format: "DD-MM-YYYY"
+      description: "It is expected to end on"
+    
+    continuing:
+      type: text
+      description: "[if open-ended, state “continues until further notice”]"
+    
+    role_or_work:
+      type: text
+      description: "I expect to undertake the following role/work"
+    
+    name_and_address_of_payer:
+      type: text
+      description: "Name and address of payer"
+    
+    brief_description_of_payers_business:
+      type: text
+      description: "Unless obvious, brief description of payer’s business"
+      
+    expected_renumeration:
+      type: number
+      units: GBP
+      description: "Expected remuneration (Including payments in kind or any taxable benefits)"
+      notes: "Earnings should be stated gross, before any deductions; fees should be stated before the addition of VAT."
+
+    payment_frequency:
+      type: text
+      description: "I will be paid (monthly, quarterly, yearly, etc)"
+    
+    expected_time_commitment_for_each_payment:
+      type: text
+      description: "Expected time commitment for each payment (in hours)"
+    
+    name_and_address_of_other_beneficiary_of_services:
+      type: text
+      description: "If services were provided to someone other than the payer, their name and address"
+      notes: "Unless this would be contrary to any legal or established professional duty of privacy or confidentiality."
+    
+    more_details:
+      type: text
+      description:
+        - "Payment was or will be made via an agent. [Please give their name and address.]"
+        - "Payment was or will be made directly or indirectly to another person or organisation, such as a charity."
+
+category_2:
+
+  donation_type:
+    type: checkbox
+    description: "I wish to register the following support for my activities as a MP, or for candidacy at an election for parliamentary or non-parliamentary office. The value of this support exceeds £1,500, either by itself or together with other donations (each of more than £500) from the same source which I have accepted in the same calendar year."
+    options:
+      - "Category 2(a): The support was/is received by my constituency party organisation and there was/is a clear link* between the donation and me"
+      - "Category 2(a): I receive/received this support via my central party organisation and there was/is a clear link* between the donation and me"
+      - "Category 2(b): I receive/received this support and I confirm that I have checked that the donor is permissible.[6]"
+    notes:
+      - "* You are considered to have a clear link to a donation if for example it was given to a party organisation with a wish that it be allocated to you, to your fighting fund or to a front bench office which you hold; if it was assigned to you in circumstances where you were aware, or could reasonably be expected to be aware, of the identity of the donor; or if you had invited or encouraged the donation."
+      - "[6] You have 30 days from receipt of a donation to check the permissibility of the donor before returning or accepting it. You then have 28 days from the date of acceptance to register the details with the House."
+
+  name_of_donor:
+    type: text
+    description: "Name of donor"
+    
+  address_of_donor:
+    type: text
+    description: "Address of donor"
+    notes: "The addresses of individuals will not be published."
+    
+  amount_or_value:
+    type: text
+    description: "Amount of donation, or nature and value if donation in kind"
+  
+  b_date_received:
+    type: date
+    format: "DD-MM-YYYY"
+    description: "Date received"
+    notes: "If the donation was given over a period of time, e.g. ongoing secretarial or support services, or a loan, please provide both start dates and expected end dates."
+
+  b_date_accepted:
+    type: date
+    format: "DD-MM-YYYY"
+    description: "Date accepted: [which cannot be earlier than the date received]"
+
+  donor_status:
+    type: checkbox
+    description: "Donor status: [Please tick one of the boxes below]"
+    options:
+      - "Individual"
+      - "Building society"
+      - "Friendly society"
+      - "Limited liability partnership"
+      - "Registered party (other than your own party)"
+      - "Trust or bequest[9]"
+      - "Trade union"
+      - "Unincorporated association"
+      - "Company (please supply registration number in the box below)"
+    notes: "[9] Please seek advice if the benefit is received from a trust or bequest."
+
+  donation_reported_to_electoral_commission:
+    type: boolean
+    description: "Tick here if the donation is one which your party has reported or will report to the Electoral Commission."
+
+  more_details:
+    type: text
+    description: "Please use the space below to provide any additional information; for example, if this was a monetary donation made for a specific purpose or received via a third party."
+
+category_3:
+
+  source_outside_uk:
+    type: boolean
+    description: "Enter ‘X’ here if the benefit was from a source outside the UK."
+
+  name_of_donor:
+    type: text
+    description: "Name of donor"
+
+  address_of_donor:
+    type: text
+    description: "Address of donor"
+    notes: "The addresses of individuals will not be published."
+    
+  amount_or_value:
+    type: text
+    description: "Amount of donation, or nature and value if donation in kind"
+    
+  date_received:
+    type: text
+    format: "DD-MM-YYYY"
+    description: "Date received"
+
+  date_accepted:
+    type: date
+    format: "DD-MM-YYYY"
+    description: "Date accepted: [which cannot be earlier than the date received]"
+
+  donor_status:
+    type: checkbox
+    description: "Donor status: [Please tick one of the boxes below]"
+    options:
+      - "Individual"
+      - "Building society"
+      - "Friendly society"
+      - "Limited liability partnership"
+      - "Registered party (other than your own party)"
+      - "Trust or bequest[12]"
+      - "Trade union"
+      - "Unincorporated association"
+      - "Company (please supply registration number in the box below)"
+    notes: "[12] Please seek advice if the benefit is received from a trust or bequest."
+
+  more_details:
+    type: text
+    description: "Please use the space below to provide any additional information; for example, if you were accompanied by a guest at an event or the benefit was received by someone other than yourself [see Chapter 1 of the Guide to the Rules, paragraphs 27 and 44]."
+
+category_4:
+
+  name_of_donor:
+    type: text
+    description: "Name of donor"
+
+  address_of_donor:
+    type: text
+    description: "Address of donor"
+    notes: "The addresses of individuals will not be published."
+
+  value:
+    type: number
+    units: GBP
+    description: "If monetary benefit, its value in £"
+
+  benefit_in_kind_nature_and_value:
+    type: text
+    description: "If benefit in kind, its nature (e.g. flights and accommodation) and value in £"
+
+  destination_of_visit:
+    type: text
+    description: "Destination of visit"
+    
+  dates_of_visit:
+    type: text
+    description: "Dates of visit"
+    
+  purpose_of_visit:
+    type: text
+    description: "Purpose of visit"
+    
+  more_details:
+    type: text
+    description: "Please use the space below to provide any additional information; for example, if you made this visit as part of an APPG, if you took a guest, or if the visit was undertaken by someone other than yourself (see Chapter 1 of the Guide to the Rules, paragraph 37)."
+
+category_5:
+
+  source_outside_uk:
+    type: boolean
+    description: "Enter ‘X’ here if the benefit was from a source outside the UK."
+
+  name_of_donor:
+    type: text
+    description: "Name of donor"
+
+  address_of_donor:
+    type: text
+    description: "Address of donor"
+    notes: "The addresses of individuals will not be published."
+    
+  amount_or_value:
+    type: text
+    description: "Amount of donation, or nature and value if donation in kind"
+    
+  date_received:
+    type: text
+    format: "DD-MM-YYYY"
+    description: "Date received"
+
+  date_accepted:
+    type: date
+    format: "DD-MM-YYYY"
+    description: "Date accepted: [which cannot be earlier than the date received]"
+
+  donor_status:
+    type: checkbox
+    description: "Donor status: [Please tick one of the boxes below]"
+    options:
+      - "Individual"
+      - "Building society"
+      - "Friendly society"
+      - "Limited liability partnership"
+      - "Registered party (other than your own party)"
+      - "Trust or bequest[12]"
+      - "Trade union"
+      - "Unincorporated association"
+      - "Company (please supply registration number in the box below)"
+    notes: "[12] Please seek advice if the benefit is received from a trust or bequest."
+
+  more_details:
+    type: text
+    description: "Please use the space below to provide any additional information; for example, if you were accompanied by a guest at an event or the benefit was received by someone other than yourself [see Chapter 1 of the Guide to the Rules, paragraphs 27 and 44]."
+
+category_6:
+
+  land_or_property_type:
+    type: radio
+    options:
+      - "(i) the property has a value of more than £100,000; or forms part of a total property portfolio whose value exceeds £100,000; and/or"
+      - "(ii) the property, alone or together with other properties owned by me, provides income of more than £10,000 in a calendar year (e.g. 2020)."
+    description: "I wish to register the following land or property which I own, part-own, or own on behalf of my spouse, partner or dependent child(ren). This land/property is not used wholly for my own residential purposes, or those of my spouse, partner or dependent child(ren)."
+  
+  date_land:
+    type: date
+    format: "DD-MM-YYYY"
+    description: "If on or after your election, date when the land or property was acquired; or when it achieved registrable value"
+
+  date_rental:
+    type: date
+    format: "DD-MM-YYYY"
+    description: "If on or after your election, date when the rental arrangement began; or when the rental received achieved registrable value"
+
+  type_of_property:
+    type: text
+    description: "Type of property (e.g. whether house or flat, shop or office, agricultural land or forest)"
+
+  location:
+    type: text
+    description: "Location (e.g. county or local authority area)"
+    
+  more_details:
+    type: text
+    description: "Please use the space below to provide any additional information; for example, if the rental income is paid to someone else, or if you are not the sole owner of this land or property."
+
+category_7:
+
+  shareholdings_type:
+    type: radio
+    options:
+      - "(i) I hold more than 15% of the issued share capital of this organisation (or more than an equivalent interest in the partnership)"
+      - "(ii) My interest in this company/organisation amounts to 15% or less of the issued share capital (or equivalent) but is worth more than £70,000[15]"
+    description: "I wish to register the following shareholdings, share options or interests in partnerships which I hold, either by myself or with or on behalf of my spouse, partner or dependent child(ren), or through a trust which is not a blind trust."
+    notes:
+      - "[15] On the previous 5 April."
+
+  date:
+    type: date
+    format: "DD-MM-YYYY"
+    description: "If on or after your election, date on which the holding was acquired or achieved registrable value"
+
+  name_of_company_or_organisation:
+    type: text
+    description: "Name of company or organisation"
+  
+  nature_of_business:
+    type: text
+    description: "Nature of its business (if not obvious from name)"
+    
+  relevant_trust_or_delegated_management_arrangement:
+    type: text
+    description: "Any relevant trust or delegated management arrangement"
+    
+  more_details:
+    type: text
+    description: "Please use the space below to provide any additional information"
+
+category_8:
+
+  date:
+    type: date
+    format: "DD-MM-YYYY"
+    description: "If on or after your election, date on which the interest arose or became registrable"
+
+  name_of_donor:
+    type: text
+    description: "Name of the donor, if relevant"
+    
+  description:
+    type: text
+    description: "Description"
+
+  more_details:
+    type: text
+    description: "Please use the space below to provide any additional information"
+
+category_9:
+
+category_10:
+
+  relationship:
+    type: text
+    description: "This person is my (spouse, civil partner, etc)"
+    
+  name:
+    type: text
+    description: "Name of the family member"
+  
+  company:
+    type: text
+    description: "Company/employer (if applicable)"
+  
+  job_title:
+    type: text
+    description: "His/her job title"
+
+  more_details:
+    type: text
+    description: "Please use the space below to provide any additional information"
+
+declaration:
+
+  completed:
+    type: radio
+    options:
+      - "1. Employment and earnings"
+      - "2. Donations and other support"
+      - "3. Gifts, benefits and hospitality from UK sources"
+      - "4. Visits outside the UK"
+      - "5. Gifts and benefits from sources outside the UK"
+      - "6. Land and property in the UK and elsewhere"
+      - "7. Shareholdings"
+      - "8. Miscellaneous"
+      - "9. Family members employed and remunerated through parliamentary expenses"
+      - "10. Family members engaged in lobbying"
+    description: "[Please tick if category completed]"
+
+  signature:
+    type: text
+    description: "Signature"
+    
+  date:
+    type: date
+    format: "DD-MM-YYYY"
+    description: "Date"
