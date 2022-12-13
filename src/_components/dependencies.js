@@ -14,7 +14,6 @@ export default function (
     ? dependencies.map((dependency) => features.includes(dependency) && 1 || 0)
       .reduce((total, current) => total * current, 1)
     : undefined;
-	console.log(id)
   if (score !== undefined) result += ' data-score="' + score + '" aria-label="' + (score==1 ? "Possible" : "Not possible") + ": " + id + ": " + text + '"';
 
   return result;
