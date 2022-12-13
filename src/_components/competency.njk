@@ -6,15 +6,19 @@ css: |
     display: block;
     color: var(--colour-bg);
     background-color: var(--colour-fg);
-    border: 2px solid var(--colour-bg);
     height: 100%;
     min-height: 5em;
     padding: 1em;
+    position: relative;
   }
-  .competency-block:hover {
+  .competency-block:hover, .competency-block:focus {
     color: var(--colour-fg);
     background-color: var(--colour-bg);
-    border-color: var(--colour-fg);
+    outline: 2px solid var(--colour-bg);
+    outline-color: var(--colour-fg);
+  }
+  .competency-block:hover:after, .competency-block:focus:after {
+    color: black;
   }
   .competency-block .value {
     font-size: 1.3em;
@@ -27,6 +31,20 @@ css: |
   }
   .competency-block[data-score="0"] {
     --colour-fg: var(--indicator-unanswerable);
+  }
+  .competency-block:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    color: white;
+    font-weight: bold;
+  }
+  .competency-block[data-score]:after {
+    content: "✕";
+  }
+  .competency-block[data-score="1"]:after {
+    content: "✓";
   }
 ---
 {%- macro get_dependencies(ID) -%}{{- competency[ID].dependencies | default([]) | join(",") -}}{%- endmacro -%}
@@ -45,6 +63,7 @@ css: |
 <li id="{{ details.ID }}" class="competency-block"
   data-auto-popup="{{ details.ID }}: {{ details.Competency }}"
   {{ comp.dependencies({ id: details.ID, current_state: current_state }) | safe }}
+  tabindex="0"
   >
   <p class="title">{{ details.Competency }}</p>
   {# NOT SURE WHAT THIS IS FOR - MAYBE REMOVE?

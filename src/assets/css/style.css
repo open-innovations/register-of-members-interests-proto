@@ -1,7 +1,8 @@
 :root {
-  --indicator-answerable: rgb(29, 240, 29);
-  --indicator-unanswerable: rgb(200, 18, 18);
-  --indicator-scored: rgb(174, 131, 51);
+  /* https://www.visualisingdata.com/2015/11/colour-swatch-alternatives-to-green-and-red/ */
+  --indicator-answerable: #008837;
+  --indicator-unanswerable: #7b3294;
+  --indicator-scored: #e20613;
 }
 
 body {
@@ -59,7 +60,7 @@ blockquote {
 .blinkenlights {
   --auto-grid-min-size: 2em;
   grid-auto-rows: var(--auto-grid-min-size);
-  gap: 0.1rem;
+  grid-gap: 4px;
 }
 
 .blinkenlights > li {
