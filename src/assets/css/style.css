@@ -77,3 +77,13 @@ blockquote {
   white-space: nowrap;
   width: 1px;
 }
+
+
+.padded {
+	padding: 1em;
+}
+.warning {
+  color: rgb(95, 82, 7);
+  background-color: rgb(251, 245, 208);
+  text-align: center;
+}
