@@ -1,5 +1,5 @@
 export default function (
-  { id, current_state: currentState, competency, states },
+  { id, current_state: currentState, competency, states, text },
 ) {
   const state = states[currentState];
   if (state === undefined) throw "Unknown state";
@@ -14,7 +14,8 @@ export default function (
     ? dependencies.map((dependency) => features.includes(dependency) && 1 || 0)
       .reduce((total, current) => total * current, 1)
     : undefined;
-  if (score !== undefined) result += ' data-score="' + score + '"';
+	console.log(id)
+  if (score !== undefined) result += ' data-score="' + score + '" aria-label="' + (score==1 ? "Possible" : "Not possible") + ": " + id + ": " + text + '"';
 
   return result;
 }

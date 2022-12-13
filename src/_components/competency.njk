@@ -62,7 +62,7 @@ css: |
 {% else %}
 <li id="{{ details.ID }}" class="competency-block"
   data-auto-popup="{{ details.ID }}: {{ details.Competency }}"
-  {{ comp.dependencies({ id: details.ID, current_state: current_state }) | safe }}
+  {{ comp.dependencies({ id: details.ID, current_state: current_state, text: details.Competency }) | safe }}
   tabindex="0"
   >
   <p class="title">{{ details.Competency }}</p>

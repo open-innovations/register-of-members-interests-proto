@@ -59,7 +59,6 @@ addEventListener("DOMContentLoaded", () => {
 
     // Get the hover position
     const autoPopupPos = target.dataset.autoPopupPos || "bottom";
-    console.log(autoPopupPos);
 
     // Setup the content and attributes of the popup
     popup.innerHTML = target.dataset.autoPopup;
