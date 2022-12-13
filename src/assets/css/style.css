@@ -42,6 +42,8 @@ blockquote {
   width: 15em;
   box-shadow: 2px 2px 4px hsla(0, 100%, 0%, 30%);
   text-align: center;
+  margin-top: 10px;
+  transform: translateX(-50%);
 }
 
 .popup::after {
@@ -58,12 +60,12 @@ blockquote {
   transform: translateX(-50%);
 }
 .popup-left {
-  margin-left: -10px;
-  transform: translate3d(-100%,-50%,0);
+  margin-top: 10px;
+  transform: translateX(-100%);
 }
 .popup-right {
-  margin-left: 10px;
-  transform: translateY(-50%);
+  margin-top: 10px;
+  transform: translateX(0%);
 }
 .popup.popup-bottom::after {
   left: 50%;
@@ -71,15 +73,15 @@ blockquote {
   transform: translate3d(-50%, -100%, 0);	
   border-bottom-color: var(--bg-colour);
 }
-.popup.popup-right::after {
-  left: 0;
-  top: 50%;
+.popup.popup-left::after {
+  left: 100%;
+  top: 0;
   transform: translate3d(-100%, -50%, 0);
   border-right-color: var(--bg-colour);
 }
-.popup.popup-left::after {
-  left: 100%;
-  top: 50%;
+.popup.popup-right::after {
+  left: 0;
+  top: 0;
   transform: translate3d(0%, -50%, 0);
   border-left-color: var(--bg-colour);
 }

@@ -30,6 +30,8 @@ addEventListener("DOMContentLoaded", () => {
         pos.left = loc.left + loc.width / 2;
         break;
     }
+	pos.top = loc.bottom;
+	pos.left = loc.left + loc.width / 2;
 	if(pos.position == "bottom" && pos.left < popup.offsetWidth/2) pos = getPopupPosition('right',loc);
 	if(pos.position == "bottom" && pos.left + popup.offsetWidth/2 > document.body.clientWidth) pos = getPopupPosition('left',loc);
 	return pos;
