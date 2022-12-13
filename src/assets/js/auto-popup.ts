@@ -12,6 +12,28 @@ addEventListener("DOMContentLoaded", () => {
   let target = undefined;
   let fader: number | undefined = undefined;
 
+  function getPopupPosition(position,loc) {
+	let pos = {'left':0,'top':0,'position':position||"bottom"};
+	// Set the position of the popup based on requested popup position
+    switch (position) {
+      case "right":
+	    pos.top = loc.top + loc.height / 2;
+		pos.left = loc.right;
+        break;
+      case "left":
+	    pos.top = loc.top + loc.height / 2;
+		pos.left = loc.left;
+        break;
+      case "bottom":
+      default:
+        pos.top = loc.bottom;
+        pos.left = loc.left + loc.width / 2;
+        break;
+    }
+	if(pos.position == "bottom" && pos.left < popup.offsetWidth/2) pos = getPopupPosition('right',loc);
+	if(pos.position == "bottom" && pos.left + popup.offsetWidth/2 > document.body.clientWidth) pos = getPopupPosition('left',loc);
+	return pos;
+  }
   /**
    * Event handler to show the popup.
    *
@@ -42,17 +64,11 @@ addEventListener("DOMContentLoaded", () => {
     popup.dataset.autoPopupPos = autoPopupPos;
 
     // Set the position of the popup based on requested popup position
-    switch (autoPopupPos) {
-      case "right":
-        popup.style.top = loc.top + loc.height / 2 + "px";
-        popup.style.left = loc.right + 10 + "px";
-        break;
-      case "bottom":
-      default:
-        popup.style.top = loc.bottom + 10 + "px";
-        popup.style.left = loc.left + loc.width / 2 + "px";
-        break;
-    }
+    let pos = getPopupPosition(autoPopupPos,loc);
+	popup.style.top = pos.top+'px';
+	popup.style.left = pos.left+'px';
+	popup.classList.remove('popup-bottom','popup-right','popup-left','popup-top');
+	popup.classList.add('popup-'+pos.position);
 
     // Do this on the next click (timeout excluded on purpose!)
     // This enables any change in visibility to take place before animating opacity
