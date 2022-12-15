@@ -2,3 +2,6 @@ competency: 'Is the donation from a political party '
 dependencies:
 - imagined.current
 - imagined.unlikely
+
+
+- commons.category_2.policitial_checkbox
