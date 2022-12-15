@@ -1,3 +1,5 @@
+competency: For companies listed in the RMFI that are not registered in the UK, what
+  jurisdiction are they registered in?
 dependencies:
 - imagined.current
 - imagined.future

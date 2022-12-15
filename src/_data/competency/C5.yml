@@ -1,2 +1,4 @@
+competency: How much has a member earned from outside employment in a calendar year
+  / parliament / time in parliament
 dependencies:
 - imagined.current

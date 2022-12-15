@@ -1,3 +1,5 @@
+competency: "Information on donors \u2013 how much money donated for different APPGs\
+  \ rather than go through them manually?"
 dependencies:
 - imagined.future
 - imagined.unlikely

@@ -1,3 +1,7 @@
+competency: 'What is the source of the donation / Does the source of the donation
+  fall within the list of impermissible sources set out in the Political
+
+  Parties, Elections and Referendums Act 2000 '
 dependencies:
 - imagined.current
 - imagined.future

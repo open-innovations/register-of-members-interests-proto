@@ -1,3 +1,4 @@
+competency: What is the number of Members with outside interests
 dependencies:
 - c1_unique_members_identifier
 - imagined.current

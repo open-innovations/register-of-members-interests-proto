@@ -1,2 +1,4 @@
+competency: 'What category of business does each of the companies listed in the RMFI
+  operate in? (SG: SIC code presumably)'
 dependencies:
 - imagined.current

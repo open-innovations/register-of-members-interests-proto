@@ -1,3 +1,5 @@
+competency: Interests related to executive (ministerial capacity) OR legislative functions
+  of ministers
 dependencies:
 - imagined.current
 - imagined.future

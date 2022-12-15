@@ -1,3 +1,9 @@
+competency: '
+
+  How much time is spent on additional elected roles (e.g. local councillors, leaders
+  of local authorities, members of the Scottish
+
+  Parliament and/or metro mayors)'
 dependencies:
 - imagined.current
 - imagined.unlikely

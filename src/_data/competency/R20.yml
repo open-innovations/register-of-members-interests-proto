@@ -1,3 +1,5 @@
+competency: How many MPs have worked for foreign governments or peers worked for foreign
+  governments?
 dependencies:
 - imagined.current
 - imagined.future
