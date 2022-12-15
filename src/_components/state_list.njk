@@ -38,7 +38,7 @@ css: |
 <div class="state-list" aria-describedby="state-list-title">
   <p id="state-list-title">Available States:</p>
   <ul>
-    {% for state in search.pages('state') | data %}
+    {% for state in search.pages('state', 'order scope') | data %}
       <li class="{% if current_page == state.url %}active{% endif %}"><a href="{{ state.url }}">{{ state.name }}</a></li>
     {% endfor %}
   </ul>
