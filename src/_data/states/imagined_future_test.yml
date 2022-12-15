@@ -1,0 +1,7 @@
+name: Future Imagined (test)
+description: "TEST: Future state for an imagined chamber"
+scope: imagined
+order: 20
+available:
+  "imagined.current":
+  "imagined.future":

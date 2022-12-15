@@ -1,0 +1,6 @@
+name: Current Imagined (test)
+description: "TEST: Current state for an imagined chamber"
+scope: imagined
+order: 10
+available:
+  "imagined.current":

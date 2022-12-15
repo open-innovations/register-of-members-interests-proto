@@ -22,11 +22,10 @@ if __name__ == "__main__":
       if 'dependencies' not in data:
           data['dependencies'] = []
 
-      remove_items(data['dependencies'], ['imagined_current', 'imagined_future', 'imagined_unlikely'])
-      print(data['dependencies'])
-      random_shuffle(hash[0], 10) and data['dependencies'].append('imagined_current')
-      random_shuffle(hash[2], 5) and data['dependencies'].append('imagined_future')
-      random_shuffle(hash[3], 2) and data['dependencies'].append('imagined_unlikely')
+      remove_items(data['dependencies'], ['imagined.current', 'imagined.future', 'imagined.unlikely'])
+      random_shuffle(hash[0], 10) and data['dependencies'].append('imagined.current')
+      random_shuffle(hash[2], 5) and data['dependencies'].append('imagined.future')
+      random_shuffle(hash[3], 2) and data['dependencies'].append('imagined.unlikely')
 
       # Make this unique
       data['dependencies'] = list(set(data['dependencies']))

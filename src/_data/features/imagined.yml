@@ -1,0 +1,6 @@
+current:
+  description: Currently available feature
+future:
+  description: Potentially available feature
+unlikely:
+  description: Feature that will never be available
