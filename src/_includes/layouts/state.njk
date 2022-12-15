@@ -4,4 +4,9 @@ layout: layouts/default.njk
 {{ comp.state_list({ current_page: url }) | safe }}
 
 <h2>{{ title }}</h2>
+
+<p>This applies to the <strong>{{ scope }}</strong> scope</p>
+
+{{ description | md | safe }}
+
 {{ comp.dashboard({ current_state: current_state }) | safe }}

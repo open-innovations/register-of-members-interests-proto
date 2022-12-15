@@ -42,6 +42,8 @@ erDiagram
     COMPETENCY ||--o{ FEATURE : dependency
     STATE }o--o{ FEATURE : available
     COMPETENCY ||--o{ COMPETENCY: duplicate_of
+    STATE }o--|| SCOPE : scope
+    SCOPE ||--o{ FEATURE : owns
 
     COMPETENCY {
         string notes
