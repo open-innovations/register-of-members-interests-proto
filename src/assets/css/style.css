@@ -87,9 +87,9 @@ blockquote {
 }
 
 .blinkenlights {
-  --auto-grid-min-size: 2em;
+  --auto-grid-min-size: 1.5rem;
   grid-auto-rows: var(--auto-grid-min-size);
-  grid-gap: 4px;
+  grid-gap: 0;
 }
 
 .blinkenlights > li {
