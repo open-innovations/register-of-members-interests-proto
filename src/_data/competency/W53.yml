@@ -3,5 +3,5 @@ competency: 'What is the source of the donation / Does the source of the donatio
 
   Parties, Elections and Referendums Act 2000 '
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

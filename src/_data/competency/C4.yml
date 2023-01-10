@@ -1,4 +1,4 @@
 competency: How many / which members have outside employment
 dependencies:
-- imagined.current
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.unlikely

@@ -1,4 +1,4 @@
 competency: Is the register machine readable
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

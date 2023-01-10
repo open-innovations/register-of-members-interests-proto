@@ -1,4 +1,4 @@
 competency: How to cross check public opinions and company endorsement?
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

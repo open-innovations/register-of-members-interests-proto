@@ -1,4 +1,4 @@
 competency: What are MPs second jobs?
 dependencies:
-- imagined.current
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.unlikely

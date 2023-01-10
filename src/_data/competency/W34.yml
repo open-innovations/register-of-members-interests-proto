@@ -1,5 +1,5 @@
 competency: What is the company name employing a Member, what category of business
   is it and within which industry do they operate
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

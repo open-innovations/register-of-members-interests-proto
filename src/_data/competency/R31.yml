@@ -1,5 +1,5 @@
 competency: Which MPs have (ever) taken donations/gifts from x?
 dependencies:
-- imagined.current
-- imagined.future
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.future
+- imagined.feature.unlikely

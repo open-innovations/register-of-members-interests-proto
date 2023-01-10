@@ -1,4 +1,4 @@
 competency: Data linked by Companies House number
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

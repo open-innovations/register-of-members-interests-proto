@@ -1,4 +1,4 @@
 competency: What is the nature of the outside interests/second jobs
 dependencies:
-- imagined.current
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.unlikely

@@ -1,5 +1,5 @@
 competency: For companies that pay MPs as employees, directors or consultants, who
   are their private clients?
 dependencies:
-- imagined.current
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.unlikely

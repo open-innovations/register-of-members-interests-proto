@@ -2,6 +2,6 @@ competency: 'How many family members of members were engaged in lobbying
 
   '
 dependencies:
-- imagined.current
-- imagined.future
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.future
+- imagined.feature.unlikely

@@ -1,4 +1,4 @@
 competency: "Exactly what entities are related to MPs (who\u2019s received contracts,\
   \ who\u2019s receiving public grunts, who\u2019s received preferential treatment)?"
 dependencies:
-- imagined.current
+- imagined.feature.current

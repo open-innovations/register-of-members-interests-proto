@@ -1,4 +1,4 @@
 competency: Which declaration in the House business does the interest relate to
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

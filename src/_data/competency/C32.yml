@@ -1,5 +1,5 @@
 competency: Which MPs have undertaken the highest valued overseas visits in a calendar
   year / parliament / time in parliament
 dependencies:
-- imagined.current
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.unlikely

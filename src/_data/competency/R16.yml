@@ -1,4 +1,4 @@
 competency: Identifying a standardised way of reporting income (time metric, gross/net
   etc)
 dependencies:
-- imagined.future
+- imagined.feature.future

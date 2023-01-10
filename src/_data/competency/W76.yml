@@ -1,5 +1,5 @@
 competency: Is a registered interest linked to a declaration in any parliamentary
   proceedings?
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

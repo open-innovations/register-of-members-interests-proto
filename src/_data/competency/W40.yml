@@ -1,4 +1,4 @@
 competency: What are the contractual terms of the outside employment
 dependencies:
-- imagined.current
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.unlikely

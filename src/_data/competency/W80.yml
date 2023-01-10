@@ -1,4 +1,4 @@
 competency: Conflict between RMFI and Ministerial lists
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

@@ -1,4 +1,4 @@
 competency: How to compare who the companies donate money to vs who appears on payroll?
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

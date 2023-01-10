@@ -1,4 +1,4 @@
 competency: How to find out to what period of time interest applies?
 dependencies:
-- imagined.current
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.unlikely

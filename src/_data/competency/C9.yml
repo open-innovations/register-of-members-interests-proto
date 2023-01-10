@@ -1,4 +1,4 @@
 competency: How much has a member received in benefits in a calendar year / parliament
   / time in parliament
 dependencies:
-- imagined.future
+- imagined.feature.future

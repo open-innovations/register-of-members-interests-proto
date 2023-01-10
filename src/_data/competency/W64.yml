@@ -1,4 +1,4 @@
 competency: Gifts, benefits and hospitality from foreign provenance
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

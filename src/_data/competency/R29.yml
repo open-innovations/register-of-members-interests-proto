@@ -2,4 +2,4 @@ competency: How to make comparisons to who was being represented in front of wha
   select committees to identify topic-based relationships across MPs (Introducing
   unique identifiers)
 dependencies:
-- imagined.current
+- imagined.feature.current

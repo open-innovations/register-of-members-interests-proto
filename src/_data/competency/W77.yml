@@ -1,5 +1,5 @@
 competency: 'Have any members initiated a parliamentary proceeding in relation to
   an organisation recorded as an interest in the RMFI '
 dependencies:
-- imagined.future
-- imagined.unlikely
+- imagined.feature.future
+- imagined.feature.unlikely

@@ -1,4 +1,4 @@
 competency: Which members have a connection to a topic / theme x e.g. energy, transport,
   defence etc.
 dependencies:
-- imagined.current
+- imagined.feature.current

@@ -3,5 +3,5 @@ competency: 'Under dual system of reporting, EC needs access to the necessary in
 
   regulated transactions (such as loans) to elected office holders, including members.'
 dependencies:
-- imagined.current
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.unlikely

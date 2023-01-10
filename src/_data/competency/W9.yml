@@ -5,5 +5,5 @@ competency: '
 
   Parliament and/or metro mayors)'
 dependencies:
-- imagined.current
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.unlikely

@@ -1,5 +1,5 @@
 competency: How many members have unpaid outside roles
 dependencies:
-- imagined.current
-- imagined.future
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.future
+- imagined.feature.unlikely

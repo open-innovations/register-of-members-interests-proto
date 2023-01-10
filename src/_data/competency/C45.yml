@@ -1,5 +1,5 @@
 competency: Which members own a property in a particular geographical area / How many
   properties does a member hold in a particular geographical area
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

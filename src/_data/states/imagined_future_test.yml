@@ -3,5 +3,5 @@ description: "TEST: Future state for an imagined scope"
 scope: imagined
 order: 20
 available:
-  "imagined.current":
-  "imagined.future":
+  "imagined.feature.current":
+  "imagined.feature.future":

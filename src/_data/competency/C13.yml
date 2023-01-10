@@ -1,4 +1,4 @@
 competency: For companies that pay MPs as employees, directors or consultants, is
   the company currently listed on the Register of Consultant Lobbyists?
 dependencies:
-- imagined.future
+- imagined.feature.future

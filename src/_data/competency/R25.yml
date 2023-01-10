@@ -1,5 +1,5 @@
 competency: How to identify donations to political parties from companies no longer
   existing?
 dependencies:
-- imagined.current
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.unlikely

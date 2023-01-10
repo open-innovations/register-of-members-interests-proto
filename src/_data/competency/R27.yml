@@ -1,4 +1,4 @@
 competency: How to identify when interest was added and seized for the Lords?
 dependencies:
-- imagined.future
-- imagined.unlikely
+- imagined.feature.future
+- imagined.feature.unlikely

@@ -1,4 +1,4 @@
 competency: Is the data linked to other external data sets
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

@@ -1,4 +1,4 @@
 competency: Is employment or earnings above or below the indicative limit of hours
   and remuneration considered reasonable
 dependencies:
-- imagined.current
+- imagined.feature.current

@@ -1,4 +1,4 @@
 competency: How can we filter out the information to find e.g., cash donations that
   have gone to MP rather than their local association?
 dependencies:
-- imagined.current
+- imagined.feature.current

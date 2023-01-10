@@ -1,4 +1,4 @@
 competency: What are the number of hours spent on second jobs
 dependencies:
-- imagined.current
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.unlikely

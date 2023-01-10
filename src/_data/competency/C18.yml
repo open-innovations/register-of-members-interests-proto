@@ -1,4 +1,4 @@
 competency: Which members have a connection to organization x
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

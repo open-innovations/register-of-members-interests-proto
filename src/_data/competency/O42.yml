@@ -1,4 +1,4 @@
 competency: 'What information is the Member required to submit as part of the registration
   process, but which is not published '
 dependencies:
-- imagined.current
+- imagined.feature.current

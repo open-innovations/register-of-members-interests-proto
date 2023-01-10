@@ -1,4 +1,4 @@
 competency: Did the Member hold the role prior to being elected
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

@@ -1,4 +1,4 @@
 competency: 'For companies listed on the RMFI, what is the company name listed on
   CH are they known by any alternative names '
 dependencies:
-- imagined.current
+- imagined.feature.current

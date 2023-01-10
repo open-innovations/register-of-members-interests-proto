@@ -1,5 +1,5 @@
 competency: 'Were the gifts and hospitality registered within 28 days / What timeframe
   were the gifts and hospitality registered within '
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

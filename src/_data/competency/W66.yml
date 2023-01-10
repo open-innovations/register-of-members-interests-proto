@@ -1,5 +1,5 @@
 competency: "Which organisations provided paid foreign travel costing over \xA3500\
   \ to a member"
 dependencies:
-- imagined.current
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.unlikely

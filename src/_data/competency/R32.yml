@@ -1,4 +1,4 @@
 competency: What are MPs financial links with different companies?
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future

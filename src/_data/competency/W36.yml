@@ -1,4 +1,4 @@
 competency: Is the paid work to provide services as a parliamentary strategist, adviser
   or consultant.
 dependencies:
-- imagined.current
+- imagined.feature.current

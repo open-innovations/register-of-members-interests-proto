@@ -2,4 +2,4 @@ competency: How to find links of shareholdings or directorships back to the Comp
   House to understand the economic activity of those companies, number of assets,
   where they are?
 dependencies:
-- imagined.current
+- imagined.feature.current

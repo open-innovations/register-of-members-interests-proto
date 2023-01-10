@@ -2,6 +2,6 @@ competency: "How can we identify that when members have moved into a new area, t
   \ declare a new conflict of interest (accessing what\u2019s declared at different\
   \ time periods)?"
 dependencies:
-- imagined.current
-- imagined.future
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.future
+- imagined.feature.unlikely

@@ -1,4 +1,4 @@
 competency: 'Between which dates did the employment occur / Was the work carried out
   prior to being elected '
 dependencies:
-- imagined.current
+- imagined.feature.current

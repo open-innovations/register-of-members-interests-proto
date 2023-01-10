@@ -1,5 +1,5 @@
 competency: Conflict between RMFI and Ministerial register
 dependencies:
-- imagined.current
-- imagined.future
-- imagined.unlikely
+- imagined.feature.current
+- imagined.feature.future
+- imagined.feature.unlikely

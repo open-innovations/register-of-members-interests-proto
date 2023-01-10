@@ -1,5 +1,5 @@
 competency: What is the UK company/charity number of each of the companies listed
   in the RMFI?
 dependencies:
-- imagined.current
-- imagined.future
+- imagined.feature.current
+- imagined.feature.future
