@@ -1,0 +1,10 @@
+<h2>Feature lists</h2>
+
+<p>
+  Features are defined in the following scopes:
+</p>
+<ul>
+{% for k, v in features %}
+  <li><a href="/features/{{ k }}/">{{ k }}</a></li>
+{% endfor %}
+</ul>

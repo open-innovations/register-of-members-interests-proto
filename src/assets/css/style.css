@@ -27,6 +27,25 @@ blockquote {
   display: block;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+dd {
+  margin-top: 0;
+  margin-left: 2rem;
+}
+
+.code {
+  font-family: monospace;
+}
+
 .popup {
   --bg-colour: green;
   position: fixed;

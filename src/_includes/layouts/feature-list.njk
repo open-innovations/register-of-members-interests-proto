@@ -1,0 +1,18 @@
+---
+layout: layouts/default.njk
+---
+
+<h2>Features in the {{ scope }} scope</h2>
+
+<p>
+  The <strong>{{ scope }}</strong> scope has the following features defined.
+  These are available to assign to states to build a view of answerability of the <a href="/competencies/">competencies</a>.
+  Available states are listed on the <a href="/">front page of this site</a>
+</p>
+
+<dl>
+{% for feature in featureList | sort %}
+    <dt class="code">{{ feature.path }}</dt>
+    <dd>{{ feature.description | md | safe }}</dd>
+{% endfor %}
+</dl>
