@@ -27,7 +27,7 @@ This is automated as a GitHub action (in `.github/workflows/update-data.yml`) wh
 [at 45 minutes past every 3rd hour from 9 through 18 on Monday to Friday.](https://crontab.guru/#45_9-18/3_*_*_1-5).
 
 Competencies are mapped to features to enable the calculation of answerability.
-This is done in the `src/_data/competencies/` folder, with each competency having a separate data file.
+This is done in the `src/_data/competency/` folder, with each competency having a separate data file.
 These are named per reference ID in the evidence CSV.
 
 The following fields can be defined:
@@ -45,10 +45,10 @@ Scopes distinguish between different contexts.
 They exist in two places.
 
 Firstly, they are the root namespace of the feature definition.
-Practically, this means that they are the names of files in the `src/_data/features` folder of the git repo.
+Practically, this means that they are the names of files in the `src/_data/features/` folder of the git repo.
 Create a new file in this folder and define the features as key/value pairs to add a suite of features within a new scope.
 
-Secondly, scopes are referenced in the state files (found in the `src/_data/states` folder).
+Secondly, scopes are referenced in the state files (found in the `src/_data/states/` folder).
 This defines the scope for the given state, and features in scope namespaces other than this are removed from consideration.
 Scopes here must match the names of the scopes defined in the features folder.
 
@@ -77,7 +77,7 @@ The commonly defined properties of the feature object are:
 States make features available (or by omission, not available).
 Each state belongs to a scope, allowing irrelevant information (e.g. features from another scope) to be ommitted from consideration.
 
-States are defined in the `src/_data/states` folder, and contain the following properties:
+States are defined in the `src/_data/states/` folder, and contain the following properties:
 
 * `name` A human intelligible name for the state
 * `description` A brief description of the state
