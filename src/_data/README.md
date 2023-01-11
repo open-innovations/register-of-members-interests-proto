@@ -16,7 +16,7 @@ The key columns are:
   competencies. Available in lume build as the `competency` object.
 - `_data/features/` Directory containing actual or potential data elements
   (don't even have to be possible!) that might be collected as part of the RMFI.
-  By convention, prefixed with the category of interest from the legislation.
+  Features are defined in a given scope, with a single file per scope in this folder.
   See the
   [Introduction to the Registers for the 2019
   Parliament](https://publications.parliament.uk/pa/cm/cmregmem/ForewordJanuary2020.pdf).
