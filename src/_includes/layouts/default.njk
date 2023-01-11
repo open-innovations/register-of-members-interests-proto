@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-  <div class="warning padded">Warning: this is a work-in-progress demonstration tool.</div>
+  <div class="warning padded centre">Warning: this is a work-in-progress demonstration tool.</div>
 
   <header id="site-header">
     <h1><a class="undecorated" href="{{ '~/index.njk' | url }}">{{ metas.site | safe }}</a></h1>
@@ -26,5 +26,6 @@
   <main>
   {{ content | safe }}
   </main>
+  {% include "_includes/fragments/footer.njk" %}
 </body>
 </html>
