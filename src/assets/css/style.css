@@ -42,6 +42,19 @@ dd {
   margin-left: 2rem;
 }
 
+#site-header {
+  display: flex;
+  gap: 1rem;
+}
+
+#site-header > :first-child {
+  flex-grow: 1;
+}
+
+#site-header * + * {
+  margin-top: 0;
+}
+
 .code {
   font-family: monospace;
 }

@@ -13,8 +13,14 @@
 <body>
   <div class="warning padded">Warning: this is a work-in-progress demonstration tool.</div>
 
-  <header>
-    <h1><a class="undecorated" href="/">{{ metas.site | safe }}</a></h1>
+  <header id="site-header">
+    <h1><a class="undecorated" href="{{ '~/index.njk' | url }}">{{ metas.site | safe }}</a></h1>
+    {{ comp.nav({
+      nav_links: {
+        Competencies: "~/evidence.njk",
+        Features: "~/features/index.njk"
+      }
+    }) | safe }}
   </header>
   <main>
   {{ content | safe }}
