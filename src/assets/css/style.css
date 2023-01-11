@@ -149,3 +149,7 @@ dd {
   background-color: rgb(251, 245, 208);
   text-align: center;
 }
+
+tr.competency.duplicate {
+  background: #aaa;
+}

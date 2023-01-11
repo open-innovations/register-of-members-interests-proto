@@ -12,14 +12,16 @@ url: /competencies/
     <tr>
       <th>ID</th>
       <th>Competency</th>
+      <th>Duplicate of</th>
       <th>RMFI Category</th>
     </tr>
   </thead>
   <tbody>
     {% for ev in evidence %}
-    <tr>
+    <tr class="competency{% if ev.Duplicates %} duplicate{% endif %}">
       <td>{{ ev.ID }}</td>
       <td>{{ ev.Competency }}</td>
+      <td>{{ ev.Duplicates }}</td>
       <td>{{ ev["RMFI category"] }}</td>
     </tr>
     {% endfor %}
