@@ -1,5 +1,14 @@
 <p>
-  This site presents a view of whether the competencies collected during a review of the RMFI can be answered.
+  This prototype tool aims to demonstrate whether the current Register of Members' Financial Interests can 
+  answer a set of questions collected during a recent review.
 </p>
+
+{% include "fragments/caveat.njk" %}
+
+<h2>
+  How it works
+</h2>
+
+{% include "fragments/overview.njk" %}
 
 {{ comp.state_list() | safe }}

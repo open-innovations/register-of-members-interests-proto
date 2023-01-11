@@ -153,3 +153,5 @@ dd {
 tr.competency.duplicate {
   background: #aaa;
 }
+
+ul * + * { margin-top: 0; }
