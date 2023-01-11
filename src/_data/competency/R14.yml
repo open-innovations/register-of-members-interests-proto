@@ -1,3 +1,7 @@
 competency: How much MPs work, paid, hours (second jobs)?
 dependencies:
 - imagined.feature.current
+duplicate_of:
+- O23
+- O4
+- O7

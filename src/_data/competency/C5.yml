@@ -2,3 +2,5 @@ competency: How much has a member earned from outside employment in a calendar y
   / parliament / time in parliament
 dependencies:
 - imagined.feature.current
+duplicate_of:
+- O23

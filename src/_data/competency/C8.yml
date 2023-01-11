@@ -1,3 +1,5 @@
 competency: How much time has a member spent on outside jobs in a calendar year /
   parliament / time in parliament
 dependencies: []
+duplicate_of:
+- O4

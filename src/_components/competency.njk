@@ -50,8 +50,9 @@ css: |
 {%- macro get_dependencies(ID) -%}{{- competency[ID].dependencies | default([]) | join(",") -}}{%- endmacro -%}
 {# Rules to knock out competencies #}
 {% if
-  details.Competency == undefined or
-  competency[details.ID].duplicate_of
+  details.Competency == undefined
+  or
+  competency[details.ID].duplicate_of.length > 0
 %}
   <!-- 
     Failed tests

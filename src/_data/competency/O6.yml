@@ -2,6 +2,7 @@ competency: What is the number of Members with outside interests
 dependencies:
 - c1_unique_members_identifier
 - imagined.feature.current
+duplicate_of: []
 notes: 'Competency: What is the number of Members with outside interests.
 
   File per question with fields describing the content.

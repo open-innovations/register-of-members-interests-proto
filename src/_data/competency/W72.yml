@@ -3,3 +3,5 @@ competency: Is the paid work to provide services as a parliamentary strategist, 
 dependencies:
 - imagined.feature.current
 - imagined.feature.future
+duplicate_of:
+- W5

@@ -2,3 +2,5 @@ competency: Is the register machine readable
 dependencies:
 - imagined.feature.current
 - imagined.feature.future
+duplicate_of:
+- W12

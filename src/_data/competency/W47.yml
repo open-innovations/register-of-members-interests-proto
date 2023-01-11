@@ -1,3 +1,5 @@
 competency: Which declaration does the interest relate to
 dependencies:
 - imagined.feature.current
+duplicate_of:
+- W22

@@ -2,3 +2,4 @@ competency: How to browse relevant information about ticketing by subject e.g., 
   tickets, cultural events tickets over the year?
 dependencies:
 - imagined.feature.future
+duplicate_of: []

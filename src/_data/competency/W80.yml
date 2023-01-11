@@ -2,3 +2,5 @@ competency: Conflict between RMFI and Ministerial lists
 dependencies:
 - imagined.feature.current
 - imagined.feature.future
+duplicate_of:
+- O2

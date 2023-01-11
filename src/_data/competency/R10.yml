@@ -2,3 +2,5 @@ competency: "More specific info on the location in identifying location of their
   \ \u2013 local authority area, reasonable geographic unit"
 dependencies:
 - imagined.feature.future
+duplicate_of:
+- C23

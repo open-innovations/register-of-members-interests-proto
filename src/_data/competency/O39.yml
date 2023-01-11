@@ -3,3 +3,5 @@ dependencies:
 - imagined.feature.current
 - imagined.feature.future
 - imagined.feature.unlikely
+duplicate_of:
+- O2

@@ -2,3 +2,5 @@ competency: 'What category of business does each of the companies listed in the 
   operate in? (SG: SIC code presumably)'
 dependencies:
 - imagined.feature.current
+duplicate_of:
+- O10

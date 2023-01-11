@@ -2,3 +2,4 @@ competency: How much has a member received in benefits in a calendar year / parl
   / time in parliament
 dependencies:
 - imagined.feature.future
+duplicate_of: []

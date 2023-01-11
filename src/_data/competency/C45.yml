@@ -3,3 +3,5 @@ competency: Which members own a property in a particular geographical area / How
 dependencies:
 - imagined.feature.current
 - imagined.feature.future
+duplicate_of:
+- C23

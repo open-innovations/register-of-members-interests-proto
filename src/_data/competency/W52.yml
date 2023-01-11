@@ -1,3 +1,5 @@
 competency: Was a salary received from a political party
 dependencies:
 - imagined.feature.unlikely
+duplicate_of:
+- O41

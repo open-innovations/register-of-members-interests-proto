@@ -1,3 +1,5 @@
 competency: "MPs earnings \u2013 annually, monthly, hourly (comparability and standardisation)?"
 dependencies:
 - imagined.feature.future
+duplicate_of:
+- O4

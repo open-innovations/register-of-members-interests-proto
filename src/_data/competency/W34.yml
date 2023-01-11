@@ -3,3 +3,5 @@ competency: What is the company name employing a Member, what category of busine
 dependencies:
 - imagined.feature.current
 - imagined.feature.future
+duplicate_of:
+- O10

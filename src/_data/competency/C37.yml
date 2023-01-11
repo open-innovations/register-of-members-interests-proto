@@ -2,3 +2,4 @@ competency: What members have declared an interest in subject x
 dependencies:
 - imagined.feature.current
 - imagined.feature.future
+duplicate_of: []

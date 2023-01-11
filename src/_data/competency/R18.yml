@@ -2,3 +2,4 @@ competency: Being able to look up company number in the register e.g., when decl
   directorships, interests
 dependencies:
 - imagined.feature.current
+duplicate_of: []

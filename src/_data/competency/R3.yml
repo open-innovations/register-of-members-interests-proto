@@ -2,3 +2,7 @@ competency: "How many MPs have second jobs, what types of jobs are they, how muc
   \ time they spend on it per year, how much they are paid for that \u2013 especially\
   \ in aggregate rather than on an individual basis"
 dependencies: []
+duplicate_of:
+- O23
+- O4
+- O7

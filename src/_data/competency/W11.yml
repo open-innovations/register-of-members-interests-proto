@@ -2,3 +2,5 @@ competency: Is employment or earning from a political party
 dependencies:
 - imagined.feature.current
 - imagined.feature.future
+duplicate_of:
+- O41

@@ -1,3 +1,5 @@
 competency: Does the member own exempted property
 dependencies:
 - imagined.feature.current
+duplicate_of:
+- C42

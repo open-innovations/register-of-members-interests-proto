@@ -1,3 +1,6 @@
 competency: How many family members employed and cost
 dependencies:
 - imagined.feature.current
+duplicate_of:
+- O3
+- O3A

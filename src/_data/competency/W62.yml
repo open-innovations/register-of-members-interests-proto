@@ -2,3 +2,5 @@ competency: Is the paid work to provide services as a parliamentary strategist, 
   or consultant and does this relate to the members parliamentary role and responsibilities
 dependencies:
 - imagined.feature.current
+duplicate_of:
+- W19

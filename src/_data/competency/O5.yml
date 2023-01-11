@@ -1,4 +1,5 @@
 competency: What are the number of hours spent on second jobs
 dependencies:
 - imagined.feature.current
-duplicate_of: O4
+duplicate_of:
+- O4

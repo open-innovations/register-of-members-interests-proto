@@ -2,3 +2,5 @@ competency: Is the paid work to provide services as a parliamentary strategist, 
   or consultant.
 dependencies:
 - imagined.feature.future
+duplicate_of:
+- W19

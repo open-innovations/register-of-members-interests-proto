@@ -2,3 +2,5 @@ competency: "How do MPs stack up against each other \u2013 e.g., time commitment
   \ outside interests?"
 dependencies:
 - imagined.feature.current
+duplicate_of:
+- O4
