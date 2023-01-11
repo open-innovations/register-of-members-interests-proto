@@ -55,6 +55,8 @@ Scopes here must match the names of the scopes defined in the features folder.
 #### Feature
 
 Features are derived from current or potential attributes of the register.
+These could be simple field definitions or they could be capabilites such as field-level validation.
+The concept is kept vague to allow for incorporation of as yet unforseen edge cases.
 
 They are defined in the `src/_data/features/` folder, with a separate file per scope, as described above.
 Internally these files are object trees, with structure governed by the scope.
@@ -71,6 +73,9 @@ The commonly defined properties of the feature object are:
 * `format`
 * `notes`
 * `units`
+* `enables` A feature may enable zero or more other features. As an example, a field which provided
+  a unique and validated identifier for a company could theoretically enable the automatic filling of
+  company name and address. This is not currently used.
 
 #### State
 
