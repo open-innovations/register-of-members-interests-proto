@@ -1,18 +1,45 @@
 ---
 css: |
-  #navigation * + * {
-    margin-top: 0;
+  #navigation {
+    --menu-fg: #ddd;
+    --menu-bg: #333;
+    position: relative;
   }
   #navigation ul {
     list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
+    position: absolute;
+    right: 0;
+    padding: 1rem; 
+    color: var(--menu-fg);
+    background: var(--menu-bg);
   }
+  #navigation button {
+    color: var(--menu-fg);
+    background: var(--menu-bg);
+    border: none;
+    padding: 0.5rem 1rem;
+  }
+  #navigation a {
+    color: inherit;
+  }
+  [hidden] {
+    display: none;
+  }
+js: |
+  addEventListener('DOMContentLoaded', () => {
+    var navButton = document.querySelector('nav button');
+    navButton.addEventListener('click', function() {
+      let expanded = this.getAttribute('aria-expanded') === 'true' || false;
+      this.setAttribute('aria-expanded', !expanded);
+      let menu = this.nextElementSibling;
+      menu.hidden = !menu.hidden;
+    });
+  });
 ---
 
 <nav id="navigation">
-  <ul>
+  <button aria-expanded="false">Site Menu</button>
+  <ul hidden>
     {% for title, link in nav_links %}
       <li><a href="{{ link | url }}">{{ title }}</a></li>
     {% endfor %}
