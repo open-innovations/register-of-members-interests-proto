@@ -1,7 +1,7 @@
 name: Future Imagined (test)
 description: "TEST: Future state for an imagined scope"
 scope: imagined
-order: 20
+order: 550
 available:
   "imagined.feature.current":
   "imagined.feature.future":

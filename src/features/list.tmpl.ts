@@ -5,7 +5,7 @@ function isAFeature(entry: Record<string, unknown>) {
   return nonObjectChildren > 0;
 }
 
-function descend([key, value]: [string, unknown], parentNamespace: (string | undefined) = undefined): Record<string, unknown>[] | undefined {
+function descend([key, value]: [string, Record<string, unknown>], parentNamespace: (string | undefined) = undefined): Record<string, unknown>[] | undefined {
   const namespace = [parentNamespace, key].filter(x => x).join('.');
   if (!value) return;
   const { description } = value;
@@ -13,8 +13,8 @@ function descend([key, value]: [string, unknown], parentNamespace: (string | und
   return Object.entries(value).map((e) => descend(e, namespace)).flat().filter(x => x);
 }
 
-export default function* ({ features }) {
-  for (const [scope, entries] of Object.entries(features)) {
+export default function* ({ features }: { features: Record<string, Record<string, unknown>> }) {
+  for (const [scope, entries] of Object.entries<Record<string, unknown>>(features)) {
     const featureList = descend([scope, entries]);
     yield {
       url: `/features/${scope}/`,
