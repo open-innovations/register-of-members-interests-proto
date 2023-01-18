@@ -1,10 +1,10 @@
 export default function (
-  { id, current_state: currentState, competency, states, text },
+  { id, current_ruleset: currentRuleset, competency, rulesets, text },
 ) {
-  const state = states[currentState];
-  if (state === undefined) throw "Unknown state";
+  const ruleset = rulesets[currentRuleset];
+  if (ruleset === undefined) throw "Unknown ruleset";
 
-  const scopeRegex = new RegExp(`^${state.scope}\.`);
+  const scopeRegex = new RegExp(`^${ruleset.scope}\.`);
 
   let result = "";
 
@@ -15,7 +15,7 @@ export default function (
 
   result += 'data-required-features="' + dependencies + '"';
 
-  const features = Object.keys(state.available);
+  const features = Object.keys(ruleset.available);
 
   function scoreDependencies(dependency) {
     if (features.includes(dependency)) return 1;

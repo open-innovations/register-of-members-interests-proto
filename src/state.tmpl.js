@@ -1,14 +1,14 @@
-export const layout = "layouts/state.njk";
-export const tags = ["state"];
+export const layout = "layouts/ruleset.njk";
+export const tags = ["ruleset"];
 
-export default function* ({ states }) {
-  for (const [state, config] of Object.entries(states)) {
+export default function* ({ rulesets }) {
+  for (const [ruleset, config] of Object.entries(rulesets)) {
     if (!config?.draft)
       yield {
         ...config,
-        title: `State: ${ config.name }`,
-        current_state: state,
-        url: `/state/${state}/`,
+        title: `Ruleset: ${ config.name }`,
+        current_ruleset: ruleset,
+        url: `/ruleset/${ruleset}/`,
       };
   }
 }

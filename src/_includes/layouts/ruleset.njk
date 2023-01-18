@@ -1,7 +1,7 @@
 ---
 layout: layouts/default.njk
 ---
-{{ comp.state_list({ current_page: url }) | safe }}
+{{ comp.ruleset_list({ current_page: url }) | safe }}
 
 <h2>{{ title }}</h2>
 
@@ -9,4 +9,4 @@ layout: layouts/default.njk
 
 {{ description | md | safe }}
 
-{{ comp.dashboard({ current_state: current_state }) | safe }}
+{{ comp.dashboard({ current_ruleset: current_ruleset }) | safe }}

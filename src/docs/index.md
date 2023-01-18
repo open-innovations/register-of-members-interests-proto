@@ -34,7 +34,7 @@ The following fields can be defined:
 
 * `competency` Name of the competency - derived from the evidence file.
 * `duplicate_of` List of other competencies that this duplicates.
-  If this list has any entries, the competency is excluded from the state dashboard.
+  If this list has any entries, the competency is excluded from the ruleset dashboard.
 * `dependencies` A list of required features to be able to answer this competency.
   These are provided in namespaced form enabling them to be uniquely identified.
   Lists of features for each scope can be found on [the features pages](/features/).
@@ -48,8 +48,8 @@ Firstly, they are the root namespace of the feature definition.
 Practically, this means that they are the names of files in the `src/_data/features/` folder of the git repo.
 Create a new file in this folder and define the features as key/value pairs to add a suite of features within a new scope.
 
-Secondly, scopes are referenced in the state files (found in the `src/_data/states/` folder).
-This defines the scope for the given state, and features in scope namespaces other than this are removed from consideration.
+Secondly, scopes are referenced in the ruleset files (found in the `src/_data/rulesets/` folder).
+This defines the scope for the given ruleset, and features in scope namespaces other than this are removed from consideration.
 Scopes here must match the names of the scopes defined in the features folder.
 
 #### Feature
@@ -77,18 +77,18 @@ The commonly defined properties of the feature object are:
   a unique and validated identifier for a company could theoretically enable the automatic filling of
   company name and address. This is not currently used.
 
-#### State
+#### Ruleset
 
-States make features available (or by omission, not available).
-Each state belongs to a scope, allowing irrelevant information (e.g. features from another scope) to be ommitted from consideration.
+Rulesets make features available (or by omission, not available).
+Each ruleset belongs to a scope, allowing irrelevant information (e.g. features from another scope) to be ommitted from consideration.
 
-States are defined in the `src/_data/states/` folder, and contain the following properties:
+Rulesets are defined in the `src/_data/rulesets/` folder, and contain the following properties:
 
-* `name` A human intelligible name for the state
-* `description` A brief description of the state
+* `name` A human intelligible name for the ruleset
+* `description` A brief description of the ruleset
 * `scope` The scope to which this applies
-* `order` A numerical value to affect the order of state display
-* `available` A list of the fully-qualified feature names that the state provides.
+* `order` A numerical value to affect the order of ruleset display
+* `available` A list of the fully-qualified feature names that the ruleset provides.
   Lists of currently defined features can be found on [the features pages](/features/).
 
 <html>{{ comp.mermaid.script() | safe }}</html>

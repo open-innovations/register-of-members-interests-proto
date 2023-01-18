@@ -20,9 +20,9 @@ The key columns are:
   See the
   [Introduction to the Registers for the 2019
   Parliament](https://publications.parliament.uk/pa/cm/cmregmem/ForewordJanuary2020.pdf).
-- `_data/states/` A directory containing a yaml file per state. Each state is a
+- `_data/rulesets/` A directory containing a yaml file per ruleset. Each ruleset is a
   list of available features defining a potential / proposed version of the data
-  collected for the RMFI. These states can be applied to the prototype to
+  collected for the RMFI. These rulesets can be applied to the prototype to
   determine which competencies can be `answered`.
 
 ## Useful links

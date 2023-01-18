@@ -6,7 +6,7 @@
 <p>
   Competencies are linked to features of the register(s).
   This linkage defines the features required to answer the competency.
-  Features are further linked to states and scopes.
+  Features are further linked to rulesets and scopes.
   You can review the defined features on <a href="{{ '~/features/index.njk' | url }}">the features page for a given scope</a>.
 </p>
 
@@ -14,12 +14,12 @@
   Scopes provide a context for the result of the tool.
   Concrete examples of scopes are the <i>House of Commons</i> and <i>House of Lords</i>.
   These contexts differ as the features available in the respective Registers of Members' Financial Interests will differ.
-  We also define an <i>Imagined</i> scope which contains features and states used for testing and demonstration purposes.
+  We also define an <i>Imagined</i> scope which contains features and rulesets used for testing and demonstration purposes.
 </p>
 
 <p>
-  Finally, states define a set of available features for a given scope.
-  Competency answerability can be determined by cross-referencing the features required by the individual competency with the features provided by the state.
+  Finally, rulesets define a set of available features for a given scope.
+  Competency answerability can be determined by cross-referencing the features required by the individual competency with the features provided by the ruleset.
   This is carried out in the context of a scope, as when considering answerability for the Commons, the dependency of a competency on a Lord features is irrelevant.
 
 </p>
@@ -30,18 +30,18 @@
 
 <blockquote>
   <p>
-    For a given state, is a question...
+    For a given ruleset, is a question...
   </p>
   <ul>
     <li>
-      <strong>answerable</strong> &mdash; all required features are available in the current state
+      <strong>answerable</strong> &mdash; all required features are available in the current ruleset
     </li>
     <li>
       <strong>unanswerable</strong> &mdash; not all required features are available in the
-            current state
+            current ruleset
     </li>
     <li>
-      <strong>unaskable</strong> &mdash; there are no features that exist in this state or any
+      <strong>unaskable</strong> &mdash; there are no features that exist in this ruleset or any
             other which could answer this question
     </li>
   </ul>

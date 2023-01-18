@@ -1,5 +1,5 @@
 name: Current Imagined (test)
-description: "TEST: Current state for an imagined chamber"
+description: "TEST: Current ruleset for an imagined chamber"
 scope: imagined
 order: 500
 available:

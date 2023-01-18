@@ -1,8 +1,8 @@
 export default `erDiagram
     COMPETENCY ||--o{ FEATURE : dependency
-    STATE }o--o{ FEATURE : available
+    RULESET }o--o{ FEATURE : available
     COMPETENCY ||--o{ COMPETENCY: duplicate_of
-    STATE }o--|| SCOPE : scope
+    RULESET }o--|| SCOPE : scope
     FEATURE }o--|| SCOPE : provided_by
     FEATURE ||--o{ FEATURE: enables
 
@@ -12,12 +12,12 @@ export default `erDiagram
         string notes "Optional notes"
     }
 
-    STATE {
-        string ID "Refernence of the state"
-        string name "Name of the state"
+    RULESET {
+        string ID "Refernence of the ruleset"
+        string name "Name of the ruleset"
         string description "Brief description"
         int order "Allows sorting"
-        boolean draft "Whether to make state available"
+        boolean draft "Whether to make ruleset available"
     }
 
     FEATURE {
