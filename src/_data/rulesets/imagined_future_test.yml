@@ -1,6 +1,6 @@
-name: Future Imagined (test)
-description: "TEST: Future ruleset for an imagined scope"
 scope: imagined
+name: Future
+description: "TEST: Future ruleset for an imagined scope"
 order: 550
 available:
   "imagined.feature.current":

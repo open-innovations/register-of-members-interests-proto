@@ -1,6 +1,6 @@
-name: Current Imagined (test)
-description: "TEST: Current ruleset for an imagined chamber"
 scope: imagined
+name: Current
+description: "TEST: Current ruleset for an imagined chamber"
 order: 500
 available:
   "imagined.feature.current":

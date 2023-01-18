@@ -24,6 +24,8 @@ The key columns are:
   list of available features defining a potential / proposed version of the data
   collected for the RMFI. These rulesets can be applied to the prototype to
   determine which competencies can be `answered`.
+- `_data/scopes.yaml` A metadata file providing the public name of each of the scopes.
+  For now...
 
 ## Useful links
 

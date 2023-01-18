@@ -3,9 +3,9 @@ layout: layouts/default.njk
 ---
 {{ comp.ruleset_list({ current_page: url }) | safe }}
 
-<h2>{{ title }}</h2>
+<h2>{{ scope_name }} {{ name }} ruleset</h2>
 
-<p>This applies to the <strong>{{ scope }}</strong> scope.</p>
+<p>This ruleset applies to the <strong>{{ scope_name }}</strong>.</p>
 
 {{ description | md | safe }}
 

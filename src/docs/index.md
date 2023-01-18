@@ -52,6 +52,8 @@ Secondly, scopes are referenced in the ruleset files (found in the `src/_data/ru
 This defines the scope for the given ruleset, and features in scope namespaces other than this are removed from consideration.
 Scopes here must match the names of the scopes defined in the features folder.
 
+In addition, the details of the scopes is held in `src/_data/scopes.yaml`. At present, this is limited to the name.
+
 #### Feature
 
 Features are derived from current or potential attributes of the register.

@@ -13,12 +13,13 @@ function descend([key, value]: [string, Record<string, unknown>], parentNamespac
   return Object.entries(value).map((e) => descend(e, namespace)).flat().filter(x => x);
 }
 
-export default function* ({ features }: { features: Record<string, Record<string, unknown>> }) {
+export default function* ({ features, scopes }: { features: Record<string, Record<string, unknown>>, scopes: Record<string, { name: string}> }) {
   for (const [scope, entries] of Object.entries<Record<string, unknown>>(features)) {
     const featureList = descend([scope, entries]);
     yield {
       url: `/features/${scope}/`,
       scope: scope,
+      scope_name: scopes[scope].name,
       features: entries,
       featureList,
     }

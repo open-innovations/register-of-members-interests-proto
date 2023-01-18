@@ -43,7 +43,7 @@ css: |
   <p id="ruleset-list-title">Defined rulesets:</p>
   <ul>
     {% for ruleset in search.pages('ruleset', 'order scope') | data %}
-      <li class="{% if current_page == ruleset.url %}active{% endif %}"><a href="{{ ruleset.url }}">{{ ruleset.name }}</a></li>
+      <li class="{% if current_page == ruleset.url %}active{% endif %}"><a href="{{ ruleset.url }}">{{ ruleset.scope_name}}: {{ ruleset.name }}</a></li>
     {% endfor %}
   </ul>
 </div>

@@ -5,6 +5,6 @@
 </p>
 <ul>
 {% for k, v in features %}
-  <li><a href="/features/{{ k }}/">{{ k }}</a></li>
+  <li><a href="/features/{{ k }}/">{{ scopes[k].name }}</a></li>
 {% endfor %}
 </ul>
