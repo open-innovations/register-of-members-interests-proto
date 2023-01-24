@@ -20,11 +20,16 @@ potential future designs of the Register(s) of Members' Financial Interests.
 
 #### Competency
 
-Competencies are derived from the set of questions collected during a recent review.
+Competencies are derived from the
+[**evidence** collected during a recent review](https://docs.google.com/spreadsheets/d/1iRsQBRPChMVFitSGBtNJFGNBvFT8XGKQYYqu40zy_OM/edit?usp=sharing).
 
 The original evidence is downloaded to the site as `src/_data/evidence.csv`.
 This is automated as a GitHub action (in `.github/workflows/update-data.yml`) which runs
 [at 45 minutes past every 3rd hour from 9 through 18 on Monday to Friday.](https://crontab.guru/#45_9-18/3_*_*_1-5).
+
+The `ID`, `Duplicates` and `Competency` fields are used to populate the files in `src/_data/comptency/`
+with core reference data.
+The `scripts/create_all_the_competencies.py` script is used to populate or update the local references.
 
 Competencies are mapped to features to enable the calculation of answerability.
 This is done in the `src/_data/competency/` folder, with each competency having a separate data file.
@@ -38,6 +43,11 @@ The following fields can be defined:
 * `dependencies` A list of required features to be able to answer this competency.
   These are provided in namespaced form enabling them to be uniquely identified.
   Lists of features for each scope can be found on [the features pages](/features/).
+
+#### Categories
+
+The `RMFI Category` field from the `src/_data/evidence.csv` file is used to create dashboard sections. The order of these
+sections is defined in the `src/_data/dashboard/categories.yml` file.
 
 #### Scope
 

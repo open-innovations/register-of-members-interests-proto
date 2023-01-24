@@ -2,12 +2,13 @@ export default `erDiagram
     COMPETENCY ||--o{ FEATURE : dependency
     RULESET }o--o{ FEATURE : available
     COMPETENCY ||--o{ COMPETENCY: duplicate_of
+    EVIDENCE ||--|| COMPETENCY: defines
     RULESET }o--|| SCOPE : scope
     FEATURE }o--|| SCOPE : provided_by
     FEATURE ||--o{ FEATURE: enables
 
     COMPETENCY {
-        string ID PK "ID in evidence CSV file (filename of definition file)"
+        string ID FK "ID in evidence CSV file"
         string competency "Name of the competency"
         string notes "Optional notes"
     }
@@ -28,7 +29,15 @@ export default `erDiagram
         string format "Format of field - e.g. DD/MM/YYYY for dates"
         string units "Units for the feature"
     }
+
     SCOPE {
         string ID PK "Identifer of the scope"
+    }
+
+    EVIDENCE {
+        string ID PK "Identifier of current evidence row - used as key for competency"
+        string Duplicates "List of other competency IDs which this row dupliates"
+        string Competency "Name of the competency"
+        string RMFI_Category "Category in the Register of Members' Financial Interests"
     }
 `;
