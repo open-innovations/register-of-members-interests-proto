@@ -1,0 +1,37 @@
+---
+css: |
+  .legend {
+    padding-left: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr))
+  }
+  .legend * + * {
+    margin-top: 0;
+  }
+  .legend dt {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .legend .competency-block {
+    height: 1.5rem;
+    width: 1.5rem;
+    min-width: unset;
+    min-height: unset;
+    padding: 0;
+  }
+---
+<dl class="legend">
+  <div>
+    <dt><div class="competency-block" data-score="1"></div><strong>Answerable</strong></dt>
+    <dd>All required features are available in the current ruleset</dd>
+  </div>
+  <div>
+    <dt><div class="competency-block" data-score="0"></div><strong>Unanswerable</strong></dt>
+    <dd>Not all required features are available in the current ruleset</dd>
+  </div>
+  <div>
+    <dt><div class="competency-block"></div><strong>Unaskable</strong></dt>
+    <dd>There are no features that exist in this ruleset or any other which could answer this question</dd>
+  </div>
+</dl>

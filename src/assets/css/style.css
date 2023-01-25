@@ -155,6 +155,10 @@ dd {
   color: rgb(95, 82, 7);
   background-color: rgb(251, 245, 208);
 }
+.info {
+  color: rgb(50, 50, 50);
+  background-color: rgb(200, 200, 200);;
+}
 .centre {
   text-align: center;
 }

@@ -9,4 +9,12 @@ layout: layouts/default.njk
 
 {{ description | md | safe }}
 
+<div class="padded info">
+  <h3>Legend</h3>
+
+  <p>The symbols and colours on the dashboard have the following meanings</p>
+
+  {{ comp.legend() | safe }}
+</div>
+
 {{ comp.dashboard({ current_ruleset: current_ruleset }) | safe }}
