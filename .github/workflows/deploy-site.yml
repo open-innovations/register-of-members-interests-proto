@@ -9,7 +9,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '.github/actions/deploy-site.yml'
+      - '.github/workflows/deploy-site.yml'
       - 'src/**'
       - '_config.js'
       - 'deno.json'
