@@ -41,7 +41,6 @@ site.use(esbuild({
     keepNames: false,
     platform: "browser",
     target: "es6",
-    incremental: true,
     treeShaking: true,
   },
 }));
