@@ -2,6 +2,7 @@ competency: What are the number of hours spent on second jobs
 dependencies:
 - c1_total_hours
 - c1_unique_members_identifier
+- imagined.feature.transitive
 duplicate_of: []
 notes: "What are the number of hours spent on second jobs \n"
 pseudocode: sum of c1_total_hours by c1_unique_members_identifier

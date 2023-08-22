@@ -87,7 +87,8 @@ The commonly defined properties of the feature object are:
 * `units`
 * `enables` A feature may enable zero or more other features. As an example, a field which provided
   a unique and validated identifier for a company could theoretically enable the automatic filling of
-  company name and address. This is not currently used.
+  company name and address. This is enabled, and supports full of indirection:
+  `a -enables-> b -enables-> c` will result in `a`, `b` and `c` being enabled!
 
 #### Ruleset
 

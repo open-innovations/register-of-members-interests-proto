@@ -1,5 +1,5 @@
 export default function (
-  { id, current_ruleset: currentRuleset, competency, rulesets, text },
+  { id, current_ruleset: currentRuleset, competency, rulesets, text, search },
 ) {
   const ruleset = rulesets[currentRuleset];
   if (ruleset === undefined) throw "Unknown ruleset";
@@ -15,10 +15,15 @@ export default function (
 
   result += 'data-required-features="' + dependencies + '"';
 
-  const features = Object.keys(ruleset.available);
+  // Get get page for current ruleset
+  const page = search.page(`ruleset current_ruleset=${currentRuleset}`);
+  const { available } = page.data;
+  
+  // Test for enabled enabled features
+  const isEnabled = (dependency) => available.includes(dependency);
 
   function scoreDependencies(dependency) {
-    if (features.includes(dependency)) return 1;
+    if (isEnabled(dependency)) return 1;
     return 0;
   }
 
