@@ -87,7 +87,8 @@ The commonly defined properties of the feature object are:
 * `units`
 * `enables` A feature may enable zero or more other features. As an example, a field which provided
   a unique and validated identifier for a company could theoretically enable the automatic filling of
-  company name and address. This is not currently used.
+  company name and address. This is enabled, and supports full of indirection:
+  `a -enables-> b -enables-> c` will result in `a`, `b` and `c` being enabled!
 
 #### Ruleset
 
@@ -104,3 +105,41 @@ Rulesets are defined in the `src/_data/rulesets/` folder, and contain the follow
   Lists of currently defined features can be found on [the features pages](/features/).
 
 <html>{{ comp.mermaid.script() | safe }}</html>
+
+
+### Site build
+
+This section outlines some of the critical parts of the site build.
+
+#### Ruleset
+
+Each ruleset is emitted as a page using the `src/features/list.tmpl.ts` page file.
+
+This constructs page data of the following form:
+
+* `layout` (all pages): `layouts/ruleset.njk` The page template
+* `tags` (all pages): `[ 'ruleset' ]`
+* `scope`: The 'scope' of the ruleset
+* `name`: A human readable ruleset name
+* `description`: A brief description of the ruleset
+* `order`: The order in which to render the ruleset
+* `available`: Calculated directly and transitively enabled features
+* `scope_name`: A human readable scope name
+* `title`: A title
+* `current_ruleset`: The key for the ruleset
+* `url`: The ruleset url
+
+The values of the can be modified in the `tmpl.js` file.
+
+The code to calculate features available in a given ruleset is defined in the generator.
+The function `calculateFeatures` takes a list of features and works out those that are
+transitively enabled, based of the value of the 'enables' key of the feature set.
+
+The `ruleset` layout calls the `dashboard.njk` component to render the dashboard.
+
+`dashboard.njk` renders the categories and then a styled unordered list to create the
+dashboard "lights". Each competency is rendered using the `competency.njk` component.
+This in turn calls the `dependencies.js` component which is responsible for providing
+the `data-required-features`, `data-score` and `aria-label` properties.
+
+The "lights" are styled by `css` provided by the `comptency.njk` component.

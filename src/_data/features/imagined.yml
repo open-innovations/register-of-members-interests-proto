@@ -5,3 +5,10 @@ feature:
     description: Potentially available feature
   unlikely:
     description: Feature that will never be available
+
+  enabler:
+    description: Feature that enables another feature
+    enables:
+      - imagined.feature.transitive
+  transitive:
+    description: Feature enabled by another feature
