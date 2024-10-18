@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='640' height='640' overflow='auto' viewBox='-32 -32 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='oi-person'%3E%3Cpath d='m-32-32h64v64h-12v-24a4 4 0 0 0 -4 -4h-8a4 4 0 0 0 -4 4v24h-36zm44 27m-8 0a8 8 0 1 0 16 0 8 8 0 1 0-16 0' fill='%23fff'%3E%3C/path%3E%3C/mask%3E%3Cg id='oi-logo' fill='%23777'%3E%3Ccircle r='32' mask='url(%23oi-person)'%3E%3C/circle%3E%3C/g%3E%3C/svg%3E">
+  <title> | Competency Answerability Dashboard
+</title>
+  <link rel="stylesheet" href="/register-of-members-interests-proto/assets/css/core.css">
+  <link rel="stylesheet" href="/register-of-members-interests-proto/assets/css/components.css">
+  <script src="/register-of-members-interests-proto/assets/js/components.js"></script>
+  <link rel="stylesheet" href="/register-of-members-interests-proto/assets/css/style.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Competency Answerability Dashboard">
+<meta property="og:locale" content="en">
+<meta property="og:description" content="Dashboard showing how a set of competencies can be answered based on various rulesets of the UK Parliament Registers of Members' Financial Interests.">
+<meta property="og:url" content="https://open-innovations.github.io/register-of-members-interests-proto/features/commons/">
+<meta name="twitter:description" content="Dashboard showing how a set of competencies can be answered based on various rulesets of the UK Parliament Registers of Members' Financial Interests.">
+<meta name="twitter:card" content="summary">
+<meta itemprop="description" content="Dashboard showing how a set of competencies can be answered based on various rulesets of the UK Parliament Registers of Members' Financial Interests.">
+<meta name="description" content="Dashboard showing how a set of competencies can be answered based on various rulesets of the UK Parliament Registers of Members' Financial Interests.">
+<meta name="generator" content="Lume v1.17.4">
+</head>
+<body>
+  <div class="warning padded centre">Warning: this is a work-in-progress demonstration tool.</div>
+
+  <header id="site-header">
+    <h1><a class="undecorated" href="/register-of-members-interests-proto/">Competency Answerability Dashboard
+</a></h1>
+    <nav id="navigation">
+  <button aria-expanded="false">Site Menu</button>
+  <ul hidden="">
+    
+      <li><a href="/register-of-members-interests-proto/competencies/">Competencies</a></li>
+    
+      <li><a href="/register-of-members-interests-proto/features/">Features</a></li>
+    
+      <li><a href="/register-of-members-interests-proto/docs/">Docs</a></li>
+    
+  </ul>
+</nav>
+  </header>
+  <main>
+  <h2>Features in the House of Commons scope</h2>
+
+<p>
+  The <strong>House of Commons</strong> scope has the following features defined.
+  These are available to assign to rulesets to build a view of answerability of the <a href="/register-of-members-interests-proto/competencies/">competencies</a>.
+  Available rulesets are listed on the <a href="/register-of-members-interests-proto/">front page of this site</a>
+</p>
+
+<dl>
+
+    <dt class="code">commons.unique_members_identifier</dt>
+    <dd><p>Unique identifier of the members who have submitted <strong>Category 1: Employment and earnings</strong> declarations</p></dd>
+
+    <dt class="code">commons.members_name</dt>
+    <dd><p>Name [in capitals]</p></dd>
+
+    <dt class="code">commons.members_name_crossref</dt>
+    <dd><p>A theoretical cross match/lookup of the member against a known list.</p></dd>
+
+    <dt class="code">commons.members_constituency</dt>
+    <dd><p>Constituency</p></dd>
+
+    <dt class="code">commons.category_1.section_1.date_received</dt>
+    <dd><p>If payment already made, date received</p></dd>
+
+    <dt class="code">commons.category_1.section_1.amount_or_value</dt>
+    <dd><p>Amount or value (plus details of any payments in kind and any taxable benefits)1</p></dd>
+
+    <dt class="code">commons.category_1.section_1.name_and_address_of_payer</dt>
+    <dd></dd>
+
+    <dt class="code">commons.category_1.section_1.brief_description_of_payers_business</dt>
+    <dd><p>Unless obvious, brief description of payer’s business</p></dd>
+
+    <dt class="code">commons.category_1.section_1.type_of_work_services_provided</dt>
+    <dd><p>Type of work or services provided [Please state if you are a director]</p></dd>
+
+    <dt class="code">commons.category_1.section_1.dates_work_completed</dt>
+    <dd><p>If payment not yet received, date(s) when you did the work</p></dd>
+
+    <dt class="code">commons.category_1.section_1.number_of_hours</dt>
+    <dd><p>Number of hours worked</p></dd>
+
+    <dt class="code">commons.category_1.section_1.name_and_address_of_other_beneficiary_of_services</dt>
+    <dd><p>If services were provided to someone other than the payer, their name and address</p></dd>
+
+    <dt class="code">commons.category_1.section_1.more_details</dt>
+    <dd><p>The payment was or will be made via an agent. [Please give their name and address.],The payment was or will be made directly or indirectly to another person or organisation, such as a charity.</p></dd>
+
+    <dt class="code">commons.category_1.section_2.date_started</dt>
+    <dd><p>This arrangement started on</p></dd>
+
+    <dt class="code">commons.category_1.section_2.date_end</dt>
+    <dd><p>It is expected to end on</p></dd>
+
+    <dt class="code">commons.category_1.section_2.continuing</dt>
+    <dd><p>[if open-ended, state “continues until further notice”]</p></dd>
+
+    <dt class="code">commons.category_1.section_2.role_or_work</dt>
+    <dd><p>I expect to undertake the following role/work</p></dd>
+
+    <dt class="code">commons.category_1.section_2.name_and_address_of_payer</dt>
+    <dd><p>Name and address of payer</p></dd>
+
+    <dt class="code">commons.category_1.section_2.brief_description_of_payers_business</dt>
+    <dd><p>Unless obvious, brief description of payer’s business</p></dd>
+
+    <dt class="code">commons.category_1.section_2.expected_renumeration</dt>
+    <dd><p>Expected remuneration (Including payments in kind or any taxable benefits)</p></dd>
+
+    <dt class="code">commons.category_1.section_2.payment_frequency</dt>
+    <dd><p>I will be paid (monthly, quarterly, yearly, etc)</p></dd>
+
+    <dt class="code">commons.category_1.section_2.expected_time_commitment_for_each_payment</dt>
+    <dd><p>Expected time commitment for each payment (in hours)</p></dd>
+
+    <dt class="code">commons.category_1.section_2.name_and_address_of_other_beneficiary_of_services</dt>
+    <dd><p>If services were provided to someone other than the payer, their name and address</p></dd>
+
+    <dt class="code">commons.category_1.section_2.more_details</dt>
+    <dd><p>Payment was or will be made via an agent. [Please give their name and address.],Payment was or will be made directly or indirectly to another person or organisation, such as a charity.</p></dd>
+
+    <dt class="code">commons.category_2.donation_type</dt>
+    <dd><p>I wish to register the following support for my activities as a MP, or for candidacy at an election for parliamentary or non-parliamentary office. The value of this support exceeds £1,500, either by itself or together with other donations (each of more than £500) from the same source which I have accepted in the same calendar year.</p></dd>
+
+    <dt class="code">commons.category_2.name_of_donor</dt>
+    <dd><p>Name of donor</p></dd>
+
+    <dt class="code">commons.category_2.address_of_donor</dt>
+    <dd><p>Address of donor</p></dd>
+
+    <dt class="code">commons.category_2.amount_or_value</dt>
+    <dd><p>Amount of donation, or nature and value if donation in kind</p></dd>
+
+    <dt class="code">commons.category_2.b_date_received</dt>
+    <dd><p>Date received</p></dd>
+
+    <dt class="code">commons.category_2.b_date_accepted</dt>
+    <dd><p>Date accepted: [which cannot be earlier than the date received]</p></dd>
+
+    <dt class="code">commons.category_2.donor_status</dt>
+    <dd><p>Donor status: [Please tick one of the boxes below]</p></dd>
+
+    <dt class="code">commons.category_2.donation_reported_to_electoral_commission</dt>
+    <dd><p>Tick here if the donation is one which your party has reported or will report to the Electoral Commission.</p></dd>
+
+    <dt class="code">commons.category_2.more_details</dt>
+    <dd><p>Please use the space below to provide any additional information; for example, if this was a monetary donation made for a specific purpose or received via a third party.</p></dd>
+
+    <dt class="code">commons.category_3.source_outside_uk</dt>
+    <dd><p>Enter ‘X’ here if the benefit was from a source outside the UK.</p></dd>
+
+    <dt class="code">commons.category_3.name_of_donor</dt>
+    <dd><p>Name of donor</p></dd>
+
+    <dt class="code">commons.category_3.address_of_donor</dt>
+    <dd><p>Address of donor</p></dd>
+
+    <dt class="code">commons.category_3.amount_or_value</dt>
+    <dd><p>Amount of donation, or nature and value if donation in kind</p></dd>
+
+    <dt class="code">commons.category_3.date_received</dt>
+    <dd><p>Date received</p></dd>
+
+    <dt class="code">commons.category_3.date_accepted</dt>
+    <dd><p>Date accepted: [which cannot be earlier than the date received]</p></dd>
+
+    <dt class="code">commons.category_3.donor_status</dt>
+    <dd><p>Donor status: [Please tick one of the boxes below]</p></dd>
+
+    <dt class="code">commons.category_3.more_details</dt>
+    <dd><p>Please use the space below to provide any additional information; for example, if you were accompanied by a guest at an event or the benefit was received by someone other than yourself [see Chapter 1 of the Guide to the Rules, paragraphs 27 and 44].</p></dd>
+
+    <dt class="code">commons.category_4.name_of_donor</dt>
+    <dd><p>Name of donor</p></dd>
+
+    <dt class="code">commons.category_4.address_of_donor</dt>
+    <dd><p>Address of donor</p></dd>
+
+    <dt class="code">commons.category_4.value</dt>
+    <dd><p>If monetary benefit, its value in £</p></dd>
+
+    <dt class="code">commons.category_4.benefit_in_kind_nature_and_value</dt>
+    <dd><p>If benefit in kind, its nature (e.g. flights and accommodation) and value in £</p></dd>
+
+    <dt class="code">commons.category_4.destination_of_visit</dt>
+    <dd><p>Destination of visit</p></dd>
+
+    <dt class="code">commons.category_4.dates_of_visit</dt>
+    <dd><p>Dates of visit</p></dd>
+
+    <dt class="code">commons.category_4.purpose_of_visit</dt>
+    <dd><p>Purpose of visit</p></dd>
+
+    <dt class="code">commons.category_4.more_details</dt>
+    <dd><p>Please use the space below to provide any additional information; for example, if you made this visit as part of an APPG, if you took a guest, or if the visit was undertaken by someone other than yourself (see Chapter 1 of the Guide to the Rules, paragraph 37).</p></dd>
+
+    <dt class="code">commons.category_5.source_outside_uk</dt>
+    <dd><p>Enter ‘X’ here if the benefit was from a source outside the UK.</p></dd>
+
+    <dt class="code">commons.category_5.name_of_donor</dt>
+    <dd><p>Name of donor</p></dd>
+
+    <dt class="code">commons.category_5.address_of_donor</dt>
+    <dd><p>Address of donor</p></dd>
+
+    <dt class="code">commons.category_5.amount_or_value</dt>
+    <dd><p>Amount of donation, or nature and value if donation in kind</p></dd>
+
+    <dt class="code">commons.category_5.date_received</dt>
+    <dd><p>Date received</p></dd>
+
+    <dt class="code">commons.category_5.date_accepted</dt>
+    <dd><p>Date accepted: [which cannot be earlier than the date received]</p></dd>
+
+    <dt class="code">commons.category_5.donor_status</dt>
+    <dd><p>Donor status: [Please tick one of the boxes below]</p></dd>
+
+    <dt class="code">commons.category_5.more_details</dt>
+    <dd><p>Please use the space below to provide any additional information; for example, if you were accompanied by a guest at an event or the benefit was received by someone other than yourself [see Chapter 1 of the Guide to the Rules, paragraphs 27 and 44].</p></dd>
+
+    <dt class="code">commons.category_6.land_or_property_type</dt>
+    <dd><p>I wish to register the following land or property which I own, part-own, or own on behalf of my spouse, partner or dependent child(ren). This land/property is not used wholly for my own residential purposes, or those of my spouse, partner or dependent child(ren).</p></dd>
+
+    <dt class="code">commons.category_6.date_land</dt>
+    <dd><p>If on or after your election, date when the land or property was acquired; or when it achieved registrable value</p></dd>
+
+    <dt class="code">commons.category_6.date_rental</dt>
+    <dd><p>If on or after your election, date when the rental arrangement began; or when the rental received achieved registrable value</p></dd>
+
+    <dt class="code">commons.category_6.type_of_property</dt>
+    <dd><p>Type of property (e.g. whether house or flat, shop or office, agricultural land or forest)</p></dd>
+
+    <dt class="code">commons.category_6.location</dt>
+    <dd><p>Location (e.g. county or local authority area)</p></dd>
+
+    <dt class="code">commons.category_6.more_details</dt>
+    <dd><p>Please use the space below to provide any additional information; for example, if the rental income is paid to someone else, or if you are not the sole owner of this land or property.</p></dd>
+
+    <dt class="code">commons.category_7.shareholdings_type</dt>
+    <dd><p>I wish to register the following shareholdings, share options or interests in partnerships which I hold, either by myself or with or on behalf of my spouse, partner or dependent child(ren), or through a trust which is not a blind trust.</p></dd>
+
+    <dt class="code">commons.category_7.date</dt>
+    <dd><p>If on or after your election, date on which the holding was acquired or achieved registrable value</p></dd>
+
+    <dt class="code">commons.category_7.name_of_company_or_organisation</dt>
+    <dd><p>Name of company or organisation</p></dd>
+
+    <dt class="code">commons.category_7.nature_of_business</dt>
+    <dd><p>Nature of its business (if not obvious from name)</p></dd>
+
+    <dt class="code">commons.category_7.relevant_trust_or_delegated_management_arrangement</dt>
+    <dd><p>Any relevant trust or delegated management arrangement</p></dd>
+
+    <dt class="code">commons.category_7.more_details</dt>
+    <dd><p>Please use the space below to provide any additional information</p></dd>
+
+    <dt class="code">commons.category_8.date</dt>
+    <dd><p>If on or after your election, date on which the interest arose or became registrable</p></dd>
+
+    <dt class="code">commons.category_8.name_of_donor</dt>
+    <dd><p>Name of the donor, if relevant</p></dd>
+
+    <dt class="code">commons.category_8.description</dt>
+    <dd><p>Description</p></dd>
+
+    <dt class="code">commons.category_8.more_details</dt>
+    <dd><p>Please use the space below to provide any additional information</p></dd>
+
+    <dt class="code">commons.category_10.relationship</dt>
+    <dd><p>This person is my (spouse, civil partner, etc)</p></dd>
+
+    <dt class="code">commons.category_10.name</dt>
+    <dd><p>Name of the family member</p></dd>
+
+    <dt class="code">commons.category_10.company</dt>
+    <dd><p>Company/employer (if applicable)</p></dd>
+
+    <dt class="code">commons.category_10.job_title</dt>
+    <dd><p>His/her job title</p></dd>
+
+    <dt class="code">commons.category_10.more_details</dt>
+    <dd><p>Please use the space below to provide any additional information</p></dd>
+
+    <dt class="code">commons.declaration.completed</dt>
+    <dd><p>[Please tick if category completed]</p></dd>
+
+    <dt class="code">commons.declaration.signature</dt>
+    <dd><p>Signature</p></dd>
+
+    <dt class="code">commons.declaration.date</dt>
+    <dd><p>Date</p></dd>
+
+</dl>
+  </main>
+  <footer>
+	<p>Created by Open Innovations 2022-3. <a href="https://github.com/open-innovations/register-of-members-interests-proto/">Code on Github</a>.</p>
+</footer>
+
+</body></html>
