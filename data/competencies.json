@@ -1,0 +1,1901 @@
+{
+  "competencies": [
+    {
+      "id": "C1",
+      "competency": "How often do members report interests late",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C10",
+      "competency": "How much has a member received in donations in a calendar year / parliament / time in parliament",
+      "dependencies": [
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C11",
+      "competency": "How many members still employ their spouse, and in what role",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C12",
+      "competency": "For companies that pay MPs as employees, directors or consultants, who are their private clients?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C13",
+      "competency": "For companies that pay MPs as employees, directors or consultants, is the company currently listed on the Register of Consultant Lobbyists?",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C14",
+      "competency": "What category of business does each of the companies listed in the RMFI operate in? (SG: SIC code presumably)",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O10"
+      ]
+    },
+    {
+      "id": "C15",
+      "competency": "What is the UK company number of each of the companies listed in the RMFI?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C16",
+      "competency": "For companies listed in the RMFI that are not registered in the UK, what jurisdiction are they registered in?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C17",
+      "competency": "What is the relationship between a member and an organisaton (e.g. shareholder, unpaid role)",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "C18",
+      "competency": "Which members have a connection to organization x",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C19",
+      "competency": "Which members have a connection to an organization with SIC code x",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "C2",
+      "competency": "Are there interests a member has declared but not reported to the RMFI (or vice versa)",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "C20",
+      "competency": "Which members have a connection to a topic / theme x e.g. energy, transport, defence etc.",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C21",
+      "competency": "Which members have a connection with an oligarch/corrupt individual/regime x",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "C22",
+      "competency": "How many members have unpaid outside roles",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C23",
+      "competency": "Which members own a property in a particular geographical area ",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C24",
+      "competency": "Which members own property and earn income in rent that meet rule thresholds",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C25",
+      "competency": "Where are the most popular destinations for overseas visits by place/region/country",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C26",
+      "competency": "What dates (from and to) did members fly overseas",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C27",
+      "competency": "Who has paid the most for overseas visits",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C28",
+      "competency": "How many sponsors of overseas visitors are foreign governments",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C29",
+      "competency": "Which overseas visits were related to the work of APPGs ",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "C3",
+      "competency": "Are there any directorships or shareholdings reported to Companies House that members haven’t reported to the RMFI",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C30",
+      "competency": "Which members have undertaken foreign trips as part of APPG delegations",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C31",
+      "competency": "Which MPs have undertaken the most overseas visits in a calendar year / parliament / time in parliament",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C32",
+      "competency": "Which MPs have undertaken the highest valued overseas visits in a calendar year / parliament / time in parliament",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C33",
+      "competency": "Which members have declared an interest on a written question & for what interest",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C34",
+      "competency": "Which members have declared an interest on a tabled oral question & for what interest",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C35",
+      "competency": "Which members have declared an interest before an oral contribution & for what interest",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C36",
+      "competency": "What interests has a member declared",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "C37",
+      "competency": "What members have declared an interest in subject x",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C38",
+      "competency": "For companies listed on the RMFI, what is the company name listed on CH are they known by any alternative names ",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C39",
+      "competency": "For companies listed on the RMFI, who are their parent companies",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "C4",
+      "competency": "How many / which members have outside employment",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C40",
+      "competency": "What category of business does each of the companies listed in the RMFI operate in? (SG: SIC code presumably)",
+      "dependencies": [],
+      "duplicate_of": [
+        "O10"
+      ]
+    },
+    {
+      "id": "C41",
+      "competency": "What is the UK company/charity number of each of the companies listed in the RMFI?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C42",
+      "competency": "Does the member own exempted property",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C43",
+      "competency": "For companies listed on the RMFI, what is the company name listed on CH are they known by any alternative names ",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "C38"
+      ]
+    },
+    {
+      "id": "C44",
+      "competency": "Does the member own exempted property",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "C42"
+      ]
+    },
+    {
+      "id": "C45",
+      "competency": "Which members own a property in a particular geographical area / How many properties does a member hold in a particular geographical area",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "C23"
+      ]
+    },
+    {
+      "id": "C46",
+      "competency": "What is the total rental income for Members owning multiple properties / How many/Which members own property and earn income in rent that meet rule thresholds",
+      "dependencies": [
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C47",
+      "competency": "What steps are taken by parliamentary authorities to ensure that the RMFI is accurate when it is published",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C48",
+      "competency": "What consideration has parliament given to developing and promoting a national open data standard that could be used to publish registers of information data",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C5",
+      "competency": "How much has a member earned from outside employment in a calendar year / parliament / time in parliament",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O23"
+      ]
+    },
+    {
+      "id": "C6",
+      "competency": "Which MPs earn the most from outside interests per annum?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C7",
+      "competency": "Can earnings be recorded in a standardised way",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "C8",
+      "competency": "How much time has a member spent on outside jobs in a calendar year / parliament / time in parliament",
+      "dependencies": [],
+      "duplicate_of": [
+        "O4"
+      ]
+    },
+    {
+      "id": "C9",
+      "competency": "How much has a member received in benefits in a calendar year / parliament / time in parliament",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O1",
+      "competency": "Outside interests",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O10",
+      "competency": "What is the company name employing a Member and what sort of business is it",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "O11",
+      "competency": "Data linked by Companies House number",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O12",
+      "competency": "How many Members family members are involved in lobbying",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O13",
+      "competency": "What are the second jobs of former Ministers/Prime Ministers",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O14",
+      "competency": "What number of Members second job is allied to their previous experience",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "O15",
+      "competency": "Data linked by Companies House number",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O11"
+      ]
+    },
+    {
+      "id": "O16",
+      "competency": "Which companies have spent the most amount of money on lobbying",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O17",
+      "competency": "What are the number of hours spent on second jobs",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O4"
+      ]
+    },
+    {
+      "id": "O18",
+      "competency": "Q229",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O19",
+      "competency": "How often is the information gathered/published (timeliness)",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O8"
+      ]
+    },
+    {
+      "id": "O2",
+      "competency": "Conflict between RMFI and Ministerial register",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O20",
+      "competency": "Conflict between RMFI and Ministerial register",
+      "dependencies": [],
+      "duplicate_of": [
+        "O2"
+      ]
+    },
+    {
+      "id": "O21",
+      "competency": "Interests related to executive (ministerial capacity) OR legislative functions of ministers",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O22",
+      "competency": "What are the number of hours spent on second jobs",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O4"
+      ]
+    },
+    {
+      "id": "O23",
+      "competency": "What is the salary earnt on second jobs",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O24",
+      "competency": null,
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O25",
+      "competency": "What is the number of MPs with second jobs",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O26",
+      "competency": "What is the nature of the outside interests/second jobs",
+      "dependencies": [],
+      "duplicate_of": [
+        "O7"
+      ]
+    },
+    {
+      "id": "O27",
+      "competency": "Is the outside employment required to uphold a professional registration held prior to becoming an MP.",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O28",
+      "competency": "What number of Members second job is allied to their previous experience",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O29",
+      "competency": "Did the Member hold the role prior to being elected",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O3",
+      "competency": "How many family members employed",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "O30",
+      "competency": "What is the salary earnt on second jobs",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O23"
+      ]
+    },
+    {
+      "id": "O31",
+      "competency": "What are the number of hours spent on second jobs",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O4"
+      ]
+    },
+    {
+      "id": "O32",
+      "competency": "Where are non-pecuniary roles declared and registered",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O33",
+      "competency": "What number of Members second job is allied to their previous experience",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O34",
+      "competency": "What is the nature of the outside interests/second jobs",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O7"
+      ]
+    },
+    {
+      "id": "O35",
+      "competency": "Does the employment complement a members parliamentary role and responsibilities.",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O36",
+      "competency": "Does the employment complement a members parliamentary role and responsibilities.",
+      "dependencies": [],
+      "duplicate_of": [
+        "O35"
+      ]
+    },
+    {
+      "id": "O37",
+      "competency": "Conflict between RMFI and Ministerial register",
+      "dependencies": [],
+      "duplicate_of": [
+        "O2"
+      ]
+    },
+    {
+      "id": "O38",
+      "competency": "Were the gifts and hospitality registered within 28 days / What timeframe were the gifts and hospitality registered within ",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O39",
+      "competency": "Conflict between RMFI and Ministerial register",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": [
+        "O2"
+      ]
+    },
+    {
+      "id": "O3A",
+      "competency": "How many family members employed and cost",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O4",
+      "competency": "What are the number of hours spent on second jobs",
+      "dependencies": [
+        "c1_total_hours",
+        "c1_unique_members_identifier",
+        "imagined.feature.transitive"
+      ],
+      "duplicate_of": [],
+      "notes": "What are the number of hours spent on second jobs \n",
+      "pseudocode": "sum of c1_total_hours by c1_unique_members_identifier"
+    },
+    {
+      "id": "O40",
+      "competency": "Is employment or earning from a political party",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "O41",
+      "competency": "Is the donation from a political party ",
+      "dependencies": [
+        "commons.category_2.policitial_checkbox",
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O42",
+      "competency": "What information is the Member required to submit as part of the registration process, but which is not published ",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O43",
+      "competency": "What is the status or relationship of the donor to the Member",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O44",
+      "competency": "How can the format of the register be enhanced to capture additional information in a concise, but transparent way",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O45",
+      "competency": "Which members have declared an interest during topical or supplementary questions",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O46",
+      "competency": "What are the number of hours spent on second jobs",
+      "dependencies": [],
+      "duplicate_of": [
+        "O4"
+      ]
+    },
+    {
+      "id": "O47",
+      "competency": "What is the salary earnt on second jobs",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O23"
+      ]
+    },
+    {
+      "id": "O48",
+      "competency": "What number of Members second job is allied to their previous experience",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O33"
+      ]
+    },
+    {
+      "id": "O49",
+      "competency": "Does the employment complement a members parliamentary role and responsibilities.",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O35"
+      ]
+    },
+    {
+      "id": "O5",
+      "competency": "What are the number of hours spent on second jobs",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O4"
+      ]
+    },
+    {
+      "id": "O6",
+      "competency": "What is the number of Members with outside interests",
+      "dependencies": [
+        "c1_unique_members_identifier",
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [],
+      "notes": "Competency: What is the number of Members with outside interests.\nFile per question with fields describing the content.\n",
+      "psuedocode": [
+        "count of c1_unique_members_identifier"
+      ]
+    },
+    {
+      "id": "O7",
+      "competency": "What is the nature of the outside interests/second jobs",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O8",
+      "competency": "How often is the information gathered/published (timeliness)",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "O9",
+      "competency": "What is the total rental income for Members owning multiple properties",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R1",
+      "competency": "What are MPs second jobs?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": [
+        "O7"
+      ]
+    },
+    {
+      "id": "R10",
+      "competency": "More specific info on the location in identifying location of their properties – local authority area, reasonable geographic unit",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "C23"
+      ]
+    },
+    {
+      "id": "R11",
+      "competency": "How to find out to what period of time interest applies?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R12",
+      "competency": "How to cross check public opinions and company endorsement?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R13",
+      "competency": "How to identify conflict of interests inside and outside parliament?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R14",
+      "competency": "How much MPs work, paid, hours (second jobs)?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O23",
+        "O4",
+        "O7"
+      ]
+    },
+    {
+      "id": "R15",
+      "competency": "Information on donors – how much money donated for different APPGs rather than go through them manually?",
+      "dependencies": [
+        "imagined.feature.future",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R16",
+      "competency": "Identifying a standardised way of reporting income (time metric, gross/net etc)",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R17",
+      "competency": "How do MPs stack up against each other – e.g., time commitment to outside interests?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O4"
+      ]
+    },
+    {
+      "id": "R18",
+      "competency": "Being able to look up company number in the register e.g., when declaring directorships, interests",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R19",
+      "competency": "Being able to browse a single register with everything in one – MPs, Lords",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "R2",
+      "competency": "What are MPs engagements, interests?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R20",
+      "competency": "How many MPs have worked for foreign governments or peers worked for foreign governments?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R21",
+      "competency": "What gifts were MP given in X year?",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R22",
+      "competency": "MPs earnings – annually, monthly, hourly (comparability and standardisation)?",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O4"
+      ]
+    },
+    {
+      "id": "R23",
+      "competency": "How to identify donors who give small incremental amounts of money to different MPs?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R24",
+      "competency": "How to compare who the companies donate money to vs who appears on payroll?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R25",
+      "competency": "How to identify donations to political parties from companies no longer existing?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R26",
+      "competency": "Company number, when listed, should link to Companies House",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "R27",
+      "competency": "How to identify when interest was added and seized for the Lords?",
+      "dependencies": [
+        "imagined.feature.future",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R28",
+      "competency": "Which MPs have relations with the health sector, around migration?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R29",
+      "competency": "How to make comparisons to who was being represented in front of what select committees to identify topic-based relationships across MPs (Introducing unique identifiers)",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R3",
+      "competency": "How many MPs have second jobs, what types of jobs are they, how much time they spend on it per year, how much they are paid for that – especially in aggregate rather than on an individual basis",
+      "dependencies": [],
+      "duplicate_of": [
+        "O23",
+        "O4",
+        "O7"
+      ]
+    },
+    {
+      "id": "R30",
+      "competency": "How to identify the same activity across MPs/identify usual and unusual activity across MPs? (Better contextualisation of data)",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R31",
+      "competency": "Which MPs have (ever) taken donations/gifts from x?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R32",
+      "competency": "What are MPs financial links with different companies?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R33",
+      "competency": "How to access MPs activity by searching for their name?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R34",
+      "competency": "How to look up specific donors and their activity – e.g., their relations with various MPs?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R35",
+      "competency": "How to browse relevant information about ticketing by subject e.g., sporting tickets, cultural events tickets over the year?",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R36",
+      "competency": "How can we identify that when members have moved into a new area, they declare a new conflict of interest (accessing what’s declared at different time periods)?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R37",
+      "competency": "How to compare parliamentary data across time?",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "R38",
+      "competency": "How can we filter out the information to find e.g., cash donations that have gone to MP rather than their local association?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R39",
+      "competency": "How can we find all the information in an accessible spreadsheet to easily filter out relevant data?",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "R4",
+      "competency": "What are MPs/Lords financial interests through companies?",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "R40",
+      "competency": "How can we ensure that there is a universal completeness of data provided in the register?",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R41",
+      "competency": "How do we find information on multiple donations to an MP from the same donor? (data aggregation)",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R5",
+      "competency": "Exactly what entities are related to MPs (who’s received contracts, who’s receiving public grunts, who’s received preferential treatment)?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R6",
+      "competency": "What are MPs/Lords property interests?",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "R7",
+      "competency": "How to find links of shareholdings or directorships back to the Companies House to understand the economic activity of those companies, number of assets, where they are?",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R8",
+      "competency": "What are MPs/Lords personal financial interests around stamp duty, rights for leaseholders?",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "R9",
+      "competency": "Consistency in properties info in how private interest relates to their public role",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "W1",
+      "competency": "Link members interests with same organisation registered under the Transparency of Lobbying, Non-Party Campaigning and Trade Union Administration Act 2014  and/or MCoC",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W10",
+      "competency": "Is the outside employment required to maintain a certain number of hours to uphold a professional registration held prior to becoming an MP.",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O27"
+      ]
+    },
+    {
+      "id": "W11",
+      "competency": "Is employment or earning from a political party",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O41"
+      ]
+    },
+    {
+      "id": "W12",
+      "competency": "Is the register machine readable",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W13",
+      "competency": "Can the data held in the register be exported in multiple formats",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W14",
+      "competency": "Can the data held in the register be downloaded in bulk",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "W15",
+      "competency": "Is the data linked to other external data sets",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W16",
+      "competency": "Which standards are used to manage and maintain the quality of the data",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W17",
+      "competency": "What is the purpose/intended use of the donation or gift",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "W18",
+      "competency": "What are the number of hours spent on second jobs",
+      "dependencies": [],
+      "duplicate_of": [
+        "O4"
+      ]
+    },
+    {
+      "id": "W19",
+      "competency": "Is the paid work to provide services as a parliamentary strategist, adviser or consultant.",
+      "dependencies": [],
+      "duplicate_of": [
+        "W5"
+      ]
+    },
+    {
+      "id": "W2",
+      "competency": "Is employment or earnings above or below the indicative limit of hours and remuneration considered reasonable",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W20",
+      "competency": "What number of Members second job is allied to their previous experience",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O33"
+      ]
+    },
+    {
+      "id": "W21",
+      "competency": "How often is the information gathered/published (timeliness)",
+      "dependencies": [],
+      "duplicate_of": [
+        "O19"
+      ]
+    },
+    {
+      "id": "W22",
+      "competency": "Which declaration in the House business does the interest relate to",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W23",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ]
+    },
+    {
+      "id": "W24",
+      "competency": "How many foreign visits were sponsored by foreign governments",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "W25",
+      "competency": "Which overseas visits were related to the work of APPGs ",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W26",
+      "competency": "Which members have undertaken foreign trips as part of APPG delegations",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W27",
+      "competency": "How many family members employed and cost",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O3",
+        "O3A"
+      ]
+    },
+    {
+      "id": "W28",
+      "competency": "Which declaration in the House business does the interest relate to",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "W22"
+      ]
+    },
+    {
+      "id": "W29",
+      "competency": "What number of Members second job is allied to their previous experience",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O33"
+      ]
+    },
+    {
+      "id": "W3",
+      "competency": "Does the employment complement a members parliamentary role and responsibilities.",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O35"
+      ]
+    },
+    {
+      "id": "W30",
+      "competency": "Does the employment complement a members parliamentary role and responsibilities.",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O35"
+      ]
+    },
+    {
+      "id": "W31",
+      "competency": "Is the outside employment required to maintain a certain number of hours to uphold a professional registration held prior to becoming an MP.",
+      "dependencies": [],
+      "duplicate_of": [
+        "O27"
+      ]
+    },
+    {
+      "id": "W32",
+      "competency": "Does the employment complement a members parliamentary role and responsibilities.",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O35"
+      ]
+    },
+    {
+      "id": "W33",
+      "competency": "Which declaration in the House business does the interest relate to",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "W22"
+      ]
+    },
+    {
+      "id": "W34",
+      "competency": "What is the company name employing a Member, what category of business is it and within which industry do they operate",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O10"
+      ]
+    },
+    {
+      "id": "W35",
+      "competency": "Are all the registers published in the same format to the same standards",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "W16"
+      ]
+    },
+    {
+      "id": "W36",
+      "competency": "Is the paid work to provide services as a parliamentary strategist, adviser or consultant.",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "W19"
+      ]
+    },
+    {
+      "id": "W37",
+      "competency": "Which members own property and earn income in rent that meet rule thresholds",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W38",
+      "competency": "What number of Members second job is allied to their previous experience",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O33"
+      ]
+    },
+    {
+      "id": "W39",
+      "competency": "Between which dates did the employment occur / Was the work carried out prior to being elected ",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W4",
+      "competency": "Is the outside employment required to maintain a certain number of hours to uphold a professional registration held prior to becoming an MP.",
+      "dependencies": [
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": [
+        "O27"
+      ]
+    },
+    {
+      "id": "W40",
+      "competency": "What are the contractual terms of the outside employment",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W41",
+      "competency": "Is the paid work to provide services as a parliamentary strategist, adviser or consultant.",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "W19"
+      ]
+    },
+    {
+      "id": "W42",
+      "competency": "Is employment or earning from a political party",
+      "dependencies": [],
+      "duplicate_of": [
+        "W11"
+      ]
+    },
+    {
+      "id": "W43",
+      "competency": "Was the member acting as government trade envoy",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "W7"
+      ]
+    },
+    {
+      "id": "W44",
+      "competency": "What are the number of hours spent on second jobs",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": [
+        "O4"
+      ]
+    },
+    {
+      "id": "W45",
+      "competency": "How often is the information gathered/published",
+      "dependencies": [],
+      "duplicate_of": [
+        "O19"
+      ]
+    },
+    {
+      "id": "W46",
+      "competency": "Is the register machine readable",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "W12"
+      ]
+    },
+    {
+      "id": "W47",
+      "competency": "Which declaration does the interest relate to",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "W22"
+      ]
+    },
+    {
+      "id": "W48",
+      "competency": "Is the paid work to provide services as a parliamentary strategist, adviser or consultant.",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": [
+        "W19"
+      ]
+    },
+    {
+      "id": "W49",
+      "competency": "Conflict between RMFI and Ministerial lists",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O2"
+      ]
+    },
+    {
+      "id": "W5",
+      "competency": "Is the paid work to provide services as a parliamentary strategist, adviser or consultant.",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "W50",
+      "competency": "Which organisation/companies do members hold unpaid directorships or trustee positions for",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W51",
+      "competency": "How to provide hyperlinks to ad hoc declarations made when tabling questions or applying for debates, and to  such declarations, or the relevant\ninterest in a Member’s Register entry",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W52",
+      "competency": "Was a salary received from a political party",
+      "dependencies": [
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": [
+        "O41"
+      ]
+    },
+    {
+      "id": "W53",
+      "competency": "What is the source of the donation / Does the source of the donation fall within the list of impermissible sources set out in the Political\nParties, Elections and Referendums Act 2000 ",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W54",
+      "competency": "Was the Direct support from the Member’s own political party organisation",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W55",
+      "competency": "Were any gifts or benefits received in the capacity of a Government trade envoy",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W56",
+      "competency": "Under dual system of reporting, EC needs access to the necessary information to fulfil its statutory duties in relation to its register of donations and\nregulated transactions (such as loans) to elected office holders, including members.",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W57",
+      "competency": "Were any gifts from a foreign source with a value of over £500 received",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W58",
+      "competency": "What date was the interest submitted to the register",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W59",
+      "competency": "Is the paid work to provide services as a parliamentary strategist, adviser or consultant.",
+      "dependencies": [
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": [
+        "W19"
+      ]
+    },
+    {
+      "id": "W6",
+      "competency": "Where are non-pecuniary roles declared and registered",
+      "dependencies": [],
+      "duplicate_of": [
+        "O32"
+      ]
+    },
+    {
+      "id": "W60",
+      "competency": "What are the number of hours spent on second jobs",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": [
+        "O4"
+      ]
+    },
+    {
+      "id": "W61",
+      "competency": "Conflict between RMFI and Ministerial lists",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "O2"
+      ]
+    },
+    {
+      "id": "W62",
+      "competency": "Is the paid work to provide services as a parliamentary strategist, adviser or consultant and does this relate to the members parliamentary role and responsibilities",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": [
+        "W19"
+      ]
+    },
+    {
+      "id": "W63",
+      "competency": "Is the register founded on the same standards as other public sector registers ",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "W64",
+      "competency": "Gifts, benefits and hospitality from foreign provenance",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W65",
+      "competency": "Did any members accept paid foreign travel costing over £500 ",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W66",
+      "competency": "Which organisations provided paid foreign travel costing over £500 to a member",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W67",
+      "competency": "How many family members of members were engaged in lobbying\n",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W68",
+      "competency": "Which organisations were  family members of members engaged in lobbying",
+      "dependencies": [],
+      "duplicate_of": []
+    },
+    {
+      "id": "W69",
+      "competency": "Is the paid work to provide services as a parliamentary strategist, adviser or consultant.",
+      "dependencies": [],
+      "duplicate_of": [
+        "O19"
+      ]
+    },
+    {
+      "id": "W7",
+      "competency": "Was the member acting as government trade envoy",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W70",
+      "competency": "What are the number of hours spent on second jobs",
+      "dependencies": [],
+      "duplicate_of": [
+        "O4"
+      ]
+    },
+    {
+      "id": "W71",
+      "competency": "Is the outside employment related to political activity or providing an essential public service",
+      "dependencies": [
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O35"
+      ]
+    },
+    {
+      "id": "W72",
+      "competency": "Is the paid work to provide services as a parliamentary strategist, adviser or consultant",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "W5"
+      ]
+    },
+    {
+      "id": "W73",
+      "competency": "Which declaration in the House business does the interest relate to",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W74",
+      "competency": "Conflict between RMFI and Ministerial lists",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O2"
+      ]
+    },
+    {
+      "id": "W75",
+      "competency": "What are the contractual terms of the outside employment (paid work)",
+      "dependencies": [],
+      "duplicate_of": [
+        "W40"
+      ]
+    },
+    {
+      "id": "W76",
+      "competency": "Is a registered interest linked to a declaration in any parliamentary proceedings?",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "W73"
+      ]
+    },
+    {
+      "id": "W77",
+      "competency": "Have any members initiated a parliamentary proceeding in relation to an organisation recorded as an interest in the RMFI ",
+      "dependencies": [
+        "imagined.feature.future",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W78",
+      "competency": "Which connected parties were engaged in lobbying",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W79",
+      "competency": "How often is the information gathered/published",
+      "dependencies": [
+        "imagined.feature.current"
+      ],
+      "duplicate_of": []
+    },
+    {
+      "id": "W8",
+      "competency": "Relationship between the Ministerial Code and the MCoC",
+      "dependencies": [],
+      "duplicate_of": [
+        "O2"
+      ]
+    },
+    {
+      "id": "W80",
+      "competency": "Conflict between RMFI and Ministerial lists",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.future"
+      ],
+      "duplicate_of": [
+        "O2"
+      ]
+    },
+    {
+      "id": "W9",
+      "competency": "\nHow much time is spent on additional elected roles (e.g. local councillors, leaders of local authorities, members of the Scottish\nParliament and/or metro mayors)",
+      "dependencies": [
+        "imagined.feature.current",
+        "imagined.feature.unlikely"
+      ],
+      "duplicate_of": []
+    }
+  ],
+  "metadata": {
+    "generated": "2024-10-24T18:52:01.904Z"
+  }
+}
