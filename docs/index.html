@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='640' height='640' overflow='auto' viewBox='-32 -32 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='oi-person'%3E%3Cpath d='m-32-32h64v64h-12v-24a4 4 0 0 0 -4 -4h-8a4 4 0 0 0 -4 4v24h-36zm44 27m-8 0a8 8 0 1 0 16 0 8 8 0 1 0-16 0' fill='%23fff'%3E%3C/path%3E%3C/mask%3E%3Cg id='oi-logo' fill='%23777'%3E%3Ccircle r='32' mask='url(%23oi-person)'%3E%3C/circle%3E%3C/g%3E%3C/svg%3E">
+  <title> | Competency Answerability Dashboard
+</title>
+  <link rel="stylesheet" href="/register-of-members-interests-proto/assets/css/core.css">
+  <link rel="stylesheet" href="/register-of-members-interests-proto/assets/css/components.css">
+  <script src="/register-of-members-interests-proto/assets/js/components.js"></script>
+  <link rel="stylesheet" href="/register-of-members-interests-proto/assets/css/style.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Competency Answerability Dashboard">
+<meta property="og:locale" content="en">
+<meta property="og:description" content="Dashboard showing how a set of competencies can be answered based on various rulesets of the UK Parliament Registers of Members' Financial Interests.">
+<meta property="og:url" content="https://open-innovations.github.io/register-of-members-interests-proto/docs/">
+<meta name="twitter:description" content="Dashboard showing how a set of competencies can be answered based on various rulesets of the UK Parliament Registers of Members' Financial Interests.">
+<meta name="twitter:card" content="summary">
+<meta itemprop="description" content="Dashboard showing how a set of competencies can be answered based on various rulesets of the UK Parliament Registers of Members' Financial Interests.">
+<meta name="description" content="Dashboard showing how a set of competencies can be answered based on various rulesets of the UK Parliament Registers of Members' Financial Interests.">
+<meta name="generator" content="Lume v1.17.4">
+</head>
+<body>
+  <div class="warning padded centre">Warning: this is a work-in-progress demonstration tool.</div>
+
+  <header id="site-header">
+    <h1><a class="undecorated" href="/register-of-members-interests-proto/">Competency Answerability Dashboard
+</a></h1>
+    <nav id="navigation">
+  <button aria-expanded="false">Site Menu</button>
+  <ul hidden="">
+    
+      <li><a href="/register-of-members-interests-proto/competencies/">Competencies</a></li>
+    
+      <li><a href="/register-of-members-interests-proto/features/">Features</a></li>
+    
+      <li><a href="/register-of-members-interests-proto/docs/">Docs</a></li>
+    
+  </ul>
+</nav>
+  </header>
+  <main>
+  <p>This is the documentation for the Competency Answerability Dashboard prototype tool created by
+<a href="https://open-innovations.org">Open Innovations</a> on behalf of the UK Parliamentary Digital Services.</p>
+<p>Using this tool you can explore whether or not given competencies are answerable given the current and
+potential future designs of the Register(s) of Members' Financial Interests.</p>
+<blockquote class="warning padded">
+  <p>
+    <strong>Please Note</strong>
+  </p>
+  <p>
+    The tool does not actually query the data contained in the registers.
+    It has been designed to allow the impact of changes to the structure and content of the
+    registers to be modelled.
+    This can then be used to provide evidence of potential impact by those proposing changes to the registers.
+  </p>
+</blockquote>
+
+<h2>Tool Design</h2>
+<p>
+  The tool contains a model of the questions being posed (referred to as competencies).
+  You can review these on <a href="/register-of-members-interests-proto/competencies/">the competencies page</a>.
+</p>
+
+<p>
+  Competencies are linked to features of the register(s).
+  This linkage defines the features required to answer the competency.
+  Features are further linked to rulesets and scopes.
+  You can review the defined features on <a href="/register-of-members-interests-proto/features/">the features page for a given scope</a>.
+</p>
+
+<p>
+  Scopes provide a context for the result of the tool.
+  Concrete examples of scopes are the <i>House of Commons</i> and <i>House of Lords</i>.
+  These contexts differ as the features available in the respective Registers of Members' Financial Interests will differ.
+  We also define an <i>Imagined</i> scope which contains features and rulesets used for testing and demonstration purposes.
+</p>
+
+<p>
+  Finally, rulesets define a set of available features for a given scope.
+  Competency answerability can be determined by cross-referencing the features required by the individual competency with the features provided by the ruleset.
+  This is carried out in the context of a scope, as when considering answerability for the Commons, the dependency of a competency on a Lord features is irrelevant.
+
+</p>
+
+<p>
+    The fundamental question this tool can answer is
+</p>
+
+<blockquote>
+  <p>
+    For a given ruleset, is a question...
+  </p>
+  <dl class="legend">
+  <div>
+    <dt><div class="competency-block" data-score="1"></div><strong>Answerable</strong></dt>
+    <dd>All required features are available in the current ruleset</dd>
+  </div>
+  <div>
+    <dt><div class="competency-block" data-score="0"></div><strong>Unanswerable</strong></dt>
+    <dd>Not all required features are available in the current ruleset</dd>
+  </div>
+  <div>
+    <dt><div class="competency-block"></div><strong>Unaskable</strong></dt>
+    <dd>There are no features that exist in this ruleset or any other which could answer this question</dd>
+  </div>
+</dl>
+</blockquote>
+
+<h3>Data Model</h3>
+<pre class="mermaid">erDiagram
+    COMPETENCY ||--o{ FEATURE : dependency
+    RULESET }o--o{ FEATURE : available
+    COMPETENCY ||--o{ COMPETENCY: duplicate_of
+    EVIDENCE ||--|| COMPETENCY: defines
+    RULESET }o--|| SCOPE : scope
+    FEATURE }o--|| SCOPE : provided_by
+    FEATURE ||--o{ FEATURE: enables
+
+    COMPETENCY {
+        string ID FK "ID in evidence CSV file"
+        string competency "Name of the competency"
+        string notes "Optional notes"
+    }
+
+    RULESET {
+        string ID "Refernence of the ruleset"
+        string name "Name of the ruleset"
+        string description "Brief description"
+        int order "Allows sorting"
+        boolean draft "Whether to make ruleset available"
+    }
+
+    FEATURE {
+        string name PK "Fully qualified name"
+        string description
+        string notes
+        string type "Type of field - e.g. text, date, checkbox"
+        string format "Format of field - e.g. DD/MM/YYYY for dates"
+        string units "Units for the feature"
+    }
+
+    SCOPE {
+        string ID PK "Identifer of the scope"
+    }
+
+    EVIDENCE {
+        string ID PK "Identifier of current evidence row - used as key for competency"
+        string Duplicates "List of other competency IDs which this row dupliates"
+        string Competency "Name of the competency"
+        string RMFI_Category "Category in the Register of Members' Financial Interests"
+    }
+</pre>
+<h4>Competency</h4>
+<p>Competencies are derived from the
+<a href="https://docs.google.com/spreadsheets/d/1iRsQBRPChMVFitSGBtNJFGNBvFT8XGKQYYqu40zy_OM/edit?usp=sharing"><strong>evidence</strong> collected during a recent review</a>.</p>
+<p>The original evidence is downloaded to the site as <code>src/_data/evidence.csv</code>.
+This is automated as a GitHub action (in <code>.github/workflows/update-data.yml</code>) which runs
+<a href="https://crontab.guru/#45_9-18/3_*_*_1-5">at 45 minutes past every 3rd hour from 9 through 18 on Monday to Friday.</a>.</p>
+<p>The <code>ID</code>, <code>Duplicates</code> and <code>Competency</code> fields are used to populate the files in <code>src/_data/comptency/</code>
+with core reference data.
+The <code>scripts/create_all_the_competencies.py</code> script is used to populate or update the local references.</p>
+<p>Competencies are mapped to features to enable the calculation of answerability.
+This is done in the <code>src/_data/competency/</code> folder, with each competency having a separate data file.
+These are named per reference ID in the evidence CSV.</p>
+<p>The following fields can be defined:</p>
+<ul>
+<li><code>competency</code> Name of the competency - derived from the evidence file.</li>
+<li><code>duplicate_of</code> List of other competencies that this duplicates.
+If this list has any entries, the competency is excluded from the ruleset dashboard.</li>
+<li><code>dependencies</code> A list of required features to be able to answer this competency.
+These are provided in namespaced form enabling them to be uniquely identified.
+Lists of features for each scope can be found on <a href="/register-of-members-interests-proto/features/">the features pages</a>.</li>
+</ul>
+<h4>Categories</h4>
+<p>The <code>RMFI Category</code> field from the <code>src/_data/evidence.csv</code> file is used to create dashboard sections. The order of these
+sections is defined in the <code>src/_data/dashboard/categories.yml</code> file.</p>
+<h4>Scope</h4>
+<p>Scopes distinguish between different contexts.
+They exist in two places.</p>
+<p>Firstly, they are the root namespace of the feature definition.
+Practically, this means that they are the names of files in the <code>src/_data/features/</code> folder of the git repo.
+Create a new file in this folder and define the features as key/value pairs to add a suite of features within a new scope.</p>
+<p>Secondly, scopes are referenced in the ruleset files (found in the <code>src/_data/rulesets/</code> folder).
+This defines the scope for the given ruleset, and features in scope namespaces other than this are removed from consideration.
+Scopes here must match the names of the scopes defined in the features folder.</p>
+<p>In addition, the details of the scopes is held in <code>src/_data/scopes.yaml</code>. At present, this is limited to the name.</p>
+<h4>Feature</h4>
+<p>Features are derived from current or potential attributes of the register.
+These could be simple field definitions or they could be capabilites such as field-level validation.
+The concept is kept vague to allow for incorporation of as yet unforseen edge cases.</p>
+<p>They are defined in the <code>src/_data/features/</code> folder, with a separate file per scope, as described above.
+Internally these files are object trees, with structure governed by the scope.
+The Commons scope, for example, has some features at the top level (e.g. <code>commons.members_name</code>)
+and others nested by category and section (e.g. <code>commons.category_1.section_1.amount_or_value</code>).</p>
+<p>Lists of currently defined features can be found on <a href="/register-of-members-interests-proto/features/">the features pages</a>.</p>
+<p>No content is required within the feature definition, as the presence of the key is sufficient to define the feature.
+The commonly defined properties of the feature object are:</p>
+<ul>
+<li><code>description</code></li>
+<li><code>type</code></li>
+<li><code>format</code></li>
+<li><code>notes</code></li>
+<li><code>units</code></li>
+<li><code>enables</code> A feature may enable zero or more other features. As an example, a field which provided
+a unique and validated identifier for a company could theoretically enable the automatic filling of
+company name and address. This is enabled, and supports full of indirection:
+<code>a -enables-&gt; b -enables-&gt; c</code> will result in <code>a</code>, <code>b</code> and <code>c</code> being enabled!</li>
+</ul>
+<h4>Ruleset</h4>
+<p>Rulesets make features available (or by omission, not available).
+Each ruleset belongs to a scope, allowing irrelevant information (e.g. features from another scope) to be ommitted from consideration.</p>
+<p>Rulesets are defined in the <code>src/_data/rulesets/</code> folder, and contain the following properties:</p>
+<ul>
+<li><code>name</code> A human intelligible name for the ruleset</li>
+<li><code>description</code> A brief description of the ruleset</li>
+<li><code>scope</code> The scope to which this applies</li>
+<li><code>order</code> A numerical value to affect the order of ruleset display</li>
+<li><code>available</code> A list of the fully-qualified feature names that the ruleset provides.
+Lists of currently defined features can be found on <a href="/register-of-members-interests-proto/features/">the features pages</a>.</li>
+</ul>
+<script defer="" type="module">
+  import mermaid from 'https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+<h3>Site build</h3>
+<p>This section outlines some of the critical parts of the site build.</p>
+<h4>Ruleset</h4>
+<p>Each ruleset is emitted as a page using the <code>src/features/list.tmpl.ts</code> page file.</p>
+<p>This constructs page data of the following form:</p>
+<ul>
+<li><code>layout</code> (all pages): <code>layouts/ruleset.njk</code> The page template</li>
+<li><code>tags</code> (all pages): <code>[ 'ruleset' ]</code></li>
+<li><code>scope</code>: The 'scope' of the ruleset</li>
+<li><code>name</code>: A human readable ruleset name</li>
+<li><code>description</code>: A brief description of the ruleset</li>
+<li><code>order</code>: The order in which to render the ruleset</li>
+<li><code>available</code>: Calculated directly and transitively enabled features</li>
+<li><code>scope_name</code>: A human readable scope name</li>
+<li><code>title</code>: A title</li>
+<li><code>current_ruleset</code>: The key for the ruleset</li>
+<li><code>url</code>: The ruleset url</li>
+</ul>
+<p>The values of the can be modified in the <code>tmpl.js</code> file.</p>
+<p>The code to calculate features available in a given ruleset is defined in the generator.
+The function <code>calculateFeatures</code> takes a list of features and works out those that are
+transitively enabled, based of the value of the 'enables' key of the feature set.</p>
+<p>The <code>ruleset</code> layout calls the <code>dashboard.njk</code> component to render the dashboard.</p>
+<p><code>dashboard.njk</code> renders the categories and then a styled unordered list to create the
+dashboard "lights". Each competency is rendered using the <code>competency.njk</code> component.
+This in turn calls the <code>dependencies.js</code> component which is responsible for providing
+the <code>data-required-features</code>, <code>data-score</code> and <code>aria-label</code> properties.</p>
+<p>The "lights" are styled by <code>css</code> provided by the <code>comptency.njk</code> component.</p>
+
+  </main>
+  <footer>
+	<p>Created by Open Innovations 2022-3. <a href="https://github.com/open-innovations/register-of-members-interests-proto/">Code on Github</a>.</p>
+</footer>
+
+</body></html>

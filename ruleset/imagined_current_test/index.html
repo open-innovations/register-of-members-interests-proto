@@ -1,0 +1,6833 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='640' height='640' overflow='auto' viewBox='-32 -32 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='oi-person'%3E%3Cpath d='m-32-32h64v64h-12v-24a4 4 0 0 0 -4 -4h-8a4 4 0 0 0 -4 4v24h-36zm44 27m-8 0a8 8 0 1 0 16 0 8 8 0 1 0-16 0' fill='%23fff'%3E%3C/path%3E%3C/mask%3E%3Cg id='oi-logo' fill='%23777'%3E%3Ccircle r='32' mask='url(%23oi-person)'%3E%3C/circle%3E%3C/g%3E%3C/svg%3E">
+  <title>Ruleset: Current | Competency Answerability Dashboard
+</title>
+  <link rel="stylesheet" href="/register-of-members-interests-proto/assets/css/core.css">
+  <link rel="stylesheet" href="/register-of-members-interests-proto/assets/css/components.css">
+  <script src="/register-of-members-interests-proto/assets/js/components.js"></script>
+  <link rel="stylesheet" href="/register-of-members-interests-proto/assets/css/style.css">
+<script src="/register-of-members-interests-proto/assets/js/auto-popup.js" data-auto-dependency="true"></script><meta property="og:type" content="website">
+<meta property="og:site_name" content="Competency Answerability Dashboard">
+<meta property="og:locale" content="en">
+<meta property="og:description" content="Dashboard showing how a set of competencies can be answered based on various rulesets of the UK Parliament Registers of Members' Financial Interests.">
+<meta property="og:url" content="https://open-innovations.github.io/register-of-members-interests-proto/ruleset/imagined_current_test/">
+<meta name="twitter:description" content="Dashboard showing how a set of competencies can be answered based on various rulesets of the UK Parliament Registers of Members' Financial Interests.">
+<meta name="twitter:card" content="summary">
+<meta itemprop="description" content="Dashboard showing how a set of competencies can be answered based on various rulesets of the UK Parliament Registers of Members' Financial Interests.">
+<meta name="description" content="Dashboard showing how a set of competencies can be answered based on various rulesets of the UK Parliament Registers of Members' Financial Interests.">
+<meta name="generator" content="Lume v1.17.4">
+</head>
+<body>
+  <div class="warning padded centre">Warning: this is a work-in-progress demonstration tool.</div>
+
+  <header id="site-header">
+    <h1><a class="undecorated" href="/register-of-members-interests-proto/">Competency Answerability Dashboard
+</a></h1>
+    <nav id="navigation">
+  <button aria-expanded="false">Site Menu</button>
+  <ul hidden="">
+    
+      <li><a href="/register-of-members-interests-proto/competencies/">Competencies</a></li>
+    
+      <li><a href="/register-of-members-interests-proto/features/">Features</a></li>
+    
+      <li><a href="/register-of-members-interests-proto/docs/">Docs</a></li>
+    
+  </ul>
+</nav>
+  </header>
+  <main>
+  <div class="ruleset-list" aria-describedby="ruleset-list-title">
+  <p id="ruleset-list-title">Defined rulesets:</p>
+  <ul>
+    
+      <li class=""><a href="/register-of-members-interests-proto/ruleset/commons_2023/">House of Commons: January 2023</a></li>
+    
+      <li class="active"><a href="/register-of-members-interests-proto/ruleset/imagined_current_test/">Imagined test scope: Current</a></li>
+    
+      <li class=""><a href="/register-of-members-interests-proto/ruleset/imagined_future_test/">Imagined test scope: Future</a></li>
+    
+  </ul>
+</div>
+
+
+<h2>Imagined test scope Current ruleset</h2>
+
+<p>This ruleset applies to the <strong>Imagined test scope</strong>.</p>
+
+<p>TEST: Current ruleset for an imagined chamber</p>
+
+<div class="padded info">
+  <h3>Legend</h3>
+
+  <p>The symbols and colours on the dashboard have the following meanings</p>
+
+  <dl class="legend">
+  <div>
+    <dt><div class="competency-block" data-score="1"></div><strong>Answerable</strong></dt>
+    <dd>All required features are available in the current ruleset</dd>
+  </div>
+  <div>
+    <dt><div class="competency-block" data-score="0"></div><strong>Unanswerable</strong></dt>
+    <dd>Not all required features are available in the current ruleset</dd>
+  </div>
+  <div>
+    <dt><div class="competency-block"></div><strong>Unaskable</strong></dt>
+    <dd>There are no features that exist in this ruleset or any other which could answer this question</dd>
+  </div>
+</dl>
+</div>
+
+
+  <section aria-labelledby="category-1">
+  <h3 id="category-1">Employment and earnings</h3>
+  <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="O4" class="competency-block" data-auto-popup="O4: What are the number of hours spent on second jobs" data-required-features="imagined.feature.transitive" data-score="0" aria-label="Not possible: O4: What are the number of hours spent on second jobs" tabindex="0">
+  <p class="title">What are the number of hours spent on second jobs</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O5
+    details: {"ID":"O5","Duplicates":"O4","Commons model allows":"Duplicate","Competency":"What are the number of hours spent on second jobs","Session date":44586,"Evidence":"Oral","Name":"Stone, Ethan","Organisation":"National World","Role ":"Investigative Reporter","Member/Witness":"Witness","Reference (Question, page, line)":"Q133","Competency.1":"What are the number of hours spent on second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/oralevidence/3343/html/"}
+    competency: {"competency":"What are the number of hours spent on second jobs","dependencies":["imagined.feature.current"],"duplicate_of":["O4"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="O6" class="competency-block" data-auto-popup="O6: What is the number of Members with outside interests" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: O6: What is the number of Members with outside interests" tabindex="0">
+  <p class="title">What is the number of Members with outside interests</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="O7" class="competency-block" data-auto-popup="O7: What is the nature of the outside interests/second jobs" data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: O7: What is the nature of the outside interests/second jobs" tabindex="0">
+  <p class="title">What is the nature of the outside interests/second jobs</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="O10" class="competency-block" data-auto-popup="O10: What is the company name employing a Member and what sort of business is it" data-required-features="" tabindex="0">
+  <p class="title">What is the company name employing a Member and what sort of business is it</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="O13" class="competency-block" data-auto-popup="O13: What are the second jobs of former Ministers/Prime Ministers" data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: O13: What are the second jobs of former Ministers/Prime Ministers" tabindex="0">
+  <p class="title">What are the second jobs of former Ministers/Prime Ministers</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="O14" class="competency-block" data-auto-popup="O14: What number of Members second job is allied to their previous experience" data-required-features="" tabindex="0">
+  <p class="title">What number of Members second job is allied to their previous experience</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O15
+    details: {"ID":"O15","Duplicates":"O11","Commons model allows":"Duplicate","Competency":"Data linked by Companies House number","Session date":44586,"Evidence":"Oral","Name":"Hislop, Ian","Organisation":"Private Eye","Role ":"Editor","Member/Witness":"Witness","Reference (Question, page, line)":"Q187","Competency.1":"Data linked by Companies House number","RMFI category":"Employment and earnings","Notes.1":"Data not in current ruleset","Link":"https://committees.parliament.uk/oralevidence/3343/html/"}
+    competency: {"competency":"Data linked by Companies House number","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["O11"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="O16" class="competency-block" data-auto-popup="O16: Which companies have spent the most amount of money on lobbying" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: O16: Which companies have spent the most amount of money on lobbying" tabindex="0">
+  <p class="title">Which companies have spent the most amount of money on lobbying</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O17
+    details: {"ID":"O17","Duplicates":"O4","Commons model allows":"Duplicate","Competency":"What are the number of hours spent on second jobs","Session date":44586,"Evidence":"Oral","Name":"Hughes, Solomon","Organisation":"Private Eye","Role ":"Journalist","Member/Witness":"Witness","Reference (Question, page, line)":"Q193","Competency.1":"What are the number of hours spent on second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/oralevidence/3343/html/"}
+    competency: {"competency":"What are the number of hours spent on second jobs","dependencies":["imagined.feature.current"],"duplicate_of":["O4"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O22
+    details: {"ID":"O22","Duplicates":"O4","Commons model allows":"Duplicate","Competency":"What are the number of hours spent on second jobs","Session date":44677,"Evidence":"Oral","Name":"Spencer, Mark","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"Q502","Competency.1":"What are the number of hours spent on second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/oralevidence/10146/html/"}
+    competency: {"competency":"What are the number of hours spent on second jobs","dependencies":["imagined.feature.current"],"duplicate_of":["O4"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="O23" class="competency-block" data-auto-popup="O23: What is the salary earnt on second jobs" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: O23: What is the salary earnt on second jobs" tabindex="0">
+  <p class="title">What is the salary earnt on second jobs</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+      
+
+<li id="O25" class="competency-block" data-auto-popup="O25: What is the number of MPs with second jobs" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: O25: What is the number of MPs with second jobs" tabindex="0">
+  <p class="title">What is the number of MPs with second jobs</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O26
+    details: {"ID":"O26","Duplicates":"O7","Commons model allows":"Duplicate","Competency":"What is the nature of the outside interests/second jobs","Session date":44587,"Evidence":"Oral","Name":"Burgon, Richard","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"Q232","Competency.1":"What is the nature of the outside interests/second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/oralevidence/3346/pdf/"}
+    competency: {"competency":"What is the nature of the outside interests/second jobs","dependencies":[],"duplicate_of":["O7"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="O27" class="competency-block" data-auto-popup="O27: Is the outside employment required to uphold a professional registration held prior to becoming an MP." data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: O27: Is the outside employment required to uphold a professional registration held prior to becoming an MP." tabindex="0">
+  <p class="title">Is the outside employment required to uphold a professional registration held prior to becoming an MP.</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="O28" class="competency-block" data-auto-popup="O28: What number of Members second job is allied to their previous experience" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: O28: What number of Members second job is allied to their previous experience" tabindex="0">
+  <p class="title">What number of Members second job is allied to their previous experience</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="O29" class="competency-block" data-auto-popup="O29: Did the Member hold the role prior to being elected" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: O29: Did the Member hold the role prior to being elected" tabindex="0">
+  <p class="title">Did the Member hold the role prior to being elected</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O30
+    details: {"ID":"O30","Duplicates":"O23","Commons model allows":"Duplicate","Competency":"What is the salary earnt on second jobs","Session date":44587,"Evidence":"Oral","Name":"Burgon, Richard","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"Q236","Competency.1":"What is the salary earnt on second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/oralevidence/3346/pdf/"}
+    competency: {"competency":"What is the salary earnt on second jobs","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["O23"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O31
+    details: {"ID":"O31","Duplicates":"O4","Commons model allows":"Duplicate","Competency":"What are the number of hours spent on second jobs","Session date":44587,"Evidence":"Oral","Name":"Burgon, Richard","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"Q250","Competency.1":"What are the number of hours spent on second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/oralevidence/3346/pdf/"}
+    competency: {"competency":"What are the number of hours spent on second jobs","dependencies":["imagined.feature.current"],"duplicate_of":["O4"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="O32" class="competency-block" data-auto-popup="O32: Where are non-pecuniary roles declared and registered" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: O32: Where are non-pecuniary roles declared and registered" tabindex="0">
+  <p class="title">Where are non-pecuniary roles declared and registered</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="O33" class="competency-block" data-auto-popup="O33: What number of Members second job is allied to their previous experience" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: O33: What number of Members second job is allied to their previous experience" tabindex="0">
+  <p class="title">What number of Members second job is allied to their previous experience</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O34
+    details: {"ID":"O34","Duplicates":"O7","Commons model allows":"Duplicate","Competency":"What is the nature of the outside interests/second jobs","Session date":44587,"Evidence":"Oral","Name":"Burgon, Richard","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"Q253","Competency.1":"What is the nature of the outside interests/second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/oralevidence/3346/pdf/"}
+    competency: {"competency":"What is the nature of the outside interests/second jobs","dependencies":["imagined.feature.current"],"duplicate_of":["O7"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="O35" class="competency-block" data-auto-popup="O35: Does the employment complement a members parliamentary role and responsibilities." data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: O35: Does the employment complement a members parliamentary role and responsibilities." tabindex="0">
+  <p class="title">Does the employment complement a members parliamentary role and responsibilities.</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O36
+    details: {"ID":"O36","Duplicates":"O35","Commons model allows":"Duplicate","Competency":"Does the employment complement a members parliamentary role and responsibilities.","Session date":44587,"Evidence":"Oral","Name":"Wiggin, SIr Bill","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"Q302/303","Competency.1":"Does the employment complement a members parliamentary role and responsibilities.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/oralevidence/3346/pdf/"}
+    competency: {"competency":"Does the employment complement a members parliamentary role and responsibilities.","dependencies":[],"duplicate_of":["O35"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="O40" class="competency-block" data-auto-popup="O40: Is employment or earning from a political party" data-required-features="" tabindex="0">
+  <p class="title">Is employment or earning from a political party</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O46
+    details: {"ID":"O46","Duplicates":"O4","Commons model allows":"Duplicate","Competency":"What are the number of hours spent on second jobs","Session date":44587,"Evidence":"Oral","Name":"Stone, Kathyrn","Organisation":"House of Commons","Role ":"Parliamentary Commissioner for Standards","Member/Witness":"Witness","Reference (Question, page, line)":"Q350","Competency.1":"What are the number of hours spent on second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/oralevidence/3346/pdf/"}
+    competency: {"competency":"What are the number of hours spent on second jobs","dependencies":[],"duplicate_of":["O4"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O47
+    details: {"ID":"O47","Duplicates":"O23","Commons model allows":"Duplicate","Competency":"What is the salary earnt on second jobs","Session date":44587,"Evidence":"Oral","Name":"Stone, Kathyrn","Organisation":"House of Commons","Role ":"Parliamentary Commissioner for Standards","Member/Witness":"Witness","Reference (Question, page, line)":"Q350","Competency.1":"What is the salary earnt on second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/oralevidence/3346/pdf/"}
+    competency: {"competency":"What is the salary earnt on second jobs","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["O23"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O48
+    details: {"ID":"O48","Duplicates":"O33","Commons model allows":"Duplicate","Competency":"What number of Members second job is allied to their previous experience","Session date":44587,"Evidence":"Oral","Name":"Stone, Kathyrn","Organisation":"House of Commons","Role ":"Parliamentary Commissioner for Standards","Member/Witness":"Witness","Reference (Question, page, line)":"Q350","Competency.1":"What number of Members second job is allied to their previous experience","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/oralevidence/3346/pdf/"}
+    competency: {"competency":"What number of Members second job is allied to their previous experience","dependencies":["imagined.feature.future"],"duplicate_of":["O33"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O49
+    details: {"ID":"O49","Duplicates":"O35","Commons model allows":"Duplicate","Competency":"Does the employment complement a members parliamentary role and responsibilities.","Session date":44587,"Evidence":"Oral","Name":"Stone, Kathyrn","Organisation":"House of Commons","Role ":"Parliamentary Commissioner for Standards","Member/Witness":"Witness","Reference (Question, page, line)":"Q350","Competency.1":"Does the employment complement a members parliamentary role and responsibilities.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/oralevidence/3346/pdf/"}
+    competency: {"competency":"Does the employment complement a members parliamentary role and responsibilities.","dependencies":["imagined.feature.current"],"duplicate_of":["O35"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="W1" class="competency-block" data-auto-popup="W1: Link members interests with same organisation registered under the Transparency of Lobbying, Non-Party Campaigning and Trade Union Administration Act 2014  and/or MCoC" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W1: Link members interests with same organisation registered under the Transparency of Lobbying, Non-Party Campaigning and Trade Union Administration Act 2014  and/or MCoC" tabindex="0">
+  <p class="title">Link members interests with same organisation registered under the Transparency of Lobbying, Non-Party Campaigning and Trade Union Administration Act 2014  and/or MCoC</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="W2" class="competency-block" data-auto-popup="W2: Is employment or earnings above or below the indicative limit of hours and remuneration considered reasonable" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W2: Is employment or earnings above or below the indicative limit of hours and remuneration considered reasonable" tabindex="0">
+  <p class="title">Is employment or earnings above or below the indicative limit of hours and remuneration considered reasonable</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W3
+    details: {"ID":"W3","Duplicates":"O35","Commons model allows":"Duplicate","Competency":"Does the employment complement a members parliamentary role and responsibilities.","Session date":44587,"Evidence":"Written","Name":"Evans of Weardale, Lord","Organisation":"Committee on Standards in Public Life","Role ":"Chair ","Member/Witness":"Witness","Reference (Question, page, line)":"p6","Competency.1":"Does the employment complement a members parliamentary role and responsibilities.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/43020/pdf/"}
+    competency: {"competency":"Does the employment complement a members parliamentary role and responsibilities.","dependencies":["imagined.feature.current"],"duplicate_of":["O35"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W4
+    details: {"ID":"W4","Duplicates":"O27","Commons model allows":"Duplicate","Competency":"Is the outside employment required to maintain a certain number of hours to uphold a professional registration held prior to becoming an MP.","Session date":44587,"Evidence":"Written","Name":"Evans of Weardale, Lord","Organisation":"Committee on Standards in Public Life","Role ":"Chair ","Member/Witness":"Witness","Reference (Question, page, line)":"p6","Competency.1":"Is the outside employment required to maintain a certain number of hours to uphold a professional registration held prior to becoming an MP.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/43020/pdf/"}
+    competency: {"competency":"Is the outside employment required to maintain a certain number of hours to uphold a professional registration held prior to becoming an MP.","dependencies":["imagined.feature.unlikely"],"duplicate_of":["O27"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="W5" class="competency-block" data-auto-popup="W5: Is the paid work to provide services as a parliamentary strategist, adviser or consultant." data-required-features="" tabindex="0">
+  <p class="title">Is the paid work to provide services as a parliamentary strategist, adviser or consultant.</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W6
+    details: {"ID":"W6","Duplicates":"O32","Commons model allows":"Duplicate","Competency":"Where are non-pecuniary roles declared and registered","Session date":44587,"Evidence":"Written","Name":"Evans of Weardale, Lord","Organisation":"Committee on Standards in Public Life","Role ":"Chair ","Member/Witness":"Witness","Reference (Question, page, line)":"p7","Competency.1":"Where are non-pecuniary roles declared and registered","RMFI category":"Employment and earnings","Other reason for inclusion ":"Linking to declaration to non-pecuniary roles","Notes.1":"If proposal accepted that all non-pecuniary roles be declared and registered, are these published in the RMFI or different place","Link":"https://committees.parliament.uk/writtenevidence/43020/pdf/"}
+    competency: {"competency":"Where are non-pecuniary roles declared and registered","dependencies":[],"duplicate_of":["O32"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W9" class="competency-block" data-auto-popup="W9: 
+How much time is spent on additional elected roles (e.g. local councillors, leaders of local authorities, members of the Scottish
+Parliament and/or metro mayors)" data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: W9: 
+How much time is spent on additional elected roles (e.g. local councillors, leaders of local authorities, members of the Scottish
+Parliament and/or metro mayors)" tabindex="0">
+  <p class="title">
+How much time is spent on additional elected roles (e.g. local councillors, leaders of local authorities, members of the Scottish
+Parliament and/or metro mayors)</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W10
+    details: {"ID":"W10","Duplicates":"O27","Commons model allows":"Duplicate","Competency":"Is the outside employment required to maintain a certain number of hours to uphold a professional registration held prior to becoming an MP.","Session date":44600,"Evidence":"Written","Name":"Poulter, Dan","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p2","Competency.1":"Is the outside employment required to maintain a certain number of hours to uphold a professional registration held prior to becoming an MP.","RMFI category":"Employment and earnings","Notes.1":"Particularly relevant for doctors","Link":"https://committees.parliament.uk/writtenevidence/43674/pdf/"}
+    competency: {"competency":"Is the outside employment required to maintain a certain number of hours to uphold a professional registration held prior to becoming an MP.","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["O27"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W11
+    details: {"ID":"W11","Duplicates":"O41","Commons model allows":"Duplicate","Competency":"Is employment or earning from a political party","Session date":44635,"Evidence":"Written","Name":"Baron, John","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p2","Competency.1":"Is employment or earning from a political party","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/43738/pdf/"}
+    competency: {"competency":"Is employment or earning from a political party","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["O41"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W18
+    details: {"ID":"W18","Duplicates":"O4","Commons model allows":"Duplicate","Competency":"What are the number of hours spent on second jobs","Session date":44635,"Evidence":"Written","Name":"NA ","Organisation":"Compassion in Politics","Member/Witness":"Witness","Reference (Question, page, line)":"p4","Competency.1":"What are the number of hours spent on second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106940/pdf/"}
+    competency: {"competency":"What are the number of hours spent on second jobs","dependencies":[],"duplicate_of":["O4"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W19
+    details: {"ID":"W19","Duplicates":"W5","Commons model allows":"Duplicate","Competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","Session date":44635,"Evidence":"Written","Name":"Bell, Aaron","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p3","Competency.1":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106605/pdf/"}
+    competency: {"competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","dependencies":[],"duplicate_of":["W5"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W20
+    details: {"ID":"W20","Duplicates":"O33","Commons model allows":"Duplicate","Competency":"What number of Members second job is allied to their previous experience","Session date":44635,"Evidence":"Written","Name":"Bell, Aaron","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p3","Competency.1":"What number of Members second job is allied to their previous experience","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106605/pdf/"}
+    competency: {"competency":"What number of Members second job is allied to their previous experience","dependencies":["imagined.feature.future"],"duplicate_of":["O33"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W29
+    details: {"ID":"W29","Duplicates":"O33","Commons model allows":"Duplicate","Competency":"What number of Members second job is allied to their previous experience","Session date":44635,"Evidence":"Written","Name":"Dunne, Philip","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p1-2","Competency.1":"What number of Members second job is allied to their previous experience","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106978/pdf/"}
+    competency: {"competency":"What number of Members second job is allied to their previous experience","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["O33"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W30
+    details: {"ID":"W30","Duplicates":"O35","Commons model allows":"Duplicate","Competency":"Does the employment complement a members parliamentary role and responsibilities.","Session date":44635,"Evidence":"Written","Name":"Dunne, Philip","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p1-2","Competency.1":"Does the employment complement a members parliamentary role and responsibilities.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106978/pdf/"}
+    competency: {"competency":"Does the employment complement a members parliamentary role and responsibilities.","dependencies":["imagined.feature.current"],"duplicate_of":["O35"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W31
+    details: {"ID":"W31","Duplicates":"O27","Commons model allows":"Duplicate","Competency":"Is the outside employment required to maintain a certain number of hours to uphold a professional registration held prior to becoming an MP.","Session date":44635,"Evidence":"Written","Organisation":"Plaid Cymru","Member/Witness":"Witness","Reference (Question, page, line)":"p1","Competency.1":"Is the outside employment required to maintain a certain number of hours to uphold a professional registration held prior to becoming an MP.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/43767/pdf/"}
+    competency: {"competency":"Is the outside employment required to maintain a certain number of hours to uphold a professional registration held prior to becoming an MP.","dependencies":[],"duplicate_of":["O27"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W32
+    details: {"ID":"W32","Duplicates":"O35","Commons model allows":"Duplicate","Competency":"Does the employment complement a members parliamentary role and responsibilities.","Session date":44635,"Evidence":"Written","Organisation":"Plaid Cymru","Member/Witness":"Witness","Reference (Question, page, line)":"p1","Competency.1":"Does the employment complement a members parliamentary role and responsibilities.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/43767/pdf/"}
+    competency: {"competency":"Does the employment complement a members parliamentary role and responsibilities.","dependencies":["imagined.feature.current"],"duplicate_of":["O35"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W34
+    details: {"ID":"W34","Duplicates":"O10","Commons model allows":"Duplicate","Competency":"What is the company name employing a Member, what category of business is it and within which industry do they operate","Session date":44635,"Evidence":"Written","Name":"Penrose, John","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p3","Competency.1":"What is the company name employing a Member, what category of business is it and within which industry do they operate","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106607/default/"}
+    competency: {"competency":"What is the company name employing a Member, what category of business is it and within which industry do they operate","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["O10"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W36
+    details: {"ID":"W36","Duplicates":"W19","Commons model allows":"Duplicate","Competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","Session date":44635,"Evidence":"Written","Name":"Penrose, John","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p3","Competency.1":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106607/default/"}
+    competency: {"competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","dependencies":["imagined.feature.current"],"duplicate_of":["W19"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W38
+    details: {"ID":"W38","Duplicates":"O33","Commons model allows":"Duplicate","Competency":"What number of Members second job is allied to their previous experience","Session date":44635,"Evidence":"Written","Name":"Anonymus MP (2)","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p1","Competency.1":"What number of Members second job is allied to their previous experience","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/107005/pdf/"}
+    competency: {"competency":"What number of Members second job is allied to their previous experience","dependencies":["imagined.feature.current"],"duplicate_of":["O33"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="W39" class="competency-block" data-auto-popup="W39: Between which dates did the employment occur / Was the work carried out prior to being elected " data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W39: Between which dates did the employment occur / Was the work carried out prior to being elected " tabindex="0">
+  <p class="title">Between which dates did the employment occur / Was the work carried out prior to being elected </p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="W40" class="competency-block" data-auto-popup="W40: What are the contractual terms of the outside employment" data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: W40: What are the contractual terms of the outside employment" tabindex="0">
+  <p class="title">What are the contractual terms of the outside employment</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W41
+    details: {"ID":"W41","Duplicates":"W19","Commons model allows":"Duplicate","Competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","Session date":44635,"Evidence":"Written","Organisation":"Unlock Democracy","Member/Witness":"Witness","Reference (Question, page, line)":"p2","Competency.1":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106945/pdf/"}
+    competency: {"competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","dependencies":["imagined.feature.future"],"duplicate_of":["W19"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W42
+    details: {"ID":"W42","Duplicates":"W11","Commons model allows":"Duplicate","Competency":"Is employment or earning from a political party","Session date":44635,"Evidence":"Written","Organisation":"Unlock Democracy","Member/Witness":"Witness","Reference (Question, page, line)":"p3","Competency.1":"Is employment or earning from a political party","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106945/pdf/"}
+    competency: {"competency":"Is employment or earning from a political party","dependencies":[],"duplicate_of":["W11"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W44
+    details: {"ID":"W44","Duplicates":"O4","Commons model allows":"Duplicate","Competency":"What are the number of hours spent on second jobs","Session date":44635,"Evidence":"Written","Organisation":"Unlock Democracy","Member/Witness":"Witness","Reference (Question, page, line)":"p5","Competency.1":"What are the number of hours spent on second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106945/pdf/"}
+    competency: {"competency":"What are the number of hours spent on second jobs","dependencies":["imagined.feature.current","imagined.feature.unlikely"],"duplicate_of":["O4"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W48
+    details: {"ID":"W48","Duplicates":"W19","Commons model allows":"Duplicate","Competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","Session date":44635,"Evidence":"Written","Name":"Solloway, Amanda","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p2","Competency.1":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106946/pdf/"}
+    competency: {"competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","dependencies":["imagined.feature.current","imagined.feature.unlikely"],"duplicate_of":["W19"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W52
+    details: {"ID":"W52","Duplicates":"O41","Commons model allows":"Duplicate","Competency":"Was a salary received from a political party","Session date":44635,"Evidence":"Written","Organisation":"Electoral Commission","Member/Witness":"Witness","Reference (Question, page, line)":"p2","Competency.1":"Was a salary received from a political party","RMFI category":"Employment and earnings","Notes.1":"Needs to be clearly marked as a salary when published in the RMFI so that it is clear that it does not fall within the scope of Political Parties, Elections and Referendums Act 2000  PPERA","Link":"https://committees.parliament.uk/writtenevidence/106963/pdf/"}
+    competency: {"competency":"Was a salary received from a political party","dependencies":["imagined.feature.unlikely"],"duplicate_of":["O41"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W59
+    details: {"ID":"W59","Duplicates":"W19","Commons model allows":"Duplicate","Competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","Session date":44635,"Evidence":"Written","Name":"Wright QC, Jeremy","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p1","Competency.1":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/107009/pdf/"}
+    competency: {"competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","dependencies":["imagined.feature.unlikely"],"duplicate_of":["W19"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W60
+    details: {"ID":"W60","Duplicates":"O4","Commons model allows":"Duplicate","Competency":"What are the number of hours spent on second jobs","Session date":44635,"Evidence":"Written","Organisation":"Compassion in Politics","Member/Witness":"Witness","Reference (Question, page, line)":"p4","Competency.1":"What are the number of hours spent on second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106940/pdf/"}
+    competency: {"competency":"What are the number of hours spent on second jobs","dependencies":["imagined.feature.current","imagined.feature.unlikely"],"duplicate_of":["O4"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W62
+    details: {"ID":"W62","Duplicates":"W19","Commons model allows":"Duplicate","Competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant and does this relate to the members parliamentary role and responsibilities","Session date":44635,"Evidence":"Written","Name":"Grayling, Chris","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p1","Competency.1":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant and does this relate to the members parliamentary role and responsibilities","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/107017/pdf/"}
+    competency: {"competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant and does this relate to the members parliamentary role and responsibilities","dependencies":["imagined.feature.current"],"duplicate_of":["W19"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W69
+    details: {"ID":"W69","Duplicates":"O19","Commons model allows":"Duplicate","Competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","Session date":44635,"Evidence":"Written","Organisation":"Transparency International UK","Member/Witness":"Witness","Reference (Question, page, line)":"p4","Competency.1":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106973/pdf/"}
+    competency: {"competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant.","dependencies":[],"duplicate_of":["O19"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W70
+    details: {"ID":"W70","Duplicates":"O4","Commons model allows":"Duplicate","Competency":"What are the number of hours spent on second jobs","Session date":44635,"Evidence":"Written","Organisation":"Transparency International UK","Member/Witness":"Witness","Reference (Question, page, line)":"p6","Competency.1":"What are the number of hours spent on second jobs","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/106973/pdf/"}
+    competency: {"competency":"What are the number of hours spent on second jobs","dependencies":[],"duplicate_of":["O4"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W71
+    details: {"ID":"W71","Duplicates":"O35","Commons model allows":"Duplicate","Competency":"Is the outside employment related to political activity or providing an essential public service","Session date":44635,"Evidence":"Written","Organisation":"Transparency International UK","Member/Witness":"Witness","Reference (Question, page, line)":"p6","Competency.1":"Is the outside employment related to political activity or providing an essential public service","RMFI category":"Employment and earnings","Notes.1":"Propsing that exemption for political activity or providing an essential public service.","Link":"https://committees.parliament.uk/writtenevidence/106973/pdf/"}
+    competency: {"competency":"Is the outside employment related to political activity or providing an essential public service","dependencies":["imagined.feature.future"],"duplicate_of":["O35"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W72
+    details: {"ID":"W72","Duplicates":"W5","Commons model allows":"Duplicate","Competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant","Session date":44637,"Evidence":"Written","Name":"Debbonaire, Thangam","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p1","Competency.1":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/43755/pdf/"}
+    competency: {"competency":"Is the paid work to provide services as a parliamentary strategist, adviser or consultant","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["W5"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W75
+    details: {"ID":"W75","Duplicates":"W40","Commons model allows":"Duplicate","Competency":"What are the contractual terms of the outside employment (paid work)","Session date":44635,"Evidence":"Written","Name":"Simpson, Claire","Organisation":"Member of the public","Member/Witness":"Witness","Reference (Question, page, line)":"p5","Competency.1":"What are the contractual terms of the outside employment (paid work)","RMFI category":"Employment and earnings","Link":"https://committees.parliament.uk/writtenevidence/107012/pdf/"}
+    competency: {"competency":"What are the contractual terms of the outside employment (paid work)","dependencies":[],"duplicate_of":["W40"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="C4" class="competency-block" data-auto-popup="C4: How many / which members have outside employment" data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: C4: How many / which members have outside employment" tabindex="0">
+  <p class="title">How many / which members have outside employment</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    C5
+    details: {"ID":"C5","Duplicates":"O23","Commons model allows":"Duplicate","Competency":"How much has a member earned from outside employment in a calendar year / parliament / time in parliament","Session date":44837,"Evidence":"Additional","Name":"Goodrich, Steve","Organisation":"Transparency International","Member/Witness":"Witness","Reference (Question, page, line)":"ln16","Competency.1":"How much has a member earned from outside employment in a calendar year / parliament / time in parliament","RMFI category":"Employment and earnings","Link":"ontologies/competency-question.md at master Â· ukparliament/ontologies Â· GitHub"}
+    competency: {"competency":"How much has a member earned from outside employment in a calendar year / parliament / time in parliament","dependencies":["imagined.feature.current"],"duplicate_of":["O23"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="C6" class="competency-block" data-auto-popup="C6: Which MPs earn the most from outside interests per annum?" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C6: Which MPs earn the most from outside interests per annum?" tabindex="0">
+  <p class="title">Which MPs earn the most from outside interests per annum?</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C7" class="competency-block" data-auto-popup="C7: Can earnings be recorded in a standardised way" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C7: Can earnings be recorded in a standardised way" tabindex="0">
+  <p class="title">Can earnings be recorded in a standardised way</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    C8
+    details: {"ID":"C8","Duplicates":"O4","Commons model allows":"Duplicate","Competency":"How much time has a member spent on outside jobs in a calendar year / parliament / time in parliament","Notes":"Need to aggregate in code","Session date":44837,"Evidence":"Additional","Name":"Goodrich, Steve","Organisation":"Transparency International","Member/Witness":"Witness","Reference (Question, page, line)":"ln22","Competency.1":"How much time has a member spent on outside jobs in a calendar year / parliament / time in parliament","RMFI category":"Employment and earnings","Link":"ontologies/competency-question.md at master Â· ukparliament/ontologies Â· GitHub"}
+    competency: {"competency":"How much time has a member spent on outside jobs in a calendar year / parliament / time in parliament","dependencies":[],"duplicate_of":["O4"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="C12" class="competency-block" data-auto-popup="C12: For companies that pay MPs as employees, directors or consultants, who are their private clients?" data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: C12: For companies that pay MPs as employees, directors or consultants, who are their private clients?" tabindex="0">
+  <p class="title">For companies that pay MPs as employees, directors or consultants, who are their private clients?</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C13" class="competency-block" data-auto-popup="C13: For companies that pay MPs as employees, directors or consultants, is the company currently listed on the Register of Consultant Lobbyists?" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: C13: For companies that pay MPs as employees, directors or consultants, is the company currently listed on the Register of Consultant Lobbyists?" tabindex="0">
+  <p class="title">For companies that pay MPs as employees, directors or consultants, is the company currently listed on the Register of Consultant Lobbyists?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="C22" class="competency-block" data-auto-popup="C22: How many members have unpaid outside roles" data-required-features="imagined.feature.current,imagined.feature.future,imagined.feature.unlikely" data-score="0" aria-label="Not possible: C22: How many members have unpaid outside roles" tabindex="0">
+  <p class="title">How many members have unpaid outside roles</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    R1
+    details: {"ID":"R1","Duplicates":"O7","Commons model allows":"Duplicate","Competency":"What are MPs second jobs?","Session date":44565,"Evidence":"Interview","Organisation":"Transparency International","Role ":"Campaigner/lobbyist","Competency.1":"What are MPs second jobs?","RMFI category":"Employment and earnings"}
+    competency: {"competency":"What are MPs second jobs?","dependencies":["imagined.feature.current","imagined.feature.unlikely"],"duplicate_of":["O7"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="R2" class="competency-block" data-auto-popup="R2: What are MPs engagements, interests?" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: R2: What are MPs engagements, interests?" tabindex="0">
+  <p class="title">What are MPs engagements, interests?</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    R3
+    details: {"ID":"R3","Duplicates":"O23 / O4 / O7","Commons model allows":"Duplicate","Competency":"How many MPs have second jobs, what types of jobs are they, how much time they spend on it per year, how much they are paid for that â especially in aggregate rather than on an individual basis","Session date":44565,"Evidence":"Interview","Organisation":"Transparency International","Role ":"Campaigner/lobbyist","Competency.1":"How many MPs have second jobs, what types of jobs are they, how much time they spend on it per year, how much they are paid for that â especially in aggregate rather than on an individual basis","RMFI category":"Employment and earnings"}
+    competency: {"competency":"How many MPs have second jobs, what types of jobs are they, how much time they spend on it per year, how much they are paid for that – especially in aggregate rather than on an individual basis","dependencies":[],"duplicate_of":["O23","O4","O7"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+<li id="R5" class="competency-block" data-auto-popup="R5: Exactly what entities are related to MPs (whoâs received contracts, whoâs receiving public grunts, whoâs received preferential treatment)?" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: R5: Exactly what entities are related to MPs (whoâs received contracts, whoâs receiving public grunts, whoâs received preferential treatment)?" tabindex="0">
+  <p class="title">Exactly what entities are related to MPs (whoâs received contracts, whoâs receiving public grunts, whoâs received preferential treatment)?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    R14
+    details: {"ID":"R14","Duplicates":"O23 / O4 / O7","Commons model allows":"Duplicate","Competency":"How much MPs work, paid, hours (second jobs)?","Session date":44565,"Evidence":"Interview","Organisation":"Open Democracy","Role ":"Journalist","Competency.1":"How much MPs work, paid, hours (second jobs)?","RMFI category":"Employment and earnings"}
+    competency: {"competency":"How much MPs work, paid, hours (second jobs)?","dependencies":["imagined.feature.current"],"duplicate_of":["O23","O4","O7"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+<li id="R16" class="competency-block" data-auto-popup="R16: Identifying a standardised way of reporting income (time metric, gross/net etc)" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: R16: Identifying a standardised way of reporting income (time metric, gross/net etc)" tabindex="0">
+  <p class="title">Identifying a standardised way of reporting income (time metric, gross/net etc)</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    R17
+    details: {"ID":"R17","Duplicates":"O4","Commons model allows":"Duplicate","Competency":"How do MPs stack up against each other â e.g., time commitment to outside interests?","Session date":44565,"Evidence":"Interview","Organisation":"Open Democracy","Role ":"Journalist","Competency.1":"How do MPs stack up against each other â e.g., time commitment to outside interests?","RMFI category":"Employment and earnings"}
+    competency: {"competency":"How do MPs stack up against each other – e.g., time commitment to outside interests?","dependencies":["imagined.feature.current"],"duplicate_of":["O4"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R20" class="competency-block" data-auto-popup="R20: How many MPs have worked for foreign governments or peers worked for foreign governments?" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: R20: How many MPs have worked for foreign governments or peers worked for foreign governments?" tabindex="0">
+  <p class="title">How many MPs have worked for foreign governments or peers worked for foreign governments?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    R22
+    details: {"ID":"R22","Duplicates":"O4","Commons model allows":"Duplicate","Competency":"MPs earnings â annually, monthly, hourly (comparability and standardisation)?","Session date":44565,"Evidence":"Interview","Organisation":"Business Insider","Role ":"Journalist","Competency.1":"MPs earnings â annually, monthly, hourly (comparability and standardisation)?","RMFI category":"Employment and earnings"}
+    competency: {"competency":"MPs earnings – annually, monthly, hourly (comparability and standardisation)?","dependencies":["imagined.feature.future"],"duplicate_of":["O4"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R27" class="competency-block" data-auto-popup="R27: How to identify when interest was added and seized for the Lords?" data-required-features="imagined.feature.future,imagined.feature.unlikely" data-score="0" aria-label="Not possible: R27: How to identify when interest was added and seized for the Lords?" tabindex="0">
+  <p class="title">How to identify when interest was added and seized for the Lords?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+  </section>
+
+  <section aria-labelledby="category-2">
+  <h3 id="category-2">Donations and other support</h3>
+  <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="O41" class="competency-block" data-auto-popup="O41: Is the donation from a political party " data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: O41: Is the donation from a political party " tabindex="0">
+  <p class="title">Is the donation from a political party </p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="O42" class="competency-block" data-auto-popup="O42: What information is the Member required to submit as part of the registration process, but which is not published " data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: O42: What information is the Member required to submit as part of the registration process, but which is not published " tabindex="0">
+  <p class="title">What information is the Member required to submit as part of the registration process, but which is not published </p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="O43" class="competency-block" data-auto-popup="O43: What is the status or relationship of the donor to the Member" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: O43: What is the status or relationship of the donor to the Member" tabindex="0">
+  <p class="title">What is the status or relationship of the donor to the Member</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W54" class="competency-block" data-auto-popup="W54: Was the Direct support from the Memberâs own political party organisation" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: W54: Was the Direct support from the Memberâs own political party organisation" tabindex="0">
+  <p class="title">Was the Direct support from the Memberâs own political party organisation</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="C10" class="competency-block" data-auto-popup="C10: How much has a member received in donations in a calendar year / parliament / time in parliament" data-required-features="imagined.feature.unlikely" data-score="0" aria-label="Not possible: C10: How much has a member received in donations in a calendar year / parliament / time in parliament" tabindex="0">
+  <p class="title">How much has a member received in donations in a calendar year / parliament / time in parliament</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R15" class="competency-block" data-auto-popup="R15: Information on donors â how much money donated for different APPGs rather than go through them manually?" data-required-features="imagined.feature.future,imagined.feature.unlikely" data-score="0" aria-label="Not possible: R15: Information on donors â how much money donated for different APPGs rather than go through them manually?" tabindex="0">
+  <p class="title">Information on donors â how much money donated for different APPGs rather than go through them manually?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R23" class="competency-block" data-auto-popup="R23: How to identify donors who give small incremental amounts of money to different MPs?" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: R23: How to identify donors who give small incremental amounts of money to different MPs?" tabindex="0">
+  <p class="title">How to identify donors who give small incremental amounts of money to different MPs?</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="R24" class="competency-block" data-auto-popup="R24: How to compare who the companies donate money to vs who appears on payroll?" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: R24: How to compare who the companies donate money to vs who appears on payroll?" tabindex="0">
+  <p class="title">How to compare who the companies donate money to vs who appears on payroll?</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="R25" class="competency-block" data-auto-popup="R25: How to identify donations to political parties from companies no longer existing?" data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: R25: How to identify donations to political parties from companies no longer existing?" tabindex="0">
+  <p class="title">How to identify donations to political parties from companies no longer existing?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R31" class="competency-block" data-auto-popup="R31: Which MPs have (ever) taken donations/gifts from x?" data-required-features="imagined.feature.current,imagined.feature.future,imagined.feature.unlikely" data-score="0" aria-label="Not possible: R31: Which MPs have (ever) taken donations/gifts from x?" tabindex="0">
+  <p class="title">Which MPs have (ever) taken donations/gifts from x?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R34" class="competency-block" data-auto-popup="R34: How to look up specific donors and their activity â e.g., their relations with various MPs?" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: R34: How to look up specific donors and their activity â e.g., their relations with various MPs?" tabindex="0">
+  <p class="title">How to look up specific donors and their activity â e.g., their relations with various MPs?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R38" class="competency-block" data-auto-popup="R38: How can we filter out the information to find e.g., cash donations that have gone to MP rather than their local association?" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: R38: How can we filter out the information to find e.g., cash donations that have gone to MP rather than their local association?" tabindex="0">
+  <p class="title">How can we filter out the information to find e.g., cash donations that have gone to MP rather than their local association?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R41" class="competency-block" data-auto-popup="R41: How do we find information on multiple donations to an MP from the same donor? (data aggregation)" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: R41: How do we find information on multiple donations to an MP from the same donor? (data aggregation)" tabindex="0">
+  <p class="title">How do we find information on multiple donations to an MP from the same donor? (data aggregation)</p>
+  
+</li>
+
+    
+  
+  </ul>
+  </section>
+
+  <section aria-labelledby="category-3">
+  <h3 id="category-3">Gifts benefits and hospitality from UK sources</h3>
+  <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="O38" class="competency-block" data-auto-popup="O38: Were the gifts and hospitality registered within 28 days / What timeframe were the gifts and hospitality registered within " data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: O38: Were the gifts and hospitality registered within 28 days / What timeframe were the gifts and hospitality registered within " tabindex="0">
+  <p class="title">Were the gifts and hospitality registered within 28 days / What timeframe were the gifts and hospitality registered within </p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W7" class="competency-block" data-auto-popup="W7: Was the member acting as government trade envoy" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W7: Was the member acting as government trade envoy" tabindex="0">
+  <p class="title">Was the member acting as government trade envoy</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W43
+    details: {"ID":"W43","Duplicates":"W7","Commons model allows":"Duplicate","Competency":"Was the member acting as government trade envoy","Session date":44635,"Evidence":"Written","Organisation":"Unlock Democracy","Member/Witness":"Witness","Reference (Question, page, line)":"p4","Competency.1":"Was the member acting as government trade envoy","RMFI category":"Gifts benefits and hospitality from UK sources","Link":"https://committees.parliament.uk/writtenevidence/106945/pdf/"}
+    competency: {"competency":"Was the member acting as government trade envoy","dependencies":["imagined.feature.current"],"duplicate_of":["W7"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="C9" class="competency-block" data-auto-popup="C9: How much has a member received in benefits in a calendar year / parliament / time in parliament" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: C9: How much has a member received in benefits in a calendar year / parliament / time in parliament" tabindex="0">
+  <p class="title">How much has a member received in benefits in a calendar year / parliament / time in parliament</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R21" class="competency-block" data-auto-popup="R21: What gifts were MP given in X year?" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: R21: What gifts were MP given in X year?" tabindex="0">
+  <p class="title">What gifts were MP given in X year?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R35" class="competency-block" data-auto-popup="R35: How to browse relevant information about ticketing by subject e.g., sporting tickets, cultural events tickets over the year?" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: R35: How to browse relevant information about ticketing by subject e.g., sporting tickets, cultural events tickets over the year?" tabindex="0">
+  <p class="title">How to browse relevant information about ticketing by subject e.g., sporting tickets, cultural events tickets over the year?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+  </section>
+
+  <section aria-labelledby="category-4">
+  <h3 id="category-4">Visits outside the UK</h3>
+  <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W24" class="competency-block" data-auto-popup="W24: How many foreign visits were sponsored by foreign governments" data-required-features="" tabindex="0">
+  <p class="title">How many foreign visits were sponsored by foreign governments</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="W25" class="competency-block" data-auto-popup="W25: Which overseas visits were related to the work of APPGs " data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W25: Which overseas visits were related to the work of APPGs " tabindex="0">
+  <p class="title">Which overseas visits were related to the work of APPGs </p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="W26" class="competency-block" data-auto-popup="W26: Which members have undertaken foreign trips as part of APPG delegations" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W26: Which members have undertaken foreign trips as part of APPG delegations" tabindex="0">
+  <p class="title">Which members have undertaken foreign trips as part of APPG delegations</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W65" class="competency-block" data-auto-popup="W65: Did any members accept paid foreign travel costing over Â£500 " data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W65: Did any members accept paid foreign travel costing over Â£500 " tabindex="0">
+  <p class="title">Did any members accept paid foreign travel costing over Â£500 </p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="W66" class="competency-block" data-auto-popup="W66: Which organisations provided paid foreign travel costing over Â£500 to a member" data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: W66: Which organisations provided paid foreign travel costing over Â£500 to a member" tabindex="0">
+  <p class="title">Which organisations provided paid foreign travel costing over Â£500 to a member</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="C25" class="competency-block" data-auto-popup="C25: Where are the most popular destinations for overseas visits by place/region/country" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C25: Where are the most popular destinations for overseas visits by place/region/country" tabindex="0">
+  <p class="title">Where are the most popular destinations for overseas visits by place/region/country</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C26" class="competency-block" data-auto-popup="C26: What dates (from and to) did members fly overseas" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: C26: What dates (from and to) did members fly overseas" tabindex="0">
+  <p class="title">What dates (from and to) did members fly overseas</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C27" class="competency-block" data-auto-popup="C27: Who has paid the most for overseas visits" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: C27: Who has paid the most for overseas visits" tabindex="0">
+  <p class="title">Who has paid the most for overseas visits</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C28" class="competency-block" data-auto-popup="C28: How many sponsors of overseas visitors are foreign governments" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C28: How many sponsors of overseas visitors are foreign governments" tabindex="0">
+  <p class="title">How many sponsors of overseas visitors are foreign governments</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C29" class="competency-block" data-auto-popup="C29: Which overseas visits were related to the work of APPGs " data-required-features="" tabindex="0">
+  <p class="title">Which overseas visits were related to the work of APPGs </p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C30" class="competency-block" data-auto-popup="C30: Which members have undertaken foreign trips as part of APPG delegations" data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: C30: Which members have undertaken foreign trips as part of APPG delegations" tabindex="0">
+  <p class="title">Which members have undertaken foreign trips as part of APPG delegations</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C31" class="competency-block" data-auto-popup="C31: Which MPs have undertaken the most overseas visits in a calendar year / parliament / time in parliament" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C31: Which MPs have undertaken the most overseas visits in a calendar year / parliament / time in parliament" tabindex="0">
+  <p class="title">Which MPs have undertaken the most overseas visits in a calendar year / parliament / time in parliament</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C32" class="competency-block" data-auto-popup="C32: Which MPs have undertaken the highest valued overseas visits in a calendar year / parliament / time in parliament" data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: C32: Which MPs have undertaken the highest valued overseas visits in a calendar year / parliament / time in parliament" tabindex="0">
+  <p class="title">Which MPs have undertaken the highest valued overseas visits in a calendar year / parliament / time in parliament</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+  </section>
+
+  <section aria-labelledby="category-5">
+  <h3 id="category-5">Gifts and benefits from sources outside the UK</h3>
+  <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W55" class="competency-block" data-auto-popup="W55: Were any gifts or benefits received in the capacity of a Government trade envoy" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W55: Were any gifts or benefits received in the capacity of a Government trade envoy" tabindex="0">
+  <p class="title">Were any gifts or benefits received in the capacity of a Government trade envoy</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+      
+
+<li id="W57" class="competency-block" data-auto-popup="W57: Were any gifts from a foreign source with a value of over Â£500 received" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W57: Were any gifts from a foreign source with a value of over Â£500 received" tabindex="0">
+  <p class="title">Were any gifts from a foreign source with a value of over Â£500 received</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W64" class="competency-block" data-auto-popup="W64: Gifts, benefits and hospitality from foreign provenance" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: W64: Gifts, benefits and hospitality from foreign provenance" tabindex="0">
+  <p class="title">Gifts, benefits and hospitality from foreign provenance</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+  </section>
+
+  <section aria-labelledby="category-6">
+  <h3 id="category-6">Land and property portfolio</h3>
+  <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="O9" class="competency-block" data-auto-popup="O9: What is the total rental income for Members owning multiple properties" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: O9: What is the total rental income for Members owning multiple properties" tabindex="0">
+  <p class="title">What is the total rental income for Members owning multiple properties</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W37" class="competency-block" data-auto-popup="W37: Which members own property and earn income in rent that meet rule thresholds" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W37: Which members own property and earn income in rent that meet rule thresholds" tabindex="0">
+  <p class="title">Which members own property and earn income in rent that meet rule thresholds</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="C23" class="competency-block" data-auto-popup="C23: Which members own a property in a particular geographical area " data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C23: Which members own a property in a particular geographical area " tabindex="0">
+  <p class="title">Which members own a property in a particular geographical area </p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C24" class="competency-block" data-auto-popup="C24: Which members own property and earn income in rent that meet rule thresholds" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C24: Which members own property and earn income in rent that meet rule thresholds" tabindex="0">
+  <p class="title">Which members own property and earn income in rent that meet rule thresholds</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="C42" class="competency-block" data-auto-popup="C42: Does the member own exempted property" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C42: Does the member own exempted property" tabindex="0">
+  <p class="title">Does the member own exempted property</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    C44
+    details: {"ID":"C44","Duplicates":"C42","Commons model allows":"Duplicate","Competency":"Does the member own exempted property","Session date":44837,"Evidence":"Additional","Organisation":"The Times","Member/Witness":"Witness","Reference (Question, page, line)":"ln99","Competency.1":"Does the member own exempted property","RMFI category":"Land and property portfolio","Link":"ontologies/competency-question.md at master Â· ukparliament/ontologies Â· GitHub"}
+    competency: {"competency":"Does the member own exempted property","dependencies":["imagined.feature.current"],"duplicate_of":["C42"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    C45
+    details: {"ID":"C45","Duplicates":"C23","Commons model allows":"Duplicate","Competency":"Which members own a property in a particular geographical area / How many properties does a member hold in a particular geographical area","Session date":44837,"Evidence":"Additional","Organisation":"The Times","Member/Witness":"Witness","Reference (Question, page, line)":"ln99","Competency.1":"Which members own a property in a particular geographical area / How many properties does a member hold in a particular geographical area","RMFI category":"Land and property portfolio","Link":"ontologies/competency-question.md at master Â· ukparliament/ontologies Â· GitHub"}
+    competency: {"competency":"Which members own a property in a particular geographical area / How many properties does a member hold in a particular geographical area","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["C23"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="C46" class="competency-block" data-auto-popup="C46: What is the total rental income for Members owning multiple properties / How many/Which members own property and earn income in rent that meet rule thresholds" data-required-features="imagined.feature.unlikely" data-score="0" aria-label="Not possible: C46: What is the total rental income for Members owning multiple properties / How many/Which members own property and earn income in rent that meet rule thresholds" tabindex="0">
+  <p class="title">What is the total rental income for Members owning multiple properties / How many/Which members own property and earn income in rent that meet rule thresholds</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R6" class="competency-block" data-auto-popup="R6: What are MPs/Lords property interests?" data-required-features="" tabindex="0">
+  <p class="title">What are MPs/Lords property interests?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+      
+
+<li id="R8" class="competency-block" data-auto-popup="R8: What are MPs/Lords personal financial interests around stamp duty, rights for leaseholders?" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: R8: What are MPs/Lords personal financial interests around stamp duty, rights for leaseholders?" tabindex="0">
+  <p class="title">What are MPs/Lords personal financial interests around stamp duty, rights for leaseholders?</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="R9" class="competency-block" data-auto-popup="R9: Consistency in properties info in how private interest relates to their public role" data-required-features="" tabindex="0">
+  <p class="title">Consistency in properties info in how private interest relates to their public role</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    R10
+    details: {"ID":"R10","Duplicates":"C23","Commons model allows":"Duplicate","Competency":"More specific info on the location in identifying location of their properties â local authority area, reasonable geographic unit","Session date":44565,"Evidence":"Interview","Organisation":"Transparency International","Role ":"Campaigner/lobbyist","Competency.1":"More specific info on the location in identifying location of their properties â local authority area, reasonable geographic unit","RMFI category":"Land and property portfolio"}
+    competency: {"competency":"More specific info on the location in identifying location of their properties – local authority area, reasonable geographic unit","dependencies":["imagined.feature.future"],"duplicate_of":["C23"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R36" class="competency-block" data-auto-popup="R36: How can we identify that when members have moved into a new area, they declare a new conflict of interest (accessing whatâs declared at different time periods)?" data-required-features="imagined.feature.current,imagined.feature.future,imagined.feature.unlikely" data-score="0" aria-label="Not possible: R36: How can we identify that when members have moved into a new area, they declare a new conflict of interest (accessing whatâs declared at different time periods)?" tabindex="0">
+  <p class="title">How can we identify that when members have moved into a new area, they declare a new conflict of interest (accessing whatâs declared at different time periods)?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+  </section>
+
+  <section aria-labelledby="category-7">
+  <h3 id="category-7">Shareholdings</h3>
+  <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="C3" class="competency-block" data-auto-popup="C3: Are there any directorships or shareholdings reported to Companies House that members havenât reported to the RMFI" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: C3: Are there any directorships or shareholdings reported to Companies House that members havenât reported to the RMFI" tabindex="0">
+  <p class="title">Are there any directorships or shareholdings reported to Companies House that members havenât reported to the RMFI</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R4" class="competency-block" data-auto-popup="R4: What are MPs/Lords financial interests through companies?" data-required-features="" tabindex="0">
+  <p class="title">What are MPs/Lords financial interests through companies?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R7" class="competency-block" data-auto-popup="R7: How to find links of shareholdings or directorships back to the Companies House to understand the economic activity of those companies, number of assets, where they are?" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: R7: How to find links of shareholdings or directorships back to the Companies House to understand the economic activity of those companies, number of assets, where they are?" tabindex="0">
+  <p class="title">How to find links of shareholdings or directorships back to the Companies House to understand the economic activity of those companies, number of assets, where they are?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R12" class="competency-block" data-auto-popup="R12: How to cross check public opinions and company endorsement?" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: R12: How to cross check public opinions and company endorsement?" tabindex="0">
+  <p class="title">How to cross check public opinions and company endorsement?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R18" class="competency-block" data-auto-popup="R18: Being able to look up company number in the register e.g., when declaring directorships, interests" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: R18: Being able to look up company number in the register e.g., when declaring directorships, interests" tabindex="0">
+  <p class="title">Being able to look up company number in the register e.g., when declaring directorships, interests</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R26" class="competency-block" data-auto-popup="R26: Company number, when listed, should link to Companies House" data-required-features="" tabindex="0">
+  <p class="title">Company number, when listed, should link to Companies House</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R32" class="competency-block" data-auto-popup="R32: What are MPs financial links with different companies?" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: R32: What are MPs financial links with different companies?" tabindex="0">
+  <p class="title">What are MPs financial links with different companies?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+  </section>
+
+  <section aria-labelledby="category-8">
+  <h3 id="category-8">Miscellaneous</h3>
+  <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
+  
+    
+      
+
+<li id="O1" class="competency-block" data-auto-popup="O1: Outside interests" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: O1: Outside interests" tabindex="0">
+  <p class="title">Outside interests</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W50" class="competency-block" data-auto-popup="W50: Which organisation/companies do members hold unpaid directorships or trustee positions for" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W50: Which organisation/companies do members hold unpaid directorships or trustee positions for" tabindex="0">
+  <p class="title">Which organisation/companies do members hold unpaid directorships or trustee positions for</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R11" class="competency-block" data-auto-popup="R11: How to find out to what period of time interest applies?" data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: R11: How to find out to what period of time interest applies?" tabindex="0">
+  <p class="title">How to find out to what period of time interest applies?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+      
+
+<li id="R13" class="competency-block" data-auto-popup="R13: How to identify conflict of interests inside and outside parliament?" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: R13: How to identify conflict of interests inside and outside parliament?" tabindex="0">
+  <p class="title">How to identify conflict of interests inside and outside parliament?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R19" class="competency-block" data-auto-popup="R19: Being able to browse a single register with everything in one â MPs, Lords" data-required-features="" tabindex="0">
+  <p class="title">Being able to browse a single register with everything in one â MPs, Lords</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R28" class="competency-block" data-auto-popup="R28: Which MPs have relations with the health sector, around migration?" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: R28: Which MPs have relations with the health sector, around migration?" tabindex="0">
+  <p class="title">Which MPs have relations with the health sector, around migration?</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="R29" class="competency-block" data-auto-popup="R29: How to make comparisons to who was being represented in front of what select committees to identify topic-based relationships across MPs (Introducing unique identifiers)" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: R29: How to make comparisons to who was being represented in front of what select committees to identify topic-based relationships across MPs (Introducing unique identifiers)" tabindex="0">
+  <p class="title">How to make comparisons to who was being represented in front of what select committees to identify topic-based relationships across MPs (Introducing unique identifiers)</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="R30" class="competency-block" data-auto-popup="R30: How to identify the same activity across MPs/identify usual and unusual activity across MPs? (Better contextualisation of data)" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: R30: How to identify the same activity across MPs/identify usual and unusual activity across MPs? (Better contextualisation of data)" tabindex="0">
+  <p class="title">How to identify the same activity across MPs/identify usual and unusual activity across MPs? (Better contextualisation of data)</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R33" class="competency-block" data-auto-popup="R33: How to access MPs activity by searching for their name?" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: R33: How to access MPs activity by searching for their name?" tabindex="0">
+  <p class="title">How to access MPs activity by searching for their name?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="R37" class="competency-block" data-auto-popup="R37: How to compare parliamentary data across time?" data-required-features="" tabindex="0">
+  <p class="title">How to compare parliamentary data across time?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+      
+
+<li id="R39" class="competency-block" data-auto-popup="R39: How can we find all the information in an accessible spreadsheet to easily filter out relevant data?" data-required-features="" tabindex="0">
+  <p class="title">How can we find all the information in an accessible spreadsheet to easily filter out relevant data?</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="R40" class="competency-block" data-auto-popup="R40: How can we ensure that there is a universal completeness of data provided in the register?" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: R40: How can we ensure that there is a universal completeness of data provided in the register?" tabindex="0">
+  <p class="title">How can we ensure that there is a universal completeness of data provided in the register?</p>
+  
+</li>
+
+    
+  
+    
+  
+  </ul>
+  </section>
+
+  <section aria-labelledby="category-9">
+  <h3 id="category-9">Family members employed and paid from parliamentary expenses</h3>
+  <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
+  
+    
+  
+    
+  
+    
+      
+
+<li id="O3" class="competency-block" data-auto-popup="O3: How many family members employed" data-required-features="" tabindex="0">
+  <p class="title">How many family members employed</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="O3A" class="competency-block" data-auto-popup="O3A: How many family members employed and cost" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: O3A: How many family members employed and cost" tabindex="0">
+  <p class="title">How many family members employed and cost</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W27
+    details: {"ID":"W27","Duplicates":"O3 / O3A","Commons model allows":"Duplicate","Competency":"How many family members employed and cost","Session date":44635,"Evidence":"Written","Name":"Grant, Peter","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p2","Competency.1":"How many family members employed and cost","RMFI category":"Family members employed and paid from parliamentary expenses","Link":"https://committees.parliament.uk/writtenevidence/106970/pdf/"}
+    competency: {"competency":"How many family members employed and cost","dependencies":["imagined.feature.current"],"duplicate_of":["O3","O3A"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="C11" class="competency-block" data-auto-popup="C11: How many members still employ their spouse, and in what role" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C11: How many members still employ their spouse, and in what role" tabindex="0">
+  <p class="title">How many members still employ their spouse, and in what role</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+  </section>
+
+  <section aria-labelledby="category-10">
+  <h3 id="category-10">Family members engaged in lobbying</h3>
+  <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="O12" class="competency-block" data-auto-popup="O12: How many Members family members are involved in lobbying" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: O12: How many Members family members are involved in lobbying" tabindex="0">
+  <p class="title">How many Members family members are involved in lobbying</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W67" class="competency-block" data-auto-popup="W67: How many family members of members were engaged in lobbying
+" data-required-features="imagined.feature.current,imagined.feature.future,imagined.feature.unlikely" data-score="0" aria-label="Not possible: W67: How many family members of members were engaged in lobbying
+" tabindex="0">
+  <p class="title">How many family members of members were engaged in lobbying
+</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="W68" class="competency-block" data-auto-popup="W68: Which organisations were  family members of members engaged in lobbying" data-required-features="" tabindex="0">
+  <p class="title">Which organisations were  family members of members engaged in lobbying</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W78" class="competency-block" data-auto-popup="W78: Which connected parties were engaged in lobbying" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W78: Which connected parties were engaged in lobbying" tabindex="0">
+  <p class="title">Which connected parties were engaged in lobbying</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+  </section>
+
+  <section aria-labelledby="category-11">
+  <h3 id="category-11">Multiple/all categories</h3>
+  <ul class="dashboard-grid blinkenlights" data-dependencies="/assets/js/auto-popup.js">
+  
+    
+  
+    
+      
+
+<li id="O2" class="competency-block" data-auto-popup="O2: Conflict between RMFI and Ministerial register" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: O2: Conflict between RMFI and Ministerial register" tabindex="0">
+  <p class="title">Conflict between RMFI and Ministerial register</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="O8" class="competency-block" data-auto-popup="O8: How often is the information gathered/published (timeliness)" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: O8: How often is the information gathered/published (timeliness)" tabindex="0">
+  <p class="title">How often is the information gathered/published (timeliness)</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O19
+    details: {"ID":"O19","Duplicates":"O8","Commons model allows":"Duplicate","Competency":"How often is the information gathered/published (timeliness)","Session date":44677,"Evidence":"Oral","Name":"Ellis, Michael","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"Q452","Competency.1":"How often is the information gathered/published (timeliness)","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Data capture, storage and standards; Compliance ","Notes.1":"Requirement for Ministerial interests every 6 months; so difference for members interests 28 days","Link":"https://committees.parliament.uk/oralevidence/10146/html/"}
+    competency: {"competency":"How often is the information gathered/published (timeliness)","dependencies":["imagined.feature.current"],"duplicate_of":["O8"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O20
+    details: {"ID":"O20","Duplicates":"O2","Commons model allows":"Duplicate","Competency":"Conflict between RMFI and Ministerial register","Session date":44677,"Evidence":"Oral","Name":"Ellis, Michael","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"Q458","Competency.1":"Conflict between RMFI and Ministerial register","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Different data requirements","Notes.1":"Value of financial interests and costs don't need to be recorded on Ministerial register; difference between MP constitutency capacity and ministerial responsibility.","Link":"https://committees.parliament.uk/oralevidence/10146/html/"}
+    competency: {"competency":"Conflict between RMFI and Ministerial register","dependencies":[],"duplicate_of":["O2"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="O21" class="competency-block" data-auto-popup="O21: Interests related to executive (ministerial capacity) OR legislative functions of ministers" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: O21: Interests related to executive (ministerial capacity) OR legislative functions of ministers" tabindex="0">
+  <p class="title">Interests related to executive (ministerial capacity) OR legislative functions of ministers</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O24
+    details: {"ID":"O24","Commons model allows":"No","Notes":"Out of scope","Session date":44628,"Evidence":"Oral","Name":"Ryder, Sir Ernest","Organisation":"\nCarried out Review of fairness and natural justice in the Houseâs standards system","Role ":"Former Senior President at Tribunals for the United Kingdom and former Lord Justice of Appeal","Member/Witness":"Witness","RMFI category":"Multiple/all categories","Notes.1":"Investigating breaches of the code and appeals.  Nothing to note abou the register.","Link":"https://committees.parliament.uk/oralevidence/9879/html/"}
+    competency: {"competency":null,"dependencies":["imagined.feature.current"],"duplicate_of":[]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O37
+    details: {"ID":"O37","Duplicates":"O2","Commons model allows":"Duplicate","Competency":"Conflict between RMFI and Ministerial register","Session date":44587,"Evidence":"Oral","Name":"Stone, Kathyrn","Organisation":"House of Commons","Role ":"Parliamentary Commissioner for Standards","Member/Witness":"Witness","Reference (Question, page, line)":"Q306","Competency.1":"Conflict between RMFI and Ministerial register","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Different data requirements","Notes.1":"Different degrees of scrutiny and requirement for each list (e.g. greater requirement for backbenchers to register gifts and hospitality, monitored every 28 days rather than 6 months).","Link":"https://committees.parliament.uk/oralevidence/3346/pdf/"}
+    competency: {"competency":"Conflict between RMFI and Ministerial register","dependencies":[],"duplicate_of":["O2"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    O39
+    details: {"ID":"O39","Duplicates":"O2","Commons model allows":"Duplicate","Competency":"Conflict between RMFI and Ministerial register","Session date":44587,"Evidence":"Oral","Name":"Stone, Kathyrn","Organisation":"House of Commons","Role ":"Parliamentary Commissioner for Standards","Member/Witness":"Witness","Reference (Question, page, line)":"Q311","Competency.1":"Conflict between RMFI and Ministerial register","RMFI category":"Multiple/all categories","Notes.1":"Different degrees of scrutiny and requirement for each list - results in inconsistency if backbench MPs and ministers attend the same event, backbenchers are held to greater account despite probably having lesser responsibility for decision making in that area","Link":"https://committees.parliament.uk/oralevidence/3346/pdf/"}
+    competency: {"competency":"Conflict between RMFI and Ministerial register","dependencies":["imagined.feature.current","imagined.feature.future","imagined.feature.unlikely"],"duplicate_of":["O2"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="O45" class="competency-block" data-auto-popup="O45: Which members have declared an interest during topical or supplementary questions" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: O45: Which members have declared an interest during topical or supplementary questions" tabindex="0">
+  <p class="title">Which members have declared an interest during topical or supplementary questions</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W8
+    details: {"ID":"W8","Duplicates":"O2","Commons model allows":"Duplicate","Competency":"Relationship between the Ministerial Code and the MCoC","Session date":44587,"Evidence":"Written","Name":"Evans of Weardale, Lord","Organisation":"Committee on Standards in Public Life","Role ":"Chair ","Member/Witness":"Witness","Reference (Question, page, line)":"p9","Competency.1":"Relationship between the Ministerial Code and the MCoC","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Different data requirements","Notes.1":"Alignment (publishing frequency) and a single database","Link":"https://committees.parliament.uk/writtenevidence/43020/pdf/"}
+    competency: {"competency":"Relationship between the Ministerial Code and the MCoC","dependencies":[],"duplicate_of":["O2"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W12" class="competency-block" data-auto-popup="W12: Is the register machine readable" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W12: Is the register machine readable" tabindex="0">
+  <p class="title">Is the register machine readable</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="W13" class="competency-block" data-auto-popup="W13: Can the data held in the register be exported in multiple formats" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: W13: Can the data held in the register be exported in multiple formats" tabindex="0">
+  <p class="title">Can the data held in the register be exported in multiple formats</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="W14" class="competency-block" data-auto-popup="W14: Can the data held in the register be downloaded in bulk" data-required-features="" tabindex="0">
+  <p class="title">Can the data held in the register be downloaded in bulk</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="W15" class="competency-block" data-auto-popup="W15: Is the data linked to other external data sets" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: W15: Is the data linked to other external data sets" tabindex="0">
+  <p class="title">Is the data linked to other external data sets</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="W16" class="competency-block" data-auto-popup="W16: Which standards are used to manage and maintain the quality of the data" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: W16: Which standards are used to manage and maintain the quality of the data" tabindex="0">
+  <p class="title">Which standards are used to manage and maintain the quality of the data</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W21
+    details: {"ID":"W21","Duplicates":"O19","Commons model allows":"Duplicate","Competency":"How often is the information gathered/published (timeliness)","Session date":44635,"Evidence":"Written","Name":"Bell, Aaron","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p4","Competency.1":"How often is the information gathered/published (timeliness)","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Data capture, storage and standards ","Link":"https://committees.parliament.uk/writtenevidence/106605/pdf/"}
+    competency: {"competency":"How often is the information gathered/published (timeliness)","dependencies":[],"duplicate_of":["O19"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="W22" class="competency-block" data-auto-popup="W22: Which declaration in the House business does the interest relate to" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W22: Which declaration in the House business does the interest relate to" tabindex="0">
+  <p class="title">Which declaration in the House business does the interest relate to</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W28
+    details: {"ID":"W28","Duplicates":"W22","Commons model allows":"Duplicate","Competency":"Which declaration in the House business does the interest relate to","Session date":44635,"Evidence":"Written","Name":"Dyer, Henry","Organisation":"Insider","Member/Witness":"Witness","Reference (Question, page, line)":"p1","Competency.1":"Which declaration in the House business does the interest relate to","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Linking to other data sets or systems ","Notes.1":"Declarations during select committees and proceedings held elsewhere than the floor of the House ","Link":"https://committees.parliament.uk/writtenevidence/106976/pdf/"}
+    competency: {"competency":"Which declaration in the House business does the interest relate to","dependencies":["imagined.feature.future"],"duplicate_of":["W22"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W33
+    details: {"ID":"W33","Duplicates":"W22","Commons model allows":"Duplicate","Competency":"Which declaration in the House business does the interest relate to","Session date":44635,"Evidence":"Written","Organisation":"Plaid Cymru","Member/Witness":"Witness","Reference (Question, page, line)":"p1","Competency.1":"Which declaration in the House business does the interest relate to","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Linking to other data sets or systems ","Notes.1":"Discusses the usefulness of the register linking to the relevant declaration (in say Q&A, Hansard etc.) and the requirement for Members to declare the specific interest rather than just pointing to the register before initiating or participating in proceedings. Extends this to WPQs and EDMs. ","Link":"https://committees.parliament.uk/writtenevidence/43767/pdf/"}
+    competency: {"competency":"Which declaration in the House business does the interest relate to","dependencies":["imagined.feature.current"],"duplicate_of":["W22"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W35
+    details: {"ID":"W35","Duplicates":"W16","Commons model allows":"Duplicate","Competency":"Are all the registers published in the same format to the same standards","Session date":44635,"Evidence":"Written","Name":"Penrose, John","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p3","Competency.1":"Are all the registers published in the same format to the same standards","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Data capture, storage and standards ","Notes.1":"Discusses the benefit of extending this approach to the following registers to improve ability to query across data sets:  \nâ¢ Public reports of Ministerial and Permanent Secretary civil servant meetings\nâ¢ The Register of Consultant Lobbyists.\nâ¢ The Register of Membersâ Interests\nâ¢ Electoral Commissionâs reports on political party donors","Link":"https://committees.parliament.uk/writtenevidence/106607/default/"}
+    competency: {"competency":"Are all the registers published in the same format to the same standards","dependencies":["imagined.feature.current"],"duplicate_of":["W16"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W45
+    details: {"ID":"W45","Duplicates":"O19","Commons model allows":"Duplicate","Competency":"How often is the information gathered/published","Session date":44635,"Evidence":"Written","Organisation":"Unlock Democracy","Member/Witness":"Witness","Reference (Question, page, line)":"p5","Competency.1":"How often is the information gathered/published","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Data capture, storage and standards; Compliance ","Link":"https://committees.parliament.uk/writtenevidence/106945/pdf/"}
+    competency: {"competency":"How often is the information gathered/published","dependencies":[],"duplicate_of":["O19"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W46
+    details: {"ID":"W46","Duplicates":"W12","Commons model allows":"Duplicate","Competency":"Is the register machine readable","Session date":44635,"Evidence":"Written","Organisation":"Unlock Democracy","Member/Witness":"Witness","Reference (Question, page, line)":"p6","Competency.1":"Is the register machine readable","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Data capture, storage and standards ","Link":"https://committees.parliament.uk/writtenevidence/106945/pdf/"}
+    competency: {"competency":"Is the register machine readable","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["W12"]}
+  -->
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W47
+    details: {"ID":"W47","Duplicates":"W22","Commons model allows":"Duplicate","Competency":"Which declaration does the interest relate to","Session date":44635,"Evidence":"Written","Organisation":"Unlock Democracy","Member/Witness":"Witness","Reference (Question, page, line)":"p6","Competency.1":"Which declaration does the interest relate to","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Linking to other data sets or systems ","Notes.1":"Discusses linking to mentions in House business papers","Link":"https://committees.parliament.uk/writtenevidence/106945/pdf/"}
+    competency: {"competency":"Which declaration does the interest relate to","dependencies":["imagined.feature.current"],"duplicate_of":["W22"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W49
+    details: {"ID":"W49","Duplicates":"O2","Commons model allows":"Duplicate","Competency":"Conflict between RMFI and Ministerial lists","Session date":44635,"Evidence":"Written","Name":"Solloway, Amanda","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p3","Competency.1":"Conflict between RMFI and Ministerial lists","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Different data requirements","Link":"https://committees.parliament.uk/writtenevidence/106946/pdf/"}
+    competency: {"competency":"Conflict between RMFI and Ministerial lists","dependencies":["imagined.feature.current"],"duplicate_of":["O2"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+<li id="W51" class="competency-block" data-auto-popup="W51: How to provide hyperlinks to ad hoc declarations made when tabling questions or applying for debates, and to  such declarations, or the relevant
+interest in a Memberâs Register entry" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: W51: How to provide hyperlinks to ad hoc declarations made when tabling questions or applying for debates, and to  such declarations, or the relevant
+interest in a Memberâs Register entry" tabindex="0">
+  <p class="title">How to provide hyperlinks to ad hoc declarations made when tabling questions or applying for debates, and to  such declarations, or the relevant
+interest in a Memberâs Register entry</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W56" class="competency-block" data-auto-popup="W56: Under dual system of reporting, EC needs access to the necessary information to fulfil its statutory duties in relation to its register of donations and
+regulated transactions (such as loans) to elected office holders, including members." data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: W56: Under dual system of reporting, EC needs access to the necessary information to fulfil its statutory duties in relation to its register of donations and
+regulated transactions (such as loans) to elected office holders, including members." tabindex="0">
+  <p class="title">Under dual system of reporting, EC needs access to the necessary information to fulfil its statutory duties in relation to its register of donations and
+regulated transactions (such as loans) to elected office holders, including members.</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+      
+
+<li id="W58" class="competency-block" data-auto-popup="W58: What date was the interest submitted to the register" data-required-features="imagined.feature.future" data-score="0" aria-label="Not possible: W58: What date was the interest submitted to the register" tabindex="0">
+  <p class="title">What date was the interest submitted to the register</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W61
+    details: {"ID":"W61","Duplicates":"O2","Commons model allows":"Duplicate","Competency":"Conflict between RMFI and Ministerial lists","Session date":44635,"Evidence":"Written","Name":"Leadsom, Andrea","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p2-3","Competency.1":"Conflict between RMFI and Ministerial lists","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Different data requirements","Link":"https://committees.parliament.uk/writtenevidence/106982/default/"}
+    competency: {"competency":"Conflict between RMFI and Ministerial lists","dependencies":["imagined.feature.current"],"duplicate_of":["O2"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+<li id="W63" class="competency-block" data-auto-popup="W63: Is the register founded on the same standards as other public sector registers " data-required-features="" tabindex="0">
+  <p class="title">Is the register founded on the same standards as other public sector registers </p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="W73" class="competency-block" data-auto-popup="W73: Which declaration in the House business does the interest relate to" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: W73: Which declaration in the House business does the interest relate to" tabindex="0">
+  <p class="title">Which declaration in the House business does the interest relate to</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W74
+    details: {"ID":"W74","Duplicates":"O2","Commons model allows":"Duplicate","Competency":"Conflict between RMFI and Ministerial lists","Session date":44637,"Evidence":"Written","Name":"Debbonaire, Thangam","Organisation":"House of Commons","Role ":"Members","Member/Witness":"Witness","Reference (Question, page, line)":"p2","Competency.1":"Conflict between RMFI and Ministerial lists","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Different data requirements","Link":"https://committees.parliament.uk/writtenevidence/43755/pdf/"}
+    competency: {"competency":"Conflict between RMFI and Ministerial lists","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["O2"]}
+  -->
+
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W76
+    details: {"ID":"W76","Duplicates":"W73","Commons model allows":"Duplicate","Competency":"Is a registered interest linked to a declaration in any parliamentary proceedings?","Session date":44705,"Evidence":"Written","Name":"Benger, John","Organisation":"House of Commons","Role ":"Clerk of the House at House of Commons","Member/Witness":"Witness","Reference (Question, page, line)":"p4","Competency.1":"Is a registered interest linked to a declaration in any parliamentary proceedings?","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Linking to other data sets or systems ","Link":"https://committees.parliament.uk/writtenevidence/108715/pdf/"}
+    competency: {"competency":"Is a registered interest linked to a declaration in any parliamentary proceedings?","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["W73"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="W77" class="competency-block" data-auto-popup="W77: Have any members initiated a parliamentary proceeding in relation to an organisation recorded as an interest in the RMFI " data-required-features="imagined.feature.future,imagined.feature.unlikely" data-score="0" aria-label="Not possible: W77: Have any members initiated a parliamentary proceeding in relation to an organisation recorded as an interest in the RMFI " tabindex="0">
+  <p class="title">Have any members initiated a parliamentary proceeding in relation to an organisation recorded as an interest in the RMFI </p>
+  
+</li>
+
+    
+  
+    
+  
+    
+      
+
+<li id="W79" class="competency-block" data-auto-popup="W79: How often is the information gathered/published" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: W79: How often is the information gathered/published" tabindex="0">
+  <p class="title">How often is the information gathered/published</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    W80
+    details: {"ID":"W80","Duplicates":"O2","Commons model allows":"Duplicate","Competency":"Conflict between RMFI and Ministerial lists","Session date":44697,"Evidence":"Written","Organisation":"The 1922 Committee","Member/Witness":"Witness","Reference (Question, page, line)":"p11","Competency.1":"Conflict between RMFI and Ministerial lists","RMFI category":"Multiple/all categories","Other reason for inclusion ":"Different data requirements","Notes.1":"Duplication of efforts","Link":"https://committees.parliament.uk/writtenevidence/106613/default/"}
+    competency: {"competency":"Conflict between RMFI and Ministerial lists","dependencies":["imagined.feature.current","imagined.feature.future"],"duplicate_of":["O2"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="C1" class="competency-block" data-auto-popup="C1: How often do members report interests late" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: C1: How often do members report interests late" tabindex="0">
+  <p class="title">How often do members report interests late</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C2" class="competency-block" data-auto-popup="C2: Are there interests a member has declared but not reported to the RMFI (or vice versa)" data-required-features="" tabindex="0">
+  <p class="title">Are there interests a member has declared but not reported to the RMFI (or vice versa)</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    C14
+    details: {"ID":"C14","Duplicates":"O10","Commons model allows":"Duplicate","Competency":"What category of business does each of the companies listed in the RMFI operate in? (SG: SIC code presumably)","Session date":44837,"Evidence":"Additional","Name":"Goodrich, Steve","Organisation":"Transparency International","Member/Witness":"Witness","Reference (Question, page, line)":"ln36","Competency.1":"What category of business does each of the companies listed in the RMFI operate in? (SG: SIC code presumably)","RMFI category":"Multiple/all categories","Link":"ontologies/competency-question.md at master Â· ukparliament/ontologies Â· GitHub"}
+    competency: {"competency":"What category of business does each of the companies listed in the RMFI operate in? (SG: SIC code presumably)","dependencies":["imagined.feature.current"],"duplicate_of":["O10"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="C15" class="competency-block" data-auto-popup="C15: What is the UK company number of each of the companies listed in the RMFI?" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C15: What is the UK company number of each of the companies listed in the RMFI?" tabindex="0">
+  <p class="title">What is the UK company number of each of the companies listed in the RMFI?</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C16" class="competency-block" data-auto-popup="C16: For companies listed in the RMFI that are not registered in the UK, what jurisdiction are they registered in?" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: C16: For companies listed in the RMFI that are not registered in the UK, what jurisdiction are they registered in?" tabindex="0">
+  <p class="title">For companies listed in the RMFI that are not registered in the UK, what jurisdiction are they registered in?</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C17" class="competency-block" data-auto-popup="C17: What is the relationship between a member and an organisaton (e.g. shareholder, unpaid role)" data-required-features="" tabindex="0">
+  <p class="title">What is the relationship between a member and an organisaton (e.g. shareholder, unpaid role)</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C18" class="competency-block" data-auto-popup="C18: Which members have a connection to organization x" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: C18: Which members have a connection to organization x" tabindex="0">
+  <p class="title">Which members have a connection to organization x</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C19" class="competency-block" data-auto-popup="C19: Which members have a connection to an organization with SIC code x" data-required-features="" tabindex="0">
+  <p class="title">Which members have a connection to an organization with SIC code x</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C20" class="competency-block" data-auto-popup="C20: Which members have a connection to a topic / theme x e.g. energy, transport, defence etc." data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C20: Which members have a connection to a topic / theme x e.g. energy, transport, defence etc." tabindex="0">
+  <p class="title">Which members have a connection to a topic / theme x e.g. energy, transport, defence etc.</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C21" class="competency-block" data-auto-popup="C21: Which members have a connection with an oligarch/corrupt individual/regime x" data-required-features="" tabindex="0">
+  <p class="title">Which members have a connection with an oligarch/corrupt individual/regime x</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="C33" class="competency-block" data-auto-popup="C33: Which members have declared an interest on a written question &amp; for what interest" data-required-features="imagined.feature.current,imagined.feature.unlikely" data-score="0" aria-label="Not possible: C33: Which members have declared an interest on a written question &amp; for what interest" tabindex="0">
+  <p class="title">Which members have declared an interest on a written question &amp; for what interest</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C34" class="competency-block" data-auto-popup="C34: Which members have declared an interest on a tabled oral question &amp; for what interest" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C34: Which members have declared an interest on a tabled oral question &amp; for what interest" tabindex="0">
+  <p class="title">Which members have declared an interest on a tabled oral question &amp; for what interest</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C35" class="competency-block" data-auto-popup="C35: Which members have declared an interest before an oral contribution &amp; for what interest" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C35: Which members have declared an interest before an oral contribution &amp; for what interest" tabindex="0">
+  <p class="title">Which members have declared an interest before an oral contribution &amp; for what interest</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C36" class="competency-block" data-auto-popup="C36: What interests has a member declared" data-required-features="" tabindex="0">
+  <p class="title">What interests has a member declared</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C37" class="competency-block" data-auto-popup="C37: What members have declared an interest in subject x" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: C37: What members have declared an interest in subject x" tabindex="0">
+  <p class="title">What members have declared an interest in subject x</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C38" class="competency-block" data-auto-popup="C38: For companies listed on the RMFI, what is the company name listed on CH are they known by any alternative names " data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C38: For companies listed on the RMFI, what is the company name listed on CH are they known by any alternative names " tabindex="0">
+  <p class="title">For companies listed on the RMFI, what is the company name listed on CH are they known by any alternative names </p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C39" class="competency-block" data-auto-popup="C39: For companies listed on the RMFI, who are their parent companies" data-required-features="" tabindex="0">
+  <p class="title">For companies listed on the RMFI, who are their parent companies</p>
+  
+</li>
+
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    C40
+    details: {"ID":"C40","Duplicates":"O10","Commons model allows":"Duplicate","Competency":"What category of business does each of the companies listed in the RMFI operate in? (SG: SIC code presumably)","Session date":44837,"Evidence":"Additional","Organisation":"The Times","Member/Witness":"Witness","Reference (Question, page, line)":"ln91","Competency.1":"What category of business does each of the companies listed in the RMFI operate in? (SG: SIC code presumably)","RMFI category":"Multiple/all categories","Link":"ontologies/competency-question.md at master Â· ukparliament/ontologies Â· GitHub"}
+    competency: {"competency":"What category of business does each of the companies listed in the RMFI operate in? (SG: SIC code presumably)","dependencies":[],"duplicate_of":["O10"]}
+  -->
+
+    
+  
+    
+      
+
+<li id="C41" class="competency-block" data-auto-popup="C41: What is the UK company/charity number of each of the companies listed in the RMFI?" data-required-features="imagined.feature.current,imagined.feature.future" data-score="0" aria-label="Not possible: C41: What is the UK company/charity number of each of the companies listed in the RMFI?" tabindex="0">
+  <p class="title">What is the UK company/charity number of each of the companies listed in the RMFI?</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+      
+
+  <!-- 
+    Failed tests
+    C43
+    details: {"ID":"C43","Duplicates":"C38","Commons model allows":"Duplicate","Competency":"For companies listed on the RMFI, what is the company name listed on CH are they known by any alternative names ","Session date":44837,"Evidence":"Additional","Organisation":"The Times","Member/Witness":"Witness","Reference (Question, page, line)":"ln97","Competency.1":"For companies listed on the RMFI, what is the company name listed on CH are they known by any alternative names ","RMFI category":"Multiple/all categories","Link":"ontologies/competency-question.md at master Â· ukparliament/ontologies Â· GitHub"}
+    competency: {"competency":"For companies listed on the RMFI, what is the company name listed on CH are they known by any alternative names ","dependencies":["imagined.feature.current"],"duplicate_of":["C38"]}
+  -->
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+<li id="C47" class="competency-block" data-auto-popup="C47: What steps are taken by parliamentary authorities to ensure that the RMFI is accurate when it is published" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C47: What steps are taken by parliamentary authorities to ensure that the RMFI is accurate when it is published" tabindex="0">
+  <p class="title">What steps are taken by parliamentary authorities to ensure that the RMFI is accurate when it is published</p>
+  
+</li>
+
+    
+  
+    
+      
+
+<li id="C48" class="competency-block" data-auto-popup="C48: What consideration has parliament given to developing and promoting a national open data standard that could be used to publish registers of information data" data-required-features="imagined.feature.current" data-score="1" aria-label="Possible: C48: What consideration has parliament given to developing and promoting a national open data standard that could be used to publish registers of information data" tabindex="0">
+  <p class="title">What consideration has parliament given to developing and promoting a national open data standard that could be used to publish registers of information data</p>
+  
+</li>
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+  </section>
+
+
+
+  </main>
+  <footer>
+	<p>Created by Open Innovations 2022-3. <a href="https://github.com/open-innovations/register-of-members-interests-proto/">Code on Github</a>.</p>
+</footer>
+
+</body></html>
